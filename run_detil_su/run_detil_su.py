@@ -109,97 +109,138 @@ def section_header(parent, title):
 #  PANEL DAFTAR ISIAN (tabel baris dinamis)
 # ╚══════════════════════════════════════════════════════════╝
 class PanelDaftarIsian(tk.Frame):
-    KOLOM = ["di_seri", "di_nomor", "di_luas", "di_tanggal"]
-    HEADER = ["Seri DI", "Nomor", "Luas", "Tanggal"]
+    """
+    Panel konfigurasi Daftar Isian.
 
-    def __init__(self, parent, baris_data: list, **kw):
+    Struktur tabel di layar web:
+         | DI 382     | DI 383     | DI 307     |
+    -----|------------|------------|------------|
+    Nomor| 034        | 0          | 120510     |
+    Tahun| 2020       | 1000       | 2021       |
+    Tgl  | 25/03/2023 | 01/01/900  | 03/10/2021 |
+
+    Di GUI ini: tiap kolom DI ditampilkan sebagai satu kartu
+    dengan field: ID kolom, Image asset, Nomor, Tahun, Tanggal.
+    """
+    FIELDS  = ["nomor",   "tahun",   "tanggal"]
+    FLABELS = ["Nomor",   "Tahun",   "Tanggal"]
+    FWIDTHS = [12, 8, 14]
+
+    def __init__(self, parent, kolom_data: list, **kw):
         kw.setdefault("bg", BG2)
         super().__init__(parent, **kw)
-        self._rows: list[dict] = []   # list of {key: StringVar}
-        self._build_header()
+        self._kolom: list[dict] = []   # list of {key: StringVar / BooleanVar}
         self._scroll_frame()
-        for b in baris_data:
-            self._add_row(b)
+        for k in kolom_data:
+            self._add_kolom(k)
         self._build_footer()
-
-    # ── header kolom ─────────────────────────────────────────
-    def _build_header(self):
-        hdr = styled_frame(self, bg=BG3)
-        hdr.pack(fill="x")
-        widths = [8, 10, 10, 12]
-        for i, (h, w) in enumerate(zip(self.HEADER, widths)):
-            styled_label(hdr, h, bold=True, color=ACCENT2, bg=BG3
-                         ).grid(row=0, column=i, padx=6, pady=4, sticky="w")
-            hdr.columnconfigure(i, minsize=w*9)
-        styled_label(hdr, "Aksi", bold=True, color=ACCENT2, bg=BG3
-                     ).grid(row=0, column=4, padx=6, pady=4)
 
     # ── canvas scrollable ─────────────────────────────────────
     def _scroll_frame(self):
         container = tk.Frame(self, bg=BG2)
         container.pack(fill="both", expand=True)
-
         self._canvas = tk.Canvas(container, bg=BG2, highlightthickness=0,
-                                  height=160)
+                                 height=220)
         sb = ttk.Scrollbar(container, orient="vertical",
-                            command=self._canvas.yview)
+                           command=self._canvas.yview)
         self._canvas.configure(yscrollcommand=sb.set)
         sb.pack(side="right", fill="y")
         self._canvas.pack(side="left", fill="both", expand=True)
-
         self._inner = tk.Frame(self._canvas, bg=BG2)
         self._win_id = self._canvas.create_window(
             (0, 0), window=self._inner, anchor="nw")
-        self._inner.bind("<Configure>", self._on_inner_config)
-        self._canvas.bind("<Configure>", self._on_canvas_config)
+        self._inner.bind("<Configure>",
+                         lambda _e: self._canvas.configure(
+                             scrollregion=self._canvas.bbox("all")))
+        self._canvas.bind("<Configure>",
+                          lambda e: self._canvas.itemconfig(
+                              self._win_id, width=e.width))
 
-    def _on_inner_config(self, _e):
-        self._canvas.configure(scrollregion=self._canvas.bbox("all"))
-
-    def _on_canvas_config(self, e):
-        self._canvas.itemconfig(self._win_id, width=e.width)
-
-    # ── footer tombol tambah ──────────────────────────────────
+    # ── footer ────────────────────────────────────────────────
     def _build_footer(self):
         ft = styled_frame(self, bg=BG2)
         ft.pack(fill="x", pady=4)
-        styled_button(ft, "+ Tambah Baris", self._add_row,
-                      color=ACCENT2, w=16).pack(side="left", padx=6)
+        styled_button(ft, "+ Tambah Kolom DI", self._add_kolom,
+                      color=ACCENT2, w=20).pack(side="left", padx=6)
 
-    # ── satu baris ───────────────────────────────────────────
-    def _add_row(self, data: dict | None = None):
+    # ── satu kartu kolom DI ───────────────────────────────────
+    def _add_kolom(self, data: dict | None = None):
         if data is None:
             data = {}
-        idx = len(self._rows)
-        row_vars = {}
-        row_frame = styled_frame(self._inner, bg=BG2)
-        row_frame.pack(fill="x", pady=1)
 
-        widths = [8, 10, 10, 12]
-        for i, (key, w) in enumerate(zip(self.KOLOM, widths)):
-            sv = tk.StringVar(value=str(data.get(key, "")))
-            row_vars[key] = sv
-            e = styled_entry(row_frame, textvariable=sv, width=w)
-            e.grid(row=0, column=i, padx=4, pady=2, sticky="w")
+        card = styled_frame(self._inner, bg=BG3)
+        card.pack(fill="x", padx=4, pady=3)
 
-        # tombol hapus baris
-        btn_del = tk.Button(row_frame, text="✕", command=lambda f=row_frame: self._del_row(f),
-                            bg=DANGER, fg="white", relief="flat", bd=0,
-                            width=3, cursor="hand2", font=("Segoe UI", 9))
-        btn_del.grid(row=0, column=4, padx=4)
+        vars_: dict = {}
 
-        row_vars["_frame"] = row_frame
-        self._rows.append(row_vars)
+        # baris atas: enabled + ID kolom + nama image
+        top = styled_frame(card, bg=BG3)
+        top.pack(fill="x", padx=6, pady=(6, 2))
 
-    def _del_row(self, frame):
-        self._rows = [r for r in self._rows if r["_frame"] is not frame]
-        frame.destroy()
+        en_var = tk.BooleanVar(value=data.get("enabled", True))
+        vars_["enabled"] = en_var
+
+        def toggle(c=card, v=en_var):
+            s = "normal" if v.get() else "disabled"
+            for w in c.winfo_children():
+                if hasattr(w, 'winfo_children'):
+                    for ww in w.winfo_children():
+                        try: ww.config(state=s)
+                        except Exception: pass
+
+        styled_check(top, "Aktif", en_var,
+                     command=toggle, bg=BG3).pack(side="left")
+
+        styled_label(top, "  ID Kolom:", bg=BG3).pack(side="left")
+        id_var = tk.StringVar(value=str(data.get("id", "")))
+        vars_["id"] = id_var
+        styled_entry(top, textvariable=id_var, width=10
+                     ).pack(side="left", padx=4)
+
+        styled_label(top, "  Image (assets/):", bg=BG3).pack(side="left")
+        img_var = tk.StringVar(value=str(data.get("image", "")))
+        vars_["image"] = img_var
+        styled_entry(top, textvariable=img_var, width=22
+                     ).pack(side="left", padx=4)
+
+        # baris bawah: Nomor, Tahun, Tanggal
+        mid = styled_frame(card, bg=BG3)
+        mid.pack(fill="x", padx=6, pady=(2, 6))
+
+        for field, lbl, w in zip(self.FIELDS, self.FLABELS, self.FWIDTHS):
+            styled_label(mid, f"{lbl}:", bg=BG3, width=8
+                         ).pack(side="left")
+            sv = tk.StringVar(value=str(data.get(field, "")))
+            vars_[field] = sv
+            styled_entry(mid, textvariable=sv, width=w
+                         ).pack(side="left", padx=(0, 10))
+
+        # tombol hapus kartu
+        tk.Button(top, text="✕",
+                  command=lambda c=card: self._del_kolom(c),
+                  bg=DANGER, fg="white", relief="flat", bd=0,
+                  width=3, cursor="hand2",
+                  font=("Segoe UI", 9)).pack(side="right")
+
+        vars_["_card"] = card
+        self._kolom.append(vars_)
+
+    def _del_kolom(self, card):
+        self._kolom = [k for k in self._kolom if k["_card"] is not card]
+        card.destroy()
 
     # ── baca data ─────────────────────────────────────────────
     def get_data(self) -> list:
         result = []
-        for r in self._rows:
-            result.append({k: r[k].get() for k in self.KOLOM})
+        for k in self._kolom:
+            result.append({
+                "id":      k["id"].get(),
+                "enabled": k["enabled"].get(),
+                "image":   k["image"].get(),
+                "nomor":   k["nomor"].get(),
+                "tahun":   k["tahun"].get(),
+                "tanggal": k["tanggal"].get(),
+            })
         return result
 
 
@@ -365,7 +406,7 @@ class AppDetilSU(tk.Tk):
 
         self._panel_di = PanelDaftarIsian(
             di_frame,
-            baris_data=di_cfg.get("baris", [])
+            kolom_data=di_cfg.get("kolom", [])
         )
         self._panel_di.pack(fill="x", padx=8, pady=4)
 
@@ -409,7 +450,7 @@ class AppDetilSU(tk.Tk):
         }
         cfg["daftar_isian"] = {
             "enabled": self._di_enabled.get(),
-            "baris":   self._panel_di.get_data(),
+            "kolom":   self._panel_di.get_data(),
         }
         cfg["detail_lain"] = {
             k: self._detail_panels[k].get_data()
@@ -620,14 +661,17 @@ class AppDetilSU(tk.Tk):
 
     def _run_simulasi(self):
         """Simulasi tanpa pyautogui — untuk testing GUI."""
-        baris = self._cfg.get("daftar_isian", {}).get("baris", [])
-        for i, b in enumerate(baris, 1):
+        kolom_list = self._cfg.get("daftar_isian", {}).get("kolom", [])
+        for i, k in enumerate(kolom_list, 1):
             while self._paused and self._running:
                 time.sleep(0.2)
             if not self._running:
                 break
-            self._progress_var.set(f"Record: {i}/{len(baris)}")
-            self._log(f"[SIM] Baris {i}: {b}")
+            self._progress_var.set(f"Kolom DI: {i}/{len(kolom_list)}")
+            self._log(f"[SIM] Kolom {k.get('id','?')}: "
+                      f"nomor={k.get('nomor','')!r} "
+                      f"tahun={k.get('tahun','')!r} "
+                      f"tgl={k.get('tanggal','')!r}")
             time.sleep(0.8)
 
 

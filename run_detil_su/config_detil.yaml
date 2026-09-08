@@ -11,40 +11,56 @@ exit_key:    esc      # Keluar
 
 # Delay antar aksi (detik)
 delay:
-  antar_field: 0.4
-  setelah_klik: 0.5
+  antar_field:   0.4
+  setelah_klik:  0.5
   setelah_ketik: 0.3
-  setelah_tab:  0.2
+  setelah_tab:   0.2
 
 # ============================================================
 #  SERI  –  field dropdown/input di kiri atas form DETIL
 # ============================================================
 seri:
-  enabled: true          # true = isi/ganti, false = biarkan
-  nilai: "-"             # nilai yang akan dipaste
+  enabled: true       # true = isi/ganti, false = biarkan
+  nilai: "-"
 
 # ============================================================
-#  DAFTAR ISIAN  –  tabel baris di bagian tengah
-#  Setiap baris mempunyai: di_seri, di_nomor, di_luas, di_tanggal
-#  Isi baris sesuai kebutuhan; hapus baris yang tidak perlu.
+#  DAFTAR ISIAN
+#
+#  Struktur tabel di layar:
+#
+#            | DI 382      | DI 383      | DI 387      |
+#  ----------|-------------|-------------|-------------|
+#  Nomor     | 034         | 0           | 120510      |
+#  Tahun     | 2020        | 1000        | 2021        |
+#  Tanggal   | 25/03/2023  | 01/01/900   | 03/10/2021  |
+#
+#  Tiap kolom DI punya: nomor, tahun, tanggal
+#  Nilai kosong ("") = BIARKAN isian yang sudah ada di layar
 # ============================================================
 daftar_isian:
-  enabled: true          # true = proses tabel ini, false = lewati
-  baris:
-    - di_seri:    "034"
-      di_nomor:   ""         # kosong = biarkan isian yang sudah ada
-      di_luas:    "1000"
-      di_tanggal: "10/01/900"
+  enabled: true
 
-    - di_seri:    "034"
-      di_nomor:   ""
-      di_luas:    "1000"
-      di_tanggal: "01/01/900"
+  kolom:
+    - id:      "DI 382"
+      enabled: true
+      image:   "label_di_382.png"   # screenshot header kolom "DI 382"
+      nomor:   "034"
+      tahun:   "2020"
+      tanggal: "25/03/2023"
 
-    - di_seri:    "034"
-      di_nomor:   ""
-      di_luas:    "1000"
-      di_tanggal: "03/10/2021"
+    - id:      "DI 383"
+      enabled: true
+      image:   "label_di_383.png"   # screenshot header kolom "DI 383"
+      nomor:   "0"
+      tahun:   "1000"
+      tanggal: "01/01/900"
+
+    - id:      "DI 307"
+      enabled: true
+      image:   "label_di_307.png"   # screenshot header kolom "DI 307"
+      nomor:   "120510"
+      tahun:   "2021"
+      tanggal: "03/10/2021"
 
 # ============================================================
 #  DETAIL LAIN-LAIN
@@ -71,53 +87,30 @@ detail_lain:
     nilai: "TIDAK ADA NOMOR GAMBAR UKUR 1871/2021"
 
 # ============================================================
-#  IMAGE RECOGNITION  –  koordinat & confidence tiap label
+#  IMAGE ASSETS  –  ringkasan file yang perlu disiapkan
+#
+#  Total asset untuk Daftar Isian: 3 (satu per header kolom)
+#  Bukan 9 — cukup klik header kolom, lalu Tab ke Nomor→Tahun→Tanggal
+#
+#  File yang perlu ada di folder assets/ :
+#
+#  Navigasi
+#    label_tab_detil.png       ← teks tab "DETIL"
+#    label_field_seri.png      ← label "Seri" di form atas
+#
+#  Daftar Isian (3 file)
+#    label_di_382.png          ← teks header "DI 382" di tabel
+#    label_di_383.png          ← teks header "DI 383" di tabel
+#    label_di_307.png          ← teks header "DI 307" di tabel
+#
+#  Detail Lain-Lain (4 file)
+#    label_keadaan_tanah.png
+#    label_tanda_batas.png
+#    label_pengukuran.png
+#    label_hal_lain.png
+#
+#  Simpan (1 file)
+#    label_tanda_seru.png      ← tombol ! / Simpan
+#
+#  TOTAL: 10 file asset
 # ============================================================
-label_configs:
-  - id: tab_detil
-    enabled: true
-    image: label_tab_detil.png
-    confidence: 0.8
-    offset: [0, 0]
-
-  - id: field_seri
-    enabled: true
-    image: label_field_seri.png
-    confidence: 0.8
-    offset: [120, 0]
-
-  - id: tabel_daftar_isian
-    enabled: true
-    image: label_tabel_di.png
-    confidence: 0.8
-    offset: [0, 0]
-
-  - id: field_keadaan_tanah
-    enabled: true
-    image: label_keadaan_tanah.png
-    confidence: 0.8
-    offset: [0, 30]
-
-  - id: field_tanda_batas
-    enabled: true
-    image: label_tanda_batas.png
-    confidence: 0.8
-    offset: [0, 30]
-
-  - id: field_pengukuran
-    enabled: true
-    image: label_pengukuran.png
-    confidence: 0.8
-    offset: [0, 30]
-
-  - id: field_hal_lain
-    enabled: true
-    image: label_hal_lain.png
-    confidence: 0.8
-    offset: [0, 30]
-
-  - id: btn_simpan
-    enabled: true
-    image: label_tanda_seru.png
-    confidence: 0.8
-    offset: [0, 0]

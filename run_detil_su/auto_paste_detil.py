@@ -139,51 +139,93 @@ def aksi_seri(cfg: dict, assets_dir: str, log_fn, nilai: str) -> bool:
 
 
 # ════════════════════════════════════════════════════════════
-#  AKSI FIELD: DAFTAR ISIAN  (satu baris tabel)
+#  AKSI FIELD: DAFTAR ISIAN
+#
+#  Struktur tabel di layar:
+#
+#           | DI 382     | DI 383     | DI 307     |
+#  ---------|------------|------------|------------|
+#  Nomor    | 034        | 0          | 120510     |
+#  Tahun    | 2020       | 1000       | 2021       |
+#  Tanggal  | 25/03/2023 | 01/01/900  | 03/10/2021 |
+#
+#  Strategi per kolom:
+#    1. Temukan header kolom (misal "DI 382") via image recognition
+#    2. Klik cell Nomor  (offset_y ke bawah dari header)
+#    3. Isi Nomor  → Tab
+#    4. Isi Tahun  → Tab
+#    5. Isi Tanggal → Tab
+#
+#  Nilai kosong ("") = skip paste, Tab saja (biarkan isi lama)
 # ════════════════════════════════════════════════════════════
 
-def aksi_satu_baris_di(cfg: dict, assets_dir: str, log_fn,
-                       baris: dict, idx: int) -> bool:
-    """
-    Isi satu baris Daftar Isian.
-    Strategi: cari header tabel pakai image, klik cell pertama baris ke-idx,
-    lalu Tab untuk berpindah kolom.
-    Jika image tidak ada, gunakan Tab-Tab dari posisi saat ini.
-    """
-    di_seri    = baris.get("di_seri", "")
-    di_nomor   = baris.get("di_nomor", "")
-    di_luas    = baris.get("di_luas", "")
-    di_tanggal = baris.get("di_tanggal", "")
+# Offset Y (px) dari tengah header kolom ke masing-masing baris
+_DI_OFFSET_NOMOR   = 30   # baris pertama (Nomor)
+_DI_OFFSET_TAHUN   = 58   # baris kedua  (Tahun)
+_DI_OFFSET_TANGGAL = 86   # baris ketiga (Tanggal)
 
-    def paste_or_skip(val: str):
-        """Paste jika nilai ada, Tab saja jika kosong (biarkan)."""
+
+def aksi_satu_kolom_di(cfg: dict, assets_dir: str, log_fn,
+                       kolom: dict) -> bool:
+    """
+    Isi satu kolom Daftar Isian (Nomor, Tahun, Tanggal).
+
+    kolom = {
+        'id':      'DI 382',
+        'enabled': True,
+        'image':   'label_di_382.png',
+        'nomor':   '034',
+        'tahun':   '2020',
+        'tanggal': '25/03/2023',
+    }
+    """
+    if not kolom.get("enabled", True):
+        log_fn(f"  [DI {kolom.get('id')}] ⏭  Dilewati (disabled).")
+        return True
+
+    col_id  = kolom.get("id", "?")
+    nomor   = str(kolom.get("nomor",   ""))
+    tahun   = str(kolom.get("tahun",   ""))
+    tanggal = str(kolom.get("tanggal", ""))
+
+    delay_tab = float(cfg.get("delay", {}).get("setelah_tab", 0.2))
+
+    def paste_or_skip(val: str, nama: str):
+        """Paste jika nilai tidak kosong, hanya Tab jika kosong."""
         if val.strip():
             _clear_and_paste(val)
             _delay(cfg, "setelah_ketik")
-        _tab_ke_field(1, float(cfg.get("delay", {}).get("setelah_tab", 0.2)))
-
-    # ── cari baris ke-idx di tabel via gambar header tabel ──
-    img_tabel = os.path.join(assets_dir, "label_tabel_di.png")
-    if os.path.exists(img_tabel):
-        loc = _find_image(img_tabel, confidence=0.8)
-        if loc:
-            # estimasi posisi baris: tinggi tiap baris ±28px
-            row_height = 28
-            base_y     = loc.top + loc.height + 4 + (idx * row_height)
-            base_x     = loc.left + 20
-            pyautogui.click(base_x, base_y)
-            _delay(cfg, "setelah_klik")
+            log_fn(f"    {nama}: '{val}'")
         else:
-            log_fn(f"  [DI baris {idx+1}] ⚠️  Tabel image tidak ditemukan.")
+            log_fn(f"    {nama}: (biarkan)")
+        _tab_ke_field(1, delay_tab)
 
-    # ── isi kolom satu per satu ──────────────────────────────
-    paste_or_skip(di_seri)
-    paste_or_skip(di_nomor)
-    paste_or_skip(di_luas)
-    paste_or_skip(di_tanggal)
+    # ── cari header kolom via image ──────────────────────────
+    img_name = kolom.get("image", "")
+    img_path = os.path.join(assets_dir, img_name)
 
-    log_fn(f"  [DI baris {idx+1}] seri={di_seri!r} nomor={di_nomor!r} "
-           f"luas={di_luas!r} tgl={di_tanggal!r}")
+    if os.path.exists(img_path):
+        loc = _find_image(img_path, confidence=0.8)
+        if loc is None:
+            log_fn(f"  [DI {col_id}] ⚠️  Header image tidak ditemukan di layar.")
+            return False
+
+        # tengah header kolom
+        cx = loc.left + loc.width // 2
+        cy_header = loc.top + loc.height // 2
+
+        # klik cell Nomor (baris pertama di bawah header)
+        pyautogui.click(cx, cy_header + _DI_OFFSET_NOMOR)
+        _delay(cfg, "setelah_klik")
+    else:
+        # tanpa image: andalkan fokus aktif saat ini
+        log_fn(f"  [DI {col_id}] ℹ️  Image '{img_name}' belum ada, paste ke fokus aktif.")
+
+    log_fn(f"  [DI {col_id}]")
+    paste_or_skip(nomor,   "Nomor  ")
+    paste_or_skip(tahun,   "Tahun  ")
+    paste_or_skip(tanggal, "Tanggal")
+
     return True
 
 
@@ -297,9 +339,9 @@ def jalankan_paste(
     seri_cfg   = cfg.get("seri",         {})
     di_cfg     = cfg.get("daftar_isian", {})
     detail_cfg = cfg.get("detail_lain",  {})
-    baris_list = di_cfg.get("baris", []) if di_cfg.get("enabled", True) else []
+    kolom_list = di_cfg.get("kolom", []) if di_cfg.get("enabled", True) else []
 
-    total = max(len(baris_list), 1)   # minimal 1 "pass"
+    total = 1   # DETIL SU: satu record = satu klik F9
 
     for rec_idx in range(total):
         if not is_running():
@@ -313,8 +355,8 @@ def jalankan_paste(
             return
 
         progress_fn(f"Record: {rec_idx+1}/{total}")
-        log_fn(f"\n── Record {rec_idx+1}/{total} ──────────────────────────")
-        status_fn(f"▶  Record {rec_idx+1}/{total}…")
+        log_fn(f"\n── Proses DETIL ────────────────────────────────────")
+        status_fn(f"▶  Mengisi DETIL…")
 
         # ── 1. Pastikan tab DETIL aktif ──────────────────────
         img_tab = os.path.join(assets_dir, "label_tab_detil.png")
@@ -336,11 +378,13 @@ def jalankan_paste(
         else:
             log_fn("  [SERI] ⏭  Dilewati (disabled).")
 
-        # ── 3. DAFTAR ISIAN  (hanya baris ke-rec_idx) ────────
-        if di_cfg.get("enabled", True) and baris_list:
-            baris = baris_list[rec_idx]
-            aksi_satu_baris_di(cfg, assets_dir, log_fn, baris, rec_idx)
-            _delay(cfg, "antar_field")
+        # ── 3. DAFTAR ISIAN  (semua kolom: DI 382, DI 383, DI 307) ──
+        if di_cfg.get("enabled", True) and kolom_list:
+            for kolom in kolom_list:
+                if not is_running():
+                    return
+                aksi_satu_kolom_di(cfg, assets_dir, log_fn, kolom)
+                _delay(cfg, "antar_field")
         else:
             log_fn("  [DI] ⏭  Dilewati (disabled atau kosong).")
 
