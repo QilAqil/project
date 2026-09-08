@@ -1,0 +1,7 @@
+# requirements.txt  –  dependensi run_detil_su
+pyautogui==0.9.54
+pyperclip==1.9.0
+pyscreeze==0.1.30
+Pillow>=11.0.0
+PyYAML>=6.0
+pyinstaller>=6.0

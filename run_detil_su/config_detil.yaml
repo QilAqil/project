@@ -1,0 +1,123 @@
+# ============================================================
+#  Konfigurasi Auto-Paste DETIL Surat Ukur
+#  Halaman: Manajemen Dokumen > Surat Ukur > DETIL
+# ============================================================
+
+# Hotkey kontrol
+trigger_key: f9       # Mulai / lanjut satu record
+pause_key:   f10      # Jeda / lanjutkan
+reset_key:   f11      # Reset ke record pertama
+exit_key:    esc      # Keluar
+
+# Delay antar aksi (detik)
+delay:
+  antar_field: 0.4
+  setelah_klik: 0.5
+  setelah_ketik: 0.3
+  setelah_tab:  0.2
+
+# ============================================================
+#  SERI  –  field dropdown/input di kiri atas form DETIL
+# ============================================================
+seri:
+  enabled: true          # true = isi/ganti, false = biarkan
+  nilai: "-"             # nilai yang akan dipaste
+
+# ============================================================
+#  DAFTAR ISIAN  –  tabel baris di bagian tengah
+#  Setiap baris mempunyai: di_seri, di_nomor, di_luas, di_tanggal
+#  Isi baris sesuai kebutuhan; hapus baris yang tidak perlu.
+# ============================================================
+daftar_isian:
+  enabled: true          # true = proses tabel ini, false = lewati
+  baris:
+    - di_seri:    "034"
+      di_nomor:   ""         # kosong = biarkan isian yang sudah ada
+      di_luas:    "1000"
+      di_tanggal: "10/01/900"
+
+    - di_seri:    "034"
+      di_nomor:   ""
+      di_luas:    "1000"
+      di_tanggal: "01/01/900"
+
+    - di_seri:    "034"
+      di_nomor:   ""
+      di_luas:    "1000"
+      di_tanggal: "03/10/2021"
+
+# ============================================================
+#  DETAIL LAIN-LAIN
+# ============================================================
+detail_lain:
+
+  keadaan_tanah:
+    enabled: true
+    nilai: "Sebidang tanah bekas pertanian"
+
+  tanda_tanda_batas:
+    enabled: true
+    nilai: >
+      Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997
+      jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional
+      Nomor 3 Tahun 1997 Pasal 22 Ayat 1.
+
+  pengukuran_dan_pemetaan:
+    enabled: true
+    nilai: "MUHKSONI"
+
+  hal_lain_lain:
+    enabled: true
+    nilai: "TIDAK ADA NOMOR GAMBAR UKUR 1871/2021"
+
+# ============================================================
+#  IMAGE RECOGNITION  –  koordinat & confidence tiap label
+# ============================================================
+label_configs:
+  - id: tab_detil
+    enabled: true
+    image: label_tab_detil.png
+    confidence: 0.8
+    offset: [0, 0]
+
+  - id: field_seri
+    enabled: true
+    image: label_field_seri.png
+    confidence: 0.8
+    offset: [120, 0]
+
+  - id: tabel_daftar_isian
+    enabled: true
+    image: label_tabel_di.png
+    confidence: 0.8
+    offset: [0, 0]
+
+  - id: field_keadaan_tanah
+    enabled: true
+    image: label_keadaan_tanah.png
+    confidence: 0.8
+    offset: [0, 30]
+
+  - id: field_tanda_batas
+    enabled: true
+    image: label_tanda_batas.png
+    confidence: 0.8
+    offset: [0, 30]
+
+  - id: field_pengukuran
+    enabled: true
+    image: label_pengukuran.png
+    confidence: 0.8
+    offset: [0, 30]
+
+  - id: field_hal_lain
+    enabled: true
+    image: label_hal_lain.png
+    confidence: 0.8
+    offset: [0, 30]
+
+  - id: btn_simpan
+    enabled: true
+    image: label_tanda_seru.png
+    confidence: 0.8
+    offset: [0, 0]
