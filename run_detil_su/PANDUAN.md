@@ -64,14 +64,12 @@ seri:
 
 #### Daftar Isian
 
-Tabel di layar punya struktur seperti ini:
+Tiap baris di layar tampilannya seperti ini:
 
 ```
-         | DI 382      | DI 383      | DI 307      |
----------|-------------|-------------|-------------|
-Nomor    | 034         | 0           | 120510      |
-Tahun    | 2020        | 1000        | 2021        |
-Tanggal  | 25/03/2023  | 01/01/900   | 03/10/2021  |
+[ DI 382 ] [ Nomor...     ] [ Tahun... ] [ Tanggal...  ] [📅]
+[ DI 383 ] [ Nomor...     ] [ Tahun... ] [ Tanggal...  ] [📅]
+[ DI 307 ] [ Nomor...     ] [ Tahun... ] [ Tanggal...  ] [📅]
 ```
 
 Konfigurasi per kolom di YAML:
@@ -144,15 +142,25 @@ Total file yang dibutuhkan: **10 file**.
 | `label_tab_detil.png` | Teks tab "DETIL" di bagian atas halaman |
 | `label_field_seri.png` | Label teks "Seri" di form bagian atas |
 
-#### Daftar Isian — Header Kolom (3 file)
+#### Daftar Isian — Label Baris (3 file)
+
+Tiap baris Daftar Isian tampilannya seperti ini di layar:
+
+```
+[ DI 303 ] [ Nomor...          ] [ Tahun...    ] [ Tanggal...   ] [📅]
+```
+
+`DI 303` adalah **label di sisi kiri** baris — itulah yang di-screenshot.
+Aplikasi mendeteksi label tersebut, lalu otomatis klik input **Nomor** di sebelah kanannya,
+kemudian Tab ke **Tahun** → Tab ke **Tanggal**.
+
 | Nama File | Ambil Screenshot Dari |
 |---|---|
-| `label_di_382.png` | Teks header **"DI 382"** di tabel |
-| `label_di_383.png` | Teks header **"DI 383"** di tabel |
-| `label_di_307.png` | Teks header **"DI 307"** di tabel |
+| `label_di_382.png` | Teks **"DI 382"** di sisi kiri baris |
+| `label_di_383.png` | Teks **"DI 383"** di sisi kiri baris |
+| `label_di_307.png` | Teks **"DI 307"** di sisi kiri baris |
 
-> Cukup 3 file untuk Daftar Isian — bukan 9.
-> Aplikasi klik header kolom, lalu otomatis Tab ke Nomor → Tahun → Tanggal.
+> Cukup **3 file** untuk Daftar Isian — satu per baris DI, bukan 9.
 
 #### Detail Lain-Lain (4 file)
 | Nama File | Ambil Screenshot Dari |
@@ -206,9 +214,9 @@ atau klik `run_detil_su.exe`
 
 | Tombol | Fungsi |
 |---|---|
-| **F9** | Mulai / lanjut satu record |
-| **F10** | Jeda / lanjutkan |
-| **F11** | Reset |
+| **F1** | Mulai / lanjut satu record |
+| **F2** | Jeda / lanjutkan |
+| **F3** | Reset |
 | **ESC** | Hentikan proses |
 
 ---

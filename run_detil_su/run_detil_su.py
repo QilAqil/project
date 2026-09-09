@@ -99,149 +99,86 @@ def styled_button(parent, text, command, color=ACCENT, w=14, **kw):
 
 def section_header(parent, title):
     f = styled_frame(parent, bg=BG3)
-    f.pack(fill="x", pady=(10, 2))
-    styled_label(f, f"  {title}", bold=True, color=ACCENT2, size=10,
-                 bg=BG3).pack(side="left", padx=4, pady=4)
+    f.pack(fill="x", pady=(6, 1))
+    styled_label(f, f"  {title}", bold=True, color=ACCENT2, size=9,
+                 bg=BG3).pack(side="left", padx=4, pady=2)
     return f
 
 
 # ╔══════════════════════════════════════════════════════════╗
 #  PANEL DAFTAR ISIAN (tabel baris dinamis)
 # ╚══════════════════════════════════════════════════════════╝
+# ╔══════════════════════════════════════════════════════════╗
+#  PANEL DAFTAR ISIAN  –  layout compact, 1 baris per kolom DI
+#  Tombol tambah dihapus – jumlah kolom DI tetap dari config
+# ╚══════════════════════════════════════════════════════════╝
 class PanelDaftarIsian(tk.Frame):
     """
-    Panel konfigurasi Daftar Isian.
-
-    Struktur tabel di layar web:
-         | DI 382     | DI 383     | DI 307     |
-    -----|------------|------------|------------|
-    Nomor| 034        | 0          | 120510     |
-    Tahun| 2020       | 1000       | 2021       |
-    Tgl  | 25/03/2023 | 01/01/900  | 03/10/2021 |
-
-    Di GUI ini: tiap kolom DI ditampilkan sebagai satu kartu
-    dengan field: ID kolom, Image asset, Nomor, Tahun, Tanggal.
+    Tiap baris DI tampil dalam SATU baris horizontal:
+    [✓ Aktif] [ID] [Image] [Nomor] [Tahun] [Tanggal]
+    Tidak ada scroll internal, tidak ada tombol tambah.
     """
-    FIELDS  = ["nomor",   "tahun",   "tanggal"]
-    FLABELS = ["Nomor",   "Tahun",   "Tanggal"]
-    FWIDTHS = [12, 8, 14]
-
     def __init__(self, parent, kolom_data: list, **kw):
         kw.setdefault("bg", BG2)
         super().__init__(parent, **kw)
-        self._kolom: list[dict] = []   # list of {key: StringVar / BooleanVar}
-        self._scroll_frame()
+        self._kolom: list[dict] = []
+        # header
+        self._build_header()
         for k in kolom_data:
             self._add_kolom(k)
-        self._build_footer()
 
-    # ── canvas scrollable ─────────────────────────────────────
-    def _scroll_frame(self):
-        container = tk.Frame(self, bg=BG2)
-        container.pack(fill="both", expand=True)
-        self._canvas = tk.Canvas(container, bg=BG2, highlightthickness=0,
-                                 height=220)
-        sb = ttk.Scrollbar(container, orient="vertical",
-                           command=self._canvas.yview)
-        self._canvas.configure(yscrollcommand=sb.set)
-        sb.pack(side="right", fill="y")
-        self._canvas.pack(side="left", fill="both", expand=True)
-        self._inner = tk.Frame(self._canvas, bg=BG2)
-        self._win_id = self._canvas.create_window(
-            (0, 0), window=self._inner, anchor="nw")
-        self._inner.bind("<Configure>",
-                         lambda _e: self._canvas.configure(
-                             scrollregion=self._canvas.bbox("all")))
-        self._canvas.bind("<Configure>",
-                          lambda e: self._canvas.itemconfig(
-                              self._win_id, width=e.width))
+    def _build_header(self):
+        hdr = styled_frame(self, bg=BG3)
+        hdr.pack(fill="x", padx=4, pady=(2,0))
+        cols = [("Aktif",6), ("ID",8), ("Image (assets/)",20),
+                ("Nomor",10), ("Tahun",7), ("Tanggal",12)]
+        for lbl, w in cols:
+            styled_label(hdr, lbl, bold=True, color=ACCENT2, bg=BG3,
+                         width=w, anchor="w").pack(side="left", padx=3, pady=3)
 
-    # ── footer ────────────────────────────────────────────────
-    def _build_footer(self):
-        ft = styled_frame(self, bg=BG2)
-        ft.pack(fill="x", pady=4)
-        styled_button(ft, "+ Tambah Kolom DI", self._add_kolom,
-                      color=ACCENT2, w=20).pack(side="left", padx=6)
-
-    # ── satu kartu kolom DI ───────────────────────────────────
-    def _add_kolom(self, data: dict | None = None):
-        if data is None:
-            data = {}
-
-        card = styled_frame(self._inner, bg=BG3)
-        card.pack(fill="x", padx=4, pady=3)
+    def _add_kolom(self, data: dict):
+        row = styled_frame(self, bg=BG2)
+        row.pack(fill="x", padx=4, pady=1)
 
         vars_: dict = {}
 
-        # baris atas: enabled + ID kolom + nama image
-        top = styled_frame(card, bg=BG3)
-        top.pack(fill="x", padx=6, pady=(6, 2))
-
+        # checkbox aktif
         en_var = tk.BooleanVar(value=data.get("enabled", True))
         vars_["enabled"] = en_var
+        cb = styled_check(row, "", en_var, bg=BG2)
+        cb.pack(side="left", padx=(6,0))
 
-        def toggle(c=card, v=en_var):
-            s = "normal" if v.get() else "disabled"
-            for w in c.winfo_children():
-                if hasattr(w, 'winfo_children'):
-                    for ww in w.winfo_children():
-                        try: ww.config(state=s)
-                        except Exception: pass
-
-        styled_check(top, "Aktif", en_var,
-                     command=toggle, bg=BG3).pack(side="left")
-
-        styled_label(top, "  ID Kolom:", bg=BG3).pack(side="left")
+        # ID kolom (readonly display)
         id_var = tk.StringVar(value=str(data.get("id", "")))
         vars_["id"] = id_var
-        styled_entry(top, textvariable=id_var, width=10
-                     ).pack(side="left", padx=4)
+        styled_entry(row, textvariable=id_var, width=8
+                     ).pack(side="left", padx=3)
 
-        styled_label(top, "  Image (assets/):", bg=BG3).pack(side="left")
+        # nama image
         img_var = tk.StringVar(value=str(data.get("image", "")))
         vars_["image"] = img_var
-        styled_entry(top, textvariable=img_var, width=22
-                     ).pack(side="left", padx=4)
+        styled_entry(row, textvariable=img_var, width=20
+                     ).pack(side="left", padx=3)
 
-        # baris bawah: Nomor, Tahun, Tanggal
-        mid = styled_frame(card, bg=BG3)
-        mid.pack(fill="x", padx=6, pady=(2, 6))
-
-        for field, lbl, w in zip(self.FIELDS, self.FLABELS, self.FWIDTHS):
-            styled_label(mid, f"{lbl}:", bg=BG3, width=8
-                         ).pack(side="left")
+        # Nomor, Tahun, Tanggal
+        for field, w in [("nomor",10), ("tahun",7), ("tanggal",12)]:
             sv = tk.StringVar(value=str(data.get(field, "")))
             vars_[field] = sv
-            styled_entry(mid, textvariable=sv, width=w
-                         ).pack(side="left", padx=(0, 10))
+            styled_entry(row, textvariable=sv, width=w
+                         ).pack(side="left", padx=3)
 
-        # tombol hapus kartu
-        tk.Button(top, text="✕",
-                  command=lambda c=card: self._del_kolom(c),
-                  bg=DANGER, fg="white", relief="flat", bd=0,
-                  width=3, cursor="hand2",
-                  font=("Segoe UI", 9)).pack(side="right")
-
-        vars_["_card"] = card
+        vars_["_row"] = row
         self._kolom.append(vars_)
 
-    def _del_kolom(self, card):
-        self._kolom = [k for k in self._kolom if k["_card"] is not card]
-        card.destroy()
-
-    # ── baca data ─────────────────────────────────────────────
     def get_data(self) -> list:
-        result = []
-        for k in self._kolom:
-            result.append({
-                "id":      k["id"].get(),
-                "enabled": k["enabled"].get(),
-                "image":   k["image"].get(),
-                "nomor":   k["nomor"].get(),
-                "tahun":   k["tahun"].get(),
-                "tanggal": k["tanggal"].get(),
-            })
-        return result
+        return [{
+            "id":      k["id"].get(),
+            "enabled": k["enabled"].get(),
+            "image":   k["image"].get(),
+            "nomor":   k["nomor"].get(),
+            "tahun":   k["tahun"].get(),
+            "tanggal": k["tanggal"].get(),
+        } for k in self._kolom]
 
 
 # ╔══════════════════════════════════════════════════════════╗
@@ -254,22 +191,22 @@ class PanelFieldDetail(tk.Frame):
         self._enabled = tk.BooleanVar(value=data.get("enabled", True))
         self._multiline = multiline
 
-        top = styled_frame(self, bg=BG2)
-        top.pack(fill="x")
-        styled_check(top, f"  {label}", self._enabled,
-                     command=self._toggle).pack(side="left", padx=6, pady=2)
+        row = styled_frame(self, bg=BG2)
+        row.pack(fill="x")
+        styled_check(row, f"  {label}", self._enabled,
+                     command=self._toggle).pack(side="left", padx=6, pady=1)
 
         body = styled_frame(self, bg=BG2)
-        body.pack(fill="x", padx=10, pady=(0, 4))
+        body.pack(fill="x", padx=14, pady=(0, 2))
 
         if multiline:
-            self._widget = styled_text(body, height=3, width=70)
+            self._widget = styled_text(body, height=2, width=70)
             self._widget.insert("1.0", data.get("nilai", ""))
             self._widget.pack(fill="x")
         else:
             sv = tk.StringVar(value=str(data.get("nilai", "")))
             self._sv = sv
-            self._widget = styled_entry(body, textvariable=sv, width=55)
+            self._widget = styled_entry(body, textvariable=sv, width=60)
             self._widget.pack(side="left", fill="x", expand=True)
 
         self._toggle()
@@ -295,8 +232,8 @@ class AppDetilSU(tk.Tk):
         self.title("Auto-Paste DETIL Surat Ukur  ·  ATR/BPN")
         self.configure(bg=BG)
         self.resizable(True, True)
-        self.minsize(780, 600)
-        self._center(900, 720)
+        self.minsize(700, 520)
+        self._center(820, 580)
 
         self._cfg = load_config()
         self._running = False
@@ -377,14 +314,14 @@ class AppDetilSU(tk.Tk):
         # ── Seri ─────────────────────────────────────────────
         section_header(inner, "SERI")
         seri_frame = styled_frame(inner, bg=BG2)
-        seri_frame.pack(fill="x", padx=8, pady=2)
+        seri_frame.pack(fill="x", padx=8, pady=1)
 
         seri_cfg = self._cfg.get("seri", {})
         self._seri_enabled = tk.BooleanVar(value=seri_cfg.get("enabled", True))
         self._seri_nilai   = tk.StringVar(value=str(seri_cfg.get("nilai", "-")))
 
         row = styled_frame(seri_frame, bg=BG2)
-        row.pack(fill="x", padx=8, pady=6)
+        row.pack(fill="x", padx=8, pady=3)
         styled_check(row, "Ganti nilai Seri", self._seri_enabled,
                      command=self._toggle_seri).pack(side="left")
         styled_label(row, "  Nilai:", bg=BG2).pack(side="left")
@@ -395,12 +332,12 @@ class AppDetilSU(tk.Tk):
         # ── Daftar Isian ─────────────────────────────────────
         section_header(inner, "DAFTAR ISIAN")
         di_frame = styled_frame(inner, bg=BG2)
-        di_frame.pack(fill="x", padx=8, pady=2)
+        di_frame.pack(fill="x", padx=8, pady=1)
 
         di_cfg = self._cfg.get("daftar_isian", {})
         self._di_enabled = tk.BooleanVar(value=di_cfg.get("enabled", True))
         row2 = styled_frame(di_frame, bg=BG2)
-        row2.pack(fill="x", padx=8, pady=(6,2))
+        row2.pack(fill="x", padx=8, pady=(3,1))
         styled_check(row2, "Proses tabel Daftar Isian",
                      self._di_enabled).pack(side="left")
 
@@ -408,31 +345,31 @@ class AppDetilSU(tk.Tk):
             di_frame,
             kolom_data=di_cfg.get("kolom", [])
         )
-        self._panel_di.pack(fill="x", padx=8, pady=4)
+        self._panel_di.pack(fill="x", padx=8, pady=2)
 
         # ── Detail Lain-Lain ─────────────────────────────────
         section_header(inner, "DETAIL LAIN-LAIN")
         dl_cfg = self._cfg.get("detail_lain", {})
 
         fields = [
-            ("keadaan_tanah",         "Keadaan Tanah",                False),
-            ("tanda_tanda_batas",     "Tanda-Tanda Batas",            True),
+            ("keadaan_tanah",          "Keadaan Tanah",               False),
+            ("tanda_tanda_batas",      "Tanda-Tanda Batas",           True),
             ("pengukuran_dan_pemetaan","Pengukuran dan Pemetaan Nama", False),
-            ("hal_lain_lain",         "Hal Lain-Lain",                False),
+            ("hal_lain_lain",          "Hal Lain-Lain",               False),
         ]
         self._detail_panels: dict[str, PanelFieldDetail] = {}
         for key, label, ml in fields:
             pf = PanelFieldDetail(inner, label,
                                   dl_cfg.get(key, {"enabled": True, "nilai": ""}),
                                   multiline=ml, bg=BG)
-            pf.pack(fill="x", padx=8, pady=2)
+            pf.pack(fill="x", padx=8, pady=1)
             self._detail_panels[key] = pf
 
         # ── Tombol simpan config ──────────────────────────────
         btn_row = styled_frame(inner, bg=BG)
-        btn_row.pack(fill="x", padx=8, pady=10)
+        btn_row.pack(fill="x", padx=8, pady=6)
         styled_button(btn_row, "💾  Simpan Config",
-                      self._save_config, color=SUCCESS, w=20
+                      self._save_config, color=SUCCESS, w=18
                       ).pack(side="right", padx=6)
 
         return outer
@@ -472,9 +409,9 @@ class AppDetilSU(tk.Tk):
         hk_frame = styled_frame(f, bg=BG2)
         hk_frame.pack(fill="x", padx=8, pady=4)
         keys = [
-            ("F9",  "Mulai / Lanjutkan satu record"),
-            ("F10", "Jeda / Lanjutkan"),
-            ("F11", "Reset ke awal"),
+            ("F1",  "Mulai / Lanjutkan satu record"),
+            ("F2",  "Jeda / Lanjutkan"),
+            ("F3",  "Reset ke awal"),
             ("ESC", "Hentikan & keluar proses"),
         ]
         for k, v in keys:
@@ -522,15 +459,15 @@ class AppDetilSU(tk.Tk):
         btn_row = styled_frame(ctrl, bg=BG2)
         btn_row.pack(pady=10)
 
-        self._btn_start = styled_button(btn_row, "▶  MULAI (F9)",
+        self._btn_start = styled_button(btn_row, "▶  MULAI (F1)",
                                         self._start_worker, color=SUCCESS, w=18)
         self._btn_start.pack(side="left", padx=6)
 
-        self._btn_pause = styled_button(btn_row, "⏸  JEDA (F10)",
+        self._btn_pause = styled_button(btn_row, "⏸  JEDA (F2)",
                                         self._toggle_pause, color=WARNING, w=18)
         self._btn_pause.pack(side="left", padx=6)
 
-        self._btn_reset = styled_button(btn_row, "↺  RESET (F11)",
+        self._btn_reset = styled_button(btn_row, "↺  RESET (F3)",
                                         self._reset_worker, color=ACCENT, w=18)
         self._btn_reset.pack(side="left", padx=6)
 
@@ -591,9 +528,9 @@ class AppDetilSU(tk.Tk):
     #  HOTKEY BINDINGS
     # ─────────────────────────────────────────────────────────
     def _bind_keys(self):
-        self.bind_all("<F9>",  lambda _e: self._start_worker())
-        self.bind_all("<F10>", lambda _e: self._toggle_pause())
-        self.bind_all("<F11>", lambda _e: self._reset_worker())
+        self.bind_all("<F1>",  lambda _e: self._start_worker())
+        self.bind_all("<F2>", lambda _e: self._toggle_pause())
+        self.bind_all("<F3>", lambda _e: self._reset_worker())
         self.bind_all("<Escape>", lambda _e: self._stop_worker())
 
     # ─────────────────────────────────────────────────────────

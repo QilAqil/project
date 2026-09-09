@@ -141,39 +141,33 @@ def aksi_seri(cfg: dict, assets_dir: str, log_fn, nilai: str) -> bool:
 # ════════════════════════════════════════════════════════════
 #  AKSI FIELD: DAFTAR ISIAN
 #
-#  Struktur tabel di layar:
+#  Struktur nyata di layar (tiap baris):
 #
-#           | DI 382     | DI 383     | DI 307     |
-#  ---------|------------|------------|------------|
-#  Nomor    | 034        | 0          | 120510     |
-#  Tahun    | 2020       | 1000       | 2021       |
-#  Tanggal  | 25/03/2023 | 01/01/900  | 03/10/2021 |
+#  [ DI 303 ] [ Nomor...          ] [ Tahun... ] [ Tanggal... ] [📅]
 #
-#  Strategi per kolom:
-#    1. Temukan header kolom (misal "DI 382") via image recognition
-#    2. Klik cell Nomor  (offset_y ke bawah dari header)
-#    3. Isi Nomor  → Tab
-#    4. Isi Tahun  → Tab
-#    5. Isi Tanggal → Tab
+#  "DI 303" adalah label di sisi KIRI baris, bukan header kolom.
+#  Dari posisi label, offset ke kanan untuk klik input Nomor,
+#  lalu Tab ke Tahun, Tab ke Tanggal.
 #
 #  Nilai kosong ("") = skip paste, Tab saja (biarkan isi lama)
 # ════════════════════════════════════════════════════════════
 
-# Offset Y (px) dari tengah header kolom ke masing-masing baris
-_DI_OFFSET_NOMOR   = 30   # baris pertama (Nomor)
-_DI_OFFSET_TAHUN   = 58   # baris kedua  (Tahun)
-_DI_OFFSET_TANGGAL = 86   # baris ketiga (Tanggal)
+# Offset X (px) dari tengah label "DI 303" ke input Nomor
+_DI_OFFSET_X_NOMOR = 160   # geser kanan ke input Nomor
 
 
 def aksi_satu_kolom_di(cfg: dict, assets_dir: str, log_fn,
                        kolom: dict) -> bool:
     """
-    Isi satu kolom Daftar Isian (Nomor, Tahun, Tanggal).
+    Isi satu baris Daftar Isian.
+
+    Struktur di layar:
+      [ DI 303 ] [ Nomor... ] [ Tahun... ] [ Tanggal... ]
 
     kolom = {
         'id':      'DI 382',
         'enabled': True,
-        'image':   'label_di_382.png',
+        'image':   'label_di_382.png',   # screenshot teks "DI 382" di kiri baris
         'nomor':   '034',
         'tahun':   '2020',
         'tanggal': '25/03/2023',
@@ -200,22 +194,22 @@ def aksi_satu_kolom_di(cfg: dict, assets_dir: str, log_fn,
             log_fn(f"    {nama}: (biarkan)")
         _tab_ke_field(1, delay_tab)
 
-    # ── cari header kolom via image ──────────────────────────
+    # ── cari label "DI 303" di kiri baris via image ──────────
     img_name = kolom.get("image", "")
     img_path = os.path.join(assets_dir, img_name)
 
     if os.path.exists(img_path):
         loc = _find_image(img_path, confidence=0.8)
         if loc is None:
-            log_fn(f"  [DI {col_id}] ⚠️  Header image tidak ditemukan di layar.")
+            log_fn(f"  [DI {col_id}] ⚠️  Label image tidak ditemukan di layar.")
             return False
 
-        # tengah header kolom
-        cx = loc.left + loc.width // 2
-        cy_header = loc.top + loc.height // 2
+        # tengah label DI di sisi kiri
+        cy = loc.top  + loc.height // 2
+        cx = loc.left + loc.width  // 2
 
-        # klik cell Nomor (baris pertama di bawah header)
-        pyautogui.click(cx, cy_header + _DI_OFFSET_NOMOR)
+        # klik input Nomor (ada di sebelah kanan label)
+        pyautogui.click(cx + _DI_OFFSET_X_NOMOR, cy)
         _delay(cfg, "setelah_klik")
     else:
         # tanpa image: andalkan fokus aktif saat ini
