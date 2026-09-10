@@ -5,3 +5,4 @@ pyscreeze==0.1.30
 Pillow>=11.0.0
 PyYAML>=6.0
 pyinstaller>=6.0
+keyboard>=0.13.5

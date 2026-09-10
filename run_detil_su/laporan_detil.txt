@@ -1,3 +1,3264 @@
 [2026-09-09 07:25:20] ✅  Konfigurasi disimpan.
 [2026-09-09 07:25:50] ✅  Konfigurasi disimpan.
 [2026-09-09 07:26:02] ✅  Konfigurasi disimpan.
+[2026-09-09 07:29:08] ✅  Konfigurasi disimpan.
+[2026-09-09 07:29:55] ✅  Konfigurasi disimpan.
+[2026-09-09 07:29:58] ▶  Memulai proses auto-paste DETIL SU…
+[2026-09-09 07:30:00] ═══════════════════════════════════════════════════════
+[2026-09-09 07:30:00]   AUTO-PASTE DETIL SURAT UKUR  –  MULAI
+[2026-09-09 07:30:00] ═══════════════════════════════════════════════════════
+[2026-09-09 07:30:00] 
+── Proses DETIL ────────────────────────────────────
+[2026-09-09 07:30:00]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 07:30:00]   [SERI] ⏭  Dilewati (disabled).
+[2026-09-09 07:30:00]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 07:30:01]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 07:30:01]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 07:30:02]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 07:30:02]   [Tanda-Tanda Batas] ⏭  Dilewati (disabled).
+[2026-09-09 07:30:02]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 07:30:02]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 07:30:02]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 07:30:02] ✅  Record 1 selesai.
+[2026-09-09 07:30:02] 
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+[2026-09-09 07:30:02]   SEMUA RECORD SELESAI ✅
+[2026-09-09 07:30:02] ════════════════════════════
+[2026-09-09 07:30:02] ✅  Proses selesai.
+[2026-09-09 07:30:15] ✅  Konfigurasi disimpan.
+[2026-09-09 07:30:56] ✅  Konfigurasi disimpan.
+[2026-09-09 07:30:58] ▶  Memulai proses auto-paste DETIL SU…
+[2026-09-09 07:30:58] ═══════════════════════════════════════════════════════
+[2026-09-09 07:30:58]   AUTO-PASTE DETIL SURAT UKUR  –  MULAI
+[2026-09-09 07:30:58] ═══════════════════════════════════════════════════════
+[2026-09-09 07:30:58] 
+── Proses DETIL ────────────────────────────────────
+[2026-09-09 07:30:58]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 07:30:58]   [SERI] ⏭  Dilewati (disabled).
+[2026-09-09 07:30:58]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 07:30:59]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 07:30:59]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 07:31:00]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 07:31:08]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 07:31:08]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 07:31:08]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 07:31:09]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 07:31:09] ✅  Record 1 selesai.
+[2026-09-09 07:31:09] 
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+[2026-09-09 07:31:09]   SEMUA RECORD SELESAI ✅
+[2026-09-09 07:31:09] ════════════════════════════
+[2026-09-09 07:31:09] ✅  Proses selesai.
+[2026-09-09 08:47:37] ✅  Konfigurasi disimpan.
+[2026-09-09 08:48:07] ✅  Konfigurasi disimpan.
+[2026-09-09 08:48:10] ▶  Memulai proses auto-paste DETIL SU…
+[2026-09-09 08:48:11] ═══════════════════════════════════════════════════════
+[2026-09-09 08:48:11]   AUTO-PASTE DETIL SURAT UKUR  –  LOOP OTOMATIS
+[2026-09-09 08:48:11]   Tekan F2 untuk jeda  |  ESC untuk berhenti
+[2026-09-09 08:48:11] ═══════════════════════════════════════════════════════
+[2026-09-09 08:48:11] 
+── Putaran 1 ────────────────────────────────
+[2026-09-09 08:48:11]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 08:48:11]   [SERI] ⏭  Dilewati.
+[2026-09-09 08:48:12]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:12]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 08:48:13]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:13]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:22]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 08:48:22]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:22]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:22]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 08:48:22] ✅  Putaran 1 selesai.
+[2026-09-09 08:48:23] 
+── Putaran 2 ────────────────────────────────
+[2026-09-09 08:48:23]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 08:48:23]   [SERI] ⏭  Dilewati.
+[2026-09-09 08:48:23]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:24]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 08:48:24]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:25]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:33]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 08:48:33]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:33]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:33]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 08:48:33] ✅  Putaran 2 selesai.
+[2026-09-09 08:48:34] 
+── Putaran 3 ────────────────────────────────
+[2026-09-09 08:48:34]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 08:48:34]   [SERI] ⏭  Dilewati.
+[2026-09-09 08:48:34]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:35]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 08:48:36]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:36]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:44]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 08:48:44]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:44]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:45]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 08:48:45] ✅  Putaran 3 selesai.
+[2026-09-09 08:48:46] 
+── Putaran 4 ────────────────────────────────
+[2026-09-09 08:48:46]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 08:48:46]   [SERI] ⏭  Dilewati.
+[2026-09-09 08:48:46]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:46]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 08:48:47]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:47]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:56]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 08:48:56]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:56]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:56]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 08:48:56] ✅  Putaran 4 selesai.
+[2026-09-09 08:48:57] 
+── Putaran 5 ────────────────────────────────
+[2026-09-09 08:48:57]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 08:48:57]   [SERI] ⏭  Dilewati.
+[2026-09-09 08:48:57]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:58]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 08:48:59]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 08:48:59]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 08:49:07]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 08:49:07]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 08:49:07]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 08:49:08]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 08:49:08] ✅  Putaran 5 selesai.
+[2026-09-09 08:49:08] 
+■  Loop dihentikan.
+[2026-09-09 08:49:08] ■  Proses dihentikan.
+[2026-09-09 08:49:08]    Total putaran selesai: 5
+[2026-09-09 08:49:08] ✅  Proses selesai.
+[2026-09-09 08:51:58] ✅  Konfigurasi disimpan.
+[2026-09-09 08:51:59] ▶  Memulai proses auto-paste DETIL SU…
+[2026-09-09 08:52:00] ═══════════════════════════════════════════════════════
+[2026-09-09 08:52:00]   AUTO-PASTE DETIL SURAT UKUR  –  LOOP OTOMATIS
+[2026-09-09 08:52:00]   Tekan F2 untuk jeda  |  ESC untuk berhenti
+[2026-09-09 08:52:00] ═══════════════════════════════════════════════════════
+[2026-09-09 08:52:00] 
+── Putaran 1 ────────────────────────────────
+[2026-09-09 08:52:00]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 08:52:00]   [SERI] ⏭  Dilewati.
+[2026-09-09 08:52:00]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:01]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 08:52:01]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:02]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:05]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-09 08:52:05]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:05]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:05]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 08:52:05] ✅  Putaran 1 selesai.
+[2026-09-09 08:52:06] 
+── Putaran 2 ────────────────────────────────
+[2026-09-09 08:52:06]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 08:52:06]   [SERI] ⏭  Dilewati.
+[2026-09-09 08:52:06]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:08]   [DI DI 303]
+[2026-09-09 08:52:08]     Nomor  : '0'
+[2026-09-09 08:52:09]     Tahun  : '1990'
+[2026-09-09 08:52:10]     Tanggal: '01/01/1990'
+[2026-09-09 08:52:10]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:11]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:12]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-09 08:52:12]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:12]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:13]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 08:52:13] ✅  Putaran 2 selesai.
+[2026-09-09 08:52:14] 
+── Putaran 3 ────────────────────────────────
+[2026-09-09 08:52:14]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 08:52:14]   [SERI] ⏭  Dilewati.
+[2026-09-09 08:52:14]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:14]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 08:52:15]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:15]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:20]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-09 08:52:20]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:20]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:20]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 08:52:20] ✅  Putaran 3 selesai.
+[2026-09-09 08:52:21] 
+── Putaran 4 ────────────────────────────────
+[2026-09-09 08:52:21]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 08:52:21]   [SERI] ⏭  Dilewati.
+[2026-09-09 08:52:21]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:22]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 08:52:22]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:23]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:31]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 08:52:31]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:31]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:32]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 08:52:32] ✅  Putaran 4 selesai.
+[2026-09-09 08:52:33] 
+── Putaran 5 ────────────────────────────────
+[2026-09-09 08:52:33]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 08:52:33]   [SERI] ⏭  Dilewati.
+[2026-09-09 08:52:33]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:33]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 08:52:34]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:34]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:34] ■  Proses dihentikan.
+[2026-09-09 08:52:42]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 08:52:42]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:42]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 08:52:43] 
+■  Loop dihentikan.
+[2026-09-09 08:52:43]    Total putaran selesai: 5
+[2026-09-09 08:52:43] ✅  Proses selesai.
+[2026-09-09 08:53:40] ✅  Konfigurasi disimpan.
+[2026-09-09 08:53:42] ▶  Memulai proses auto-paste DETIL SU…
+[2026-09-09 08:53:42] ═══════════════════════════════════════════════════════
+[2026-09-09 08:53:42]   AUTO-PASTE DETIL SURAT UKUR  –  LOOP OTOMATIS
+[2026-09-09 08:53:42]   Tekan F2 untuk jeda  |  ESC untuk berhenti
+[2026-09-09 08:53:42] ═══════════════════════════════════════════════════════
+[2026-09-09 08:53:42] 
+── Putaran 1 ────────────────────────────────
+[2026-09-09 08:53:42]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 08:53:42]   [SERI] ⏭  Dilewati.
+[2026-09-09 08:53:42]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 08:53:43]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 08:53:43]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 08:53:44]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 08:53:52]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 08:53:52]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 08:53:52]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 08:53:52]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 08:53:52] ✅  Putaran 1 selesai.
+[2026-09-09 08:53:53] 
+── Putaran 2 ────────────────────────────────
+[2026-09-09 08:53:53]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 08:53:54]   [SERI] ⏭  Dilewati.
+[2026-09-09 08:53:54]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 08:53:54]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 08:53:55]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 08:53:55]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 08:54:03]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 08:54:03]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 08:54:03]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 08:54:04]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 08:54:04] ✅  Putaran 2 selesai.
+[2026-09-09 08:54:05] 
+── Putaran 3 ────────────────────────────────
+[2026-09-09 08:54:05]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 08:54:05]   [SERI] ⏭  Dilewati.
+[2026-09-09 08:54:05]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 08:54:06]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 08:54:06]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 08:54:07]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 08:54:15]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 08:54:15]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 08:54:15]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 08:54:16]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 08:54:16] ✅  Putaran 3 selesai.
+[2026-09-09 08:54:17] 
+── Putaran 4 ────────────────────────────────
+[2026-09-09 08:54:17]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 08:54:17]   [SERI] ⏭  Dilewati.
+[2026-09-09 08:54:17]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 08:54:18]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 08:54:18]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 08:54:18]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 08:54:26] ■  Proses dihentikan.
+[2026-09-09 08:54:27]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 08:54:27]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 08:54:27]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 08:54:27] 
+■  Loop dihentikan.
+[2026-09-09 08:54:27]    Total putaran selesai: 4
+[2026-09-09 08:54:27] ✅  Proses selesai.
+[2026-09-09 09:05:34] ✅  Konfigurasi disimpan.
+[2026-09-09 09:05:36] ▶  Memulai proses auto-paste DETIL SU…
+[2026-09-09 09:05:37] ═══════════════════════════════════════════════════════
+[2026-09-09 09:05:37]   AUTO-PASTE DETIL SURAT UKUR  –  LOOP OTOMATIS
+[2026-09-09 09:05:37]   Tekan F2 untuk jeda  |  ESC untuk berhenti
+[2026-09-09 09:05:37] ═══════════════════════════════════════════════════════
+[2026-09-09 09:05:37] 
+── Putaran 1 ────────────────────────────────
+[2026-09-09 09:05:37]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 09:05:37]   [SERI] ⏭  Dilewati.
+[2026-09-09 09:05:37]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 09:05:38]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 09:05:38]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 09:05:38]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 09:05:46]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 09:05:47]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 09:05:47]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 09:05:47]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 09:05:47] ✅  Putaran 1 selesai.
+[2026-09-09 09:05:48] 
+── Putaran 2 ────────────────────────────────
+[2026-09-09 09:05:48]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 09:05:48]   [SERI] ⏭  Dilewati.
+[2026-09-09 09:05:48]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 09:05:49]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 09:05:50]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 09:05:50]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 09:05:59]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 09:05:59]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 09:05:59]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 09:06:00]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 09:06:00] ✅  Putaran 2 selesai.
+[2026-09-09 09:06:01] 
+── Putaran 3 ────────────────────────────────
+[2026-09-09 09:06:01]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 09:06:01]   [SERI] ⏭  Dilewati.
+[2026-09-09 09:06:01]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 09:06:02]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 09:06:02]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 09:06:03]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 09:06:11]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 09:06:11]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 09:06:11]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 09:06:11]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 09:06:11] ✅  Putaran 3 selesai.
+[2026-09-09 09:06:13] 
+── Putaran 4 ────────────────────────────────
+[2026-09-09 09:06:13]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 09:06:13]   [SERI] ⏭  Dilewati.
+[2026-09-09 09:06:13]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 09:06:13]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 09:06:14]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 09:06:14]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 09:06:23]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 09:06:23]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 09:06:23]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 09:06:23] ■  Proses dihentikan.
+[2026-09-09 09:06:23] 
+■  Loop dihentikan.
+[2026-09-09 09:06:23]    Total putaran selesai: 4
+[2026-09-09 09:06:23] ✅  Proses selesai.
+[2026-09-09 13:03:04] ✅  Konfigurasi disimpan.
+[2026-09-09 13:03:05] ▶  Memulai loop auto-paste…
+[2026-09-09 13:03:06] ═══════════════════════════════════════════════════════
+[2026-09-09 13:03:06]   AUTO-PASTE DETIL SURAT UKUR  –  LOOP OTOMATIS
+[2026-09-09 13:03:06]   Tekan F2 untuk jeda  |  ESC untuk berhenti
+[2026-09-09 13:03:06] ═══════════════════════════════════════════════════════
+[2026-09-09 13:03:06] 
+── Putaran 1 ────────────────────────────────
+[2026-09-09 13:03:06]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:03:06]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:03:06]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:07]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 13:03:07]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:08]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:16]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 13:03:16]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:16]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:16]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:03:16] ✅  Putaran 1 selesai.
+[2026-09-09 13:03:17] 
+── Putaran 2 ────────────────────────────────
+[2026-09-09 13:03:17]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:03:17]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:03:17]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:18]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 13:03:18]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:19]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:27]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 13:03:27]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:27]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:27]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:03:27] ✅  Putaran 2 selesai.
+[2026-09-09 13:03:28] 
+── Putaran 3 ────────────────────────────────
+[2026-09-09 13:03:28]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:03:28]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:03:28]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:29]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 13:03:29]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:30]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:39]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 13:03:39]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:39]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:39]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:03:39] ✅  Putaran 3 selesai.
+[2026-09-09 13:03:40] 
+── Putaran 4 ────────────────────────────────
+[2026-09-09 13:03:40]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:03:40]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:03:40]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:41]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 13:03:41]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:42]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:50]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 13:03:50]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:50]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:50]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:03:50] ✅  Putaran 4 selesai.
+[2026-09-09 13:03:51] 
+── Putaran 5 ────────────────────────────────
+[2026-09-09 13:03:51]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:03:52]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:03:52]   [DI DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:52]   [DI DI 303] ⚠️  Label image tidak ditemukan di layar.
+[2026-09-09 13:03:53]   [DI DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:03:53]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 13:04:01]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 13:04:01]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 13:04:01]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 13:04:02] 
+■  Loop dihentikan.
+[2026-09-09 13:04:02]    Total putaran selesai: 5
+[2026-09-09 13:04:02] ✅  Selesai.
+[2026-09-09 13:18:17] ✅  Konfigurasi disimpan.
+[2026-09-09 13:18:19] ▶  Memulai loop auto-paste…
+[2026-09-09 13:18:20] ═══════════════════════════════════════════════════════
+[2026-09-09 13:18:20]   AUTO-PASTE DETIL SURAT UKUR  –  LOOP OTOMATIS
+[2026-09-09 13:18:20]   Tekan F2 untuk jeda  |  ESC untuk berhenti
+[2026-09-09 13:18:20] ═══════════════════════════════════════════════════════
+[2026-09-09 13:18:20] 
+── Putaran 1 ────────────────────────────────
+[2026-09-09 13:18:20]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:18:20]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:18:20]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:18:20]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:18:21]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:18:21]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:18:22]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 13:18:24]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-09 13:18:24]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 13:18:24]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 13:18:24]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:18:24] ✅  Putaran 1 selesai.
+[2026-09-09 13:18:25] 
+── Putaran 2 ────────────────────────────────
+[2026-09-09 13:18:25]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:18:25]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:18:25]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:18:26]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:18:26]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:18:27]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:18:27]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 13:18:29]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-09 13:18:29]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 13:18:29]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 13:18:30]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:18:30] ✅  Putaran 2 selesai.
+[2026-09-09 13:18:31] 
+── Putaran 3 ────────────────────────────────
+[2026-09-09 13:18:31]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:18:31]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:18:31]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:18:31]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:18:32]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:18:32]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:18:33]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 13:18:40]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-09 13:18:40]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 13:18:40]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 13:18:41]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:18:41] ✅  Putaran 3 selesai.
+[2026-09-09 13:18:42] 
+── Putaran 4 ────────────────────────────────
+[2026-09-09 13:18:42]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:18:42]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:18:42]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:18:42]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:18:43]   [DI 303] ✅ Ditemukan di (362,207) ukuran 47×25
+[2026-09-09 13:18:43]   [DI 303] 🖱  Klik Nomor di (545, 219)
+[2026-09-09 13:18:44]   [DI 303]
+[2026-09-09 13:18:44]     Nomor  : '0'
+[2026-09-09 13:18:45]     Tahun  : '1990'
+[2026-09-09 13:18:46]     Tanggal: '01/01/1990'
+[2026-09-09 13:18:46] 
+■  Loop dihentikan.
+[2026-09-09 13:18:47]    Total putaran selesai: 4
+[2026-09-09 13:18:47] ✅  Selesai.
+[2026-09-09 13:18:52] ✅  Konfigurasi disimpan.
+[2026-09-09 13:18:54] ▶  Memulai loop auto-paste…
+[2026-09-09 13:18:54] ═══════════════════════════════════════════════════════
+[2026-09-09 13:18:54]   AUTO-PASTE DETIL SURAT UKUR  –  LOOP OTOMATIS
+[2026-09-09 13:18:54]   Tekan F2 untuk jeda  |  ESC untuk berhenti
+[2026-09-09 13:18:54] ═══════════════════════════════════════════════════════
+[2026-09-09 13:18:54] 
+── Putaran 1 ────────────────────────────────
+[2026-09-09 13:18:54]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:18:54]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:18:54]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:18:54]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:18:55]   [DI 303] ✅ Ditemukan di (362,207) ukuran 47×25
+[2026-09-09 13:18:55]   [DI 303] 🖱  Klik Nomor di (545, 219)
+[2026-09-09 13:18:56]   [DI 303]
+[2026-09-09 13:18:56]     Nomor  : '0'
+[2026-09-09 13:18:57]     Tahun  : '1990'
+[2026-09-09 13:18:58]     Tanggal: '01/01/1990'
+[2026-09-09 13:18:58]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:18:59]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:05]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-09 13:19:05]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:05]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:06]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:19:06] ✅  Putaran 1 selesai.
+[2026-09-09 13:19:07] 
+── Putaran 2 ────────────────────────────────
+[2026-09-09 13:19:07]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:19:07]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:19:07]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:08]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:19:08]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:19:09]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:09]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:13]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-09 13:19:13]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:13]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:14]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:19:14] ✅  Putaran 2 selesai.
+[2026-09-09 13:19:15] 
+── Putaran 3 ────────────────────────────────
+[2026-09-09 13:19:15]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:19:15]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:19:15]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:15]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:19:16]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:19:16]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:17]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:23]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-09 13:19:23]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:23]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:24]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:19:24] ✅  Putaran 3 selesai.
+[2026-09-09 13:19:25] 
+── Putaran 4 ────────────────────────────────
+[2026-09-09 13:19:25]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:19:25]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:19:25]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:25]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:19:26]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:19:27]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:27]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:35]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 13:19:35]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:35]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:36]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:19:36] ✅  Putaran 4 selesai.
+[2026-09-09 13:19:37] 
+── Putaran 5 ────────────────────────────────
+[2026-09-09 13:19:37]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:19:37]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:19:37]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:37]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:19:38]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:19:38]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:39]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:43]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-09 13:19:43]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:43]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:43]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:19:43] ✅  Putaran 5 selesai.
+[2026-09-09 13:19:44] 
+── Putaran 6 ────────────────────────────────
+[2026-09-09 13:19:44]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:19:44]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:19:45]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:45]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:19:46]   [DI 303] ✅ Ditemukan di (362,207) ukuran 47×25
+[2026-09-09 13:19:46]   [DI 303] 🖱  Klik Nomor di (545, 219)
+[2026-09-09 13:19:46]   [DI 303]
+[2026-09-09 13:19:47]     Nomor  : '0'
+[2026-09-09 13:19:48]     Tahun  : '1990'
+[2026-09-09 13:19:49]     Tanggal: '01/01/1990'
+[2026-09-09 13:19:49]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:50]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:52]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-09 13:19:52]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:52]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:52]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:19:52] ✅  Putaran 6 selesai.
+[2026-09-09 13:19:53] 
+── Putaran 7 ────────────────────────────────
+[2026-09-09 13:19:53]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:19:53]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:19:53]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:54]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:19:54]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:19:55]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:19:55]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 13:20:03]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 13:20:03]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 13:20:04]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 13:20:04]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:20:04] ✅  Putaran 7 selesai.
+[2026-09-09 13:20:05] 
+── Putaran 8 ────────────────────────────────
+[2026-09-09 13:20:05]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:20:05]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:20:05]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:20:06]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:20:06]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:20:07]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:20:07]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 13:20:10]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-09 13:20:10]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 13:20:10]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 13:20:10]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:20:11] ✅  Putaran 8 selesai.
+[2026-09-09 13:20:12] 
+── Putaran 9 ────────────────────────────────
+[2026-09-09 13:20:12]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:20:12]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:20:12]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:20:12]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:20:13]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:20:13]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:20:14]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 13:20:22]   [Tanda-Tanda Batas] ⚠️  Image tidak ditemukan, lewati.
+[2026-09-09 13:20:22]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 13:20:22]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 13:20:22]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:20:22] ✅  Putaran 9 selesai.
+[2026-09-09 13:20:23] 
+── Putaran 10 ────────────────────────────────
+[2026-09-09 13:20:23]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:20:23]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:20:24]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:20:24]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:20:25]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:20:25]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:20:26]   [Keadaan Tanah] ⏭  Dilewati (disabled).
+[2026-09-09 13:20:28]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-09 13:20:28]   [Pengukuran dan Pemetaan] ⏭  Dilewati (disabled).
+[2026-09-09 13:20:28]   [Hal Lain-Lain] ⏭  Dilewati (disabled).
+[2026-09-09 13:20:28]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:20:28] ✅  Putaran 10 selesai.
+[2026-09-09 13:20:29] 
+── Putaran 11 ────────────────────────────────
+[2026-09-09 13:20:29]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:20:29]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:20:29]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:30:50] ✅  Konfigurasi disimpan.
+[2026-09-09 13:30:53] ▶  Memulai loop auto-paste…
+[2026-09-09 13:30:54] ═══════════════════════════════════════════════════════
+[2026-09-09 13:30:54]   AUTO-PASTE DETIL SURAT UKUR  –  LOOP OTOMATIS
+[2026-09-09 13:30:54]   Tekan F2 untuk jeda  |  ESC untuk berhenti
+[2026-09-09 13:30:54] ═══════════════════════════════════════════════════════
+[2026-09-09 13:30:54] 
+── Putaran 1 ────────────────────────────────
+[2026-09-09 13:30:54]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:30:54]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:30:54]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:30:54]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:30:55]   [DI 303] ✅ Ditemukan di (1225,642) ukuran 47×25
+[2026-09-09 13:30:55]   [DI 303] 🖱  Klik Nomor di (1408, 654)
+[2026-09-09 13:30:55]   [DI 303]
+[2026-09-09 13:30:56]     Nomor  : '0'
+[2026-09-09 13:30:57]     Tahun  : '1990'
+[2026-09-09 13:30:58]     Tanggal: '01/01/1990'
+[2026-09-09 13:30:58]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:30:59]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:30:59]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:00]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:00]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:01]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:31:01] ✅  Putaran 1 selesai.
+[2026-09-09 13:31:02] 
+── Putaran 2 ────────────────────────────────
+[2026-09-09 13:31:02]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:31:02]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:31:02]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:02]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:31:03]   [DI 303] ✅ Ditemukan di (339,642) ukuran 47×25
+[2026-09-09 13:31:03]   [DI 303] 🖱  Klik Nomor di (522, 654)
+[2026-09-09 13:31:04]   [DI 303]
+[2026-09-09 13:31:05]     Nomor  : '0'
+[2026-09-09 13:31:05]     Tahun  : '1990'
+[2026-09-09 13:31:06]     Tanggal: '01/01/1990'
+[2026-09-09 13:31:07]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:07]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:07]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:08]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:08]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:09]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:31:09] ✅  Putaran 2 selesai.
+[2026-09-09 13:31:10] 
+── Putaran 3 ────────────────────────────────
+[2026-09-09 13:31:10]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:31:10]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:31:10]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:10]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:31:11]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:31:11]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:12]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:12]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:12]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:12]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:13]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:31:13] ✅  Putaran 3 selesai.
+[2026-09-09 13:31:14] 
+── Putaran 4 ────────────────────────────────
+[2026-09-09 13:31:14]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:31:14]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:31:14]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:15]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:31:15]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:31:16]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:16]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:16]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:17]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:17]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:18]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:31:18] ✅  Putaran 4 selesai.
+[2026-09-09 13:31:19] 
+── Putaran 5 ────────────────────────────────
+[2026-09-09 13:31:19]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:31:19]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:31:19]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:19]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:31:20]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:31:20]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:21]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:21]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:21]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:21]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:22]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:31:22] ✅  Putaran 5 selesai.
+[2026-09-09 13:31:23] 
+── Putaran 6 ────────────────────────────────
+[2026-09-09 13:31:23]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:31:23]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:31:23]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:24]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:31:24]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:31:25]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:25]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:25]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:26]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:26]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:27]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:31:27] ✅  Putaran 6 selesai.
+[2026-09-09 13:31:28] 
+── Putaran 7 ────────────────────────────────
+[2026-09-09 13:31:28]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:31:28]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:31:28]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:28]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:31:29]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:31:29]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:30]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:30]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:30]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:30]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:31]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:31:31] ✅  Putaran 7 selesai.
+[2026-09-09 13:31:32] 
+── Putaran 8 ────────────────────────────────
+[2026-09-09 13:31:32]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:31:32]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:31:32]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:32]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:31:33]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:31:34]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:34]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:34]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:35]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:35]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:35]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:31:35] ✅  Putaran 8 selesai.
+[2026-09-09 13:31:36] 
+── Putaran 9 ────────────────────────────────
+[2026-09-09 13:31:37]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:31:37]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:31:37]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:37]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:31:38]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:31:38]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:38]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:39]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:39]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:39]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:40]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:31:40] ✅  Putaran 9 selesai.
+[2026-09-09 13:31:41] 
+── Putaran 10 ────────────────────────────────
+[2026-09-09 13:31:41]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:31:41]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:31:41]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:41]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:31:42]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:31:43]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:43]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:43]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:44]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:44]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:44]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:31:44] ✅  Putaran 10 selesai.
+[2026-09-09 13:31:45] 
+── Putaran 11 ────────────────────────────────
+[2026-09-09 13:31:45]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:31:45]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:31:45]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:46]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:31:47]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:31:47]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:47]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:48]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:48]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:48]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:49]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:31:49] ✅  Putaran 11 selesai.
+[2026-09-09 13:31:50] 
+── Putaran 12 ────────────────────────────────
+[2026-09-09 13:31:50]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:31:50]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:31:50]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:50]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:31:51]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:31:52]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:52]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:52]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:52]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:53]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:53]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:31:53] ✅  Putaran 12 selesai.
+[2026-09-09 13:31:54] 
+── Putaran 13 ────────────────────────────────
+[2026-09-09 13:31:54]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:31:54]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:31:54]   [DI 302] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:55]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:31:56]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:31:56]   [DI 307] ⏭  Dilewati (disabled).
+[2026-09-09 13:31:56] ⏸  Dijeda.
+[2026-09-09 13:31:56]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:57]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:57]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:57]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:31:58]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:31:58] ✅  Putaran 13 selesai.
+[2026-09-09 13:44:44] ✅  Konfigurasi disimpan.
+[2026-09-09 13:44:48] ▶  Memulai loop auto-paste…
+[2026-09-09 13:44:49] ═══════════════════════════════════════════════════════
+[2026-09-09 13:44:49]   AUTO-PASTE DETIL SURAT UKUR  –  LOOP OTOMATIS
+[2026-09-09 13:44:49]   Tekan F2 untuk jeda  |  ESC untuk berhenti
+[2026-09-09 13:44:49] ═══════════════════════════════════════════════════════
+[2026-09-09 13:44:49] 
+── Putaran 1 ────────────────────────────────
+[2026-09-09 13:44:49]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:44:49]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:44:49]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:44:51]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:44:51]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:44:52]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:44:53]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:44:53]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:44:54]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:44:54]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:44:55]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:44:55] ✅  Putaran 1 selesai.
+[2026-09-09 13:44:56] 
+── Putaran 2 ────────────────────────────────
+[2026-09-09 13:44:56]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:44:56]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:44:56]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:44:57]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:44:58]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:44:58]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:44:59]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:45:00]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:45:00]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:45:00]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:45:01]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:45:01] ✅  Putaran 2 selesai.
+[2026-09-09 13:45:02] 
+── Putaran 3 ────────────────────────────────
+[2026-09-09 13:45:02]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:45:02]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:45:02]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:45:03]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:45:04]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:45:04]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:45:06]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:45:06]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:45:06]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:45:07]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:45:07]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:45:07] ✅  Putaran 3 selesai.
+[2026-09-09 13:45:08] 
+── Putaran 4 ────────────────────────────────
+[2026-09-09 13:45:08]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:45:08]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:45:08]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:45:10]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:45:10] ⏸  Dijeda.
+[2026-09-09 13:45:10]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:45:11] ▶  Melanjutkan.
+[2026-09-09 13:45:11]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:45:12] ⏸  Dijeda.
+[2026-09-09 13:45:12] ▶  Melanjutkan.
+[2026-09-09 13:45:12]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:45:13]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:45:13]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:45:13] ⏸  Dijeda.
+[2026-09-09 13:45:13]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:45:14]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:45:14] ✅  Putaran 4 selesai.
+[2026-09-09 13:46:07] ▶  Melanjutkan.
+[2026-09-09 13:46:07] ▶  Melanjutkan loop…
+[2026-09-09 13:46:07] 
+── Putaran 5 ────────────────────────────────
+[2026-09-09 13:46:07]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:46:07]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:46:07]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:46:08] ⏸  Dijeda.
+[2026-09-09 13:46:09] ▶  Melanjutkan.
+[2026-09-09 13:46:09]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:46:10]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:46:10] ⏸  Dijeda.
+[2026-09-09 13:46:27] ▶  Melanjutkan.
+[2026-09-09 13:46:27]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:46:29]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:29]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:29]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:30]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:30]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:46:30] ✅  Putaran 5 selesai.
+[2026-09-09 13:46:31] 
+── Putaran 6 ────────────────────────────────
+[2026-09-09 13:46:31]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:46:31]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:46:31]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:46:33]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:46:33]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:46:34]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:46:35]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:35]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:36]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:36]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:37]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:46:37] ✅  Putaran 6 selesai.
+[2026-09-09 13:46:38] 
+── Putaran 7 ────────────────────────────────
+[2026-09-09 13:46:38]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:46:38]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:46:38]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:46:39]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:46:40]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:46:40]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:46:42]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:42]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:42]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:42]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:43]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:46:43] ✅  Putaran 7 selesai.
+[2026-09-09 13:46:44] 
+── Putaran 8 ────────────────────────────────
+[2026-09-09 13:46:44]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:46:44]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:46:44]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:46:46]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:46:47]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:46:47]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:46:49]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:49]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:49]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:49]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:50]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:46:50] ✅  Putaran 8 selesai.
+[2026-09-09 13:46:51] 
+── Putaran 9 ────────────────────────────────
+[2026-09-09 13:46:51]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:46:51]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:46:51]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:46:53]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:46:53]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:46:54]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:46:55]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:55]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:56]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:56]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:46:57]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:46:57] ✅  Putaran 9 selesai.
+[2026-09-09 13:46:58] 
+── Putaran 10 ────────────────────────────────
+[2026-09-09 13:46:58]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:46:58]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:46:58]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:46:59]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:47:00]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:47:00]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:47:02]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:47:02]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:47:02]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:47:02]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:47:03]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:47:03] ✅  Putaran 10 selesai.
+[2026-09-09 13:47:04] 
+── Putaran 11 ────────────────────────────────
+[2026-09-09 13:47:04]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:47:04]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:47:04]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:47:06]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:47:06]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:47:07]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:47:08]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:47:08]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:47:09]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:47:09]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:47:09]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:47:09] ✅  Putaran 11 selesai.
+[2026-09-09 13:47:10] 
+── Putaran 12 ────────────────────────────────
+[2026-09-09 13:47:11]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:47:11]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:47:11]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:47:12]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:47:13]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:47:13]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:47:14]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:47:15]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:47:15]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:47:15]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:47:16]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:47:16] ✅  Putaran 12 selesai.
+[2026-09-09 13:47:17] 
+── Putaran 13 ────────────────────────────────
+[2026-09-09 13:47:17]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:47:17]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:47:17]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:47:18]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:47:19]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:47:19]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:47:21]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:47:21]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:47:21]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:47:22]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 13:47:22]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 13:47:22] ✅  Putaran 13 selesai.
+[2026-09-09 13:47:23] 
+── Putaran 14 ────────────────────────────────
+[2026-09-09 13:47:23]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 13:47:23]   [SERI] ⏭  Dilewati.
+[2026-09-09 13:47:23]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 13:47:24] ⏸  Dijeda.
+[2026-09-09 13:47:28] ↺  Reset.
+[2026-09-09 13:47:28]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 13:47:28]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 13:47:29] 
+■  Loop dihentikan.
+[2026-09-09 13:47:29]    Total putaran selesai: 14
+[2026-09-09 13:47:29] ✅  Selesai.
+[2026-09-09 16:06:10] ✅  Konfigurasi disimpan.
+[2026-09-09 16:06:14] ▶  Memulai loop auto-paste…
+[2026-09-09 16:06:14] ═══════════════════════════════════════════════════════
+[2026-09-09 16:06:14]   AUTO-PASTE DETIL SURAT UKUR  –  LOOP OTOMATIS
+[2026-09-09 16:06:14]   Tekan F2 untuk jeda  |  ESC untuk berhenti
+[2026-09-09 16:06:14] ═══════════════════════════════════════════════════════
+[2026-09-09 16:06:14] 
+── Putaran 1 ────────────────────────────────
+[2026-09-09 16:06:14]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 16:06:15]   [SERI] ⏭  Dilewati.
+[2026-09-09 16:06:15]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:06:16]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 16:06:17]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 16:06:17]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:06:18]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:06:19]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:06:19]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:06:19]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:06:20]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 16:06:20] ✅  Putaran 1 selesai.
+[2026-09-09 16:06:21] 
+── Putaran 2 ────────────────────────────────
+[2026-09-09 16:06:21]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 16:06:21]   [SERI] ⏭  Dilewati.
+[2026-09-09 16:06:21]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:06:23]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 16:06:24]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 16:06:25]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:06:26]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:06:26]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:06:27]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:06:27]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:06:28]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 16:06:28] ✅  Putaran 2 selesai.
+[2026-09-09 16:06:29] 
+── Putaran 3 ────────────────────────────────
+[2026-09-09 16:06:29]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 16:06:29]   [SERI] ⏭  Dilewati.
+[2026-09-09 16:06:29]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:06:30]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 16:06:31]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 16:06:31]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:06:33]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:06:33]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:06:33]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:06:33]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:06:34] ⏸  Dijeda.
+[2026-09-09 16:06:34]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 16:06:34] ✅  Putaran 3 selesai.
+[2026-09-09 16:07:14] ▶  Melanjutkan.
+[2026-09-09 16:07:14] ▶  Melanjutkan loop…
+[2026-09-09 16:07:14] 
+── Putaran 4 ────────────────────────────────
+[2026-09-09 16:07:14]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 16:07:14]   [SERI] ⏭  Dilewati.
+[2026-09-09 16:07:14]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:07:16]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 16:07:17]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 16:07:17]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:07:18]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:07:19]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:07:19]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:07:19]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:07:20]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 16:07:20] ✅  Putaran 4 selesai.
+[2026-09-09 16:07:21] 
+── Putaran 5 ────────────────────────────────
+[2026-09-09 16:07:21]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 16:07:21]   [SERI] ⏭  Dilewati.
+[2026-09-09 16:07:21]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:07:22]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 16:07:23]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 16:07:23]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:07:25]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:07:25]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:07:25]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:07:26]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:07:26]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 16:07:26] ✅  Putaran 5 selesai.
+[2026-09-09 16:07:27] 
+── Putaran 6 ────────────────────────────────
+[2026-09-09 16:07:27]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 16:07:27]   [SERI] ⏭  Dilewati.
+[2026-09-09 16:07:27]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:07:29]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 16:07:31]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 16:07:31]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:07:32]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:07:33]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:07:33]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:07:33]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:07:34]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 16:07:34] ✅  Putaran 6 selesai.
+[2026-09-09 16:07:35] 
+── Putaran 7 ────────────────────────────────
+[2026-09-09 16:07:35]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 16:07:35]   [SERI] ⏭  Dilewati.
+[2026-09-09 16:07:35]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:07:37]   [DI 303] 🔍 Cari 'label_di_303.png' | file:631B | layar:1920×1080
+[2026-09-09 16:07:37]   [DI 303] ⚠️  Tidak ditemukan. Coba: zoom browser 100%, crop ulang gambar lebih ketat, atau gunakan mode koordinat manual.
+[2026-09-09 16:07:38]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:07:39]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:07:39]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:07:40]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:07:40]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:07:41] 
+■  Loop dihentikan.
+[2026-09-09 16:07:41]    Total putaran selesai: 7
+[2026-09-09 16:07:41] ✅  Selesai.
+[2026-09-09 16:07:41] 🔎  Mulai cek asset — pastikan halaman DETIL terbuka di browser…
+[2026-09-09 16:07:41] ═══ DIAGNOSTIK ASSET  |  Resolusi layar: 1920×1080 ═══
+[2026-09-09 16:07:41]   (Detail Lain-Lain: tidak butuh image, pakai Tab otomatis)
+[2026-09-09 16:07:41]   ✅  [DI 302] 'label_di_302.png' — DITEMUKAN di (310,627)
+[2026-09-09 16:07:42]   ⚠️  [DI 303] 'label_di_303.png' (631B) — TIDAK DITEMUKAN (zoom 100%? crop ulang?)
+[2026-09-09 16:07:42]   ✅  [DI 307] 'label_di_307.png' — DITEMUKAN di (310,629)
+[2026-09-09 16:07:42] ═══ Hasil: 2 OK  |  1 GAGAL ═══
+[2026-09-09 16:07:44] 🔎  Mulai cek asset — pastikan halaman DETIL terbuka di browser…
+[2026-09-09 16:07:44]   (Detail Lain-Lain: tidak butuh image, pakai Tab otomatis)
+[2026-09-09 16:07:44]   ✅  [DI 302] 'label_di_302.png' — DITEMUKAN di (310,627)
+[2026-09-09 16:07:45]   ⚠️  [DI 303] 'label_di_303.png' (631B) — TIDAK DITEMUKAN (zoom 100%? crop ulang?)
+[2026-09-09 16:07:45]   ✅  [DI 307] 'label_di_307.png' — DITEMUKAN di (576,531)
+[2026-09-09 16:07:45] ═══ Hasil: 2 OK  |  1 GAGAL ═══
+[2026-09-09 16:08:00] 🔎  Mulai cek asset — pastikan halaman DETIL terbuka di browser…
+[2026-09-09 16:08:00] ═══ DIAGNOSTIK ASSET  |  Resolusi layar: 1920×1080 ═══
+[2026-09-09 16:08:00]   (Detail Lain-Lain: tidak butuh image, pakai Tab otomatis)
+[2026-09-09 16:08:00]   ✅  [DI 302] 'label_di_302.png' — DITEMUKAN di (310,627)
+[2026-09-09 16:08:01]   ⚠️  [DI 303] 'label_di_303.png' (631B) — TIDAK DITEMUKAN (zoom 100%? crop ulang?)
+[2026-09-09 16:08:01]   ✅  [DI 307] 'label_di_307.png' — DITEMUKAN di (310,629)
+[2026-09-09 16:08:01] ═══ Hasil: 2 OK  |  1 GAGAL ═══
+[2026-09-09 16:08:26] 🔎  Mulai cek asset — pastikan halaman DETIL terbuka di browser…
+[2026-09-09 16:08:26] ═══ DIAGNOSTIK ASSET  |  Resolusi layar: 1920×1080 ═══
+[2026-09-09 16:08:26]   (Detail Lain-Lain: tidak butuh image, pakai Tab otomatis)
+[2026-09-09 16:08:26]   ✅  [DI 302] 'label_di_302.png' — DITEMUKAN di (310,627)
+[2026-09-09 16:08:26]   ⚠️  [DI 303] 'label_di_303.png' (631B) — TIDAK DITEMUKAN (zoom 100%? crop ulang?)
+[2026-09-09 16:08:27]   ✅  [DI 307] 'label_di_307.png' — DITEMUKAN di (310,629)
+[2026-09-09 16:08:27] ═══ Hasil: 2 OK  |  1 GAGAL ═══
+[2026-09-09 16:11:09] 🔎  Mulai cek asset — pastikan halaman DETIL terbuka di browser…
+[2026-09-09 16:11:09] ═══ DIAGNOSTIK ASSET  |  Resolusi layar: 1920×1080 ═══
+[2026-09-09 16:11:09]   (Detail Lain-Lain: tidak butuh image, pakai Tab otomatis)
+[2026-09-09 16:11:10]   ✅  [DI 302] 'label_di_302.png' — DITEMUKAN di (310,627)
+[2026-09-09 16:11:10]   ✅  [DI 303] 'label_di_303.png' — DITEMUKAN di (253,190)
+[2026-09-09 16:11:10]   ✅  [DI 307] 'label_di_307.png' — DITEMUKAN di (576,531)
+[2026-09-09 16:11:10] ═══ Hasil: 3 OK  |  0 GAGAL ═══
+[2026-09-09 16:11:52] ✅  Konfigurasi disimpan.
+[2026-09-09 16:12:00] ▶  Memulai loop auto-paste…
+[2026-09-09 16:12:00] ═══════════════════════════════════════════════════════
+[2026-09-09 16:12:00]   AUTO-PASTE DETIL SURAT UKUR  –  LOOP OTOMATIS
+[2026-09-09 16:12:00]   Tekan F2 untuk jeda  |  ESC untuk berhenti
+[2026-09-09 16:12:00] ═══════════════════════════════════════════════════════
+[2026-09-09 16:12:00] 
+── Putaran 1 ────────────────────────────────
+[2026-09-09 16:12:00]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 16:12:00]   [SERI] ⏭  Dilewati.
+[2026-09-09 16:12:00]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:12:02]   [DI 303] 🔍 Cari 'label_di_303.png' | file:433B | layar:1920×1080
+[2026-09-09 16:12:02]   [DI 303] ✅ Ditemukan di (253,190) ukuran 35×18
+[2026-09-09 16:12:02]   [DI 303] 🖱  Klik Nomor di (430, 199)
+[2026-09-09 16:12:03]   [DI 303]
+[2026-09-09 16:12:03]     Nomor  : '0'
+[2026-09-09 16:12:04]     Tahun  : '1990'
+[2026-09-09 16:12:05]     Tanggal: '01/01/1990'
+[2026-09-09 16:12:05]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:12:07]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:12:07]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:12:07]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:12:08]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:12:08]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 16:12:08] ✅  Putaran 1 selesai.
+[2026-09-09 16:12:09] 
+── Putaran 2 ────────────────────────────────
+[2026-09-09 16:12:09]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 16:12:09]   [SERI] ⏭  Dilewati.
+[2026-09-09 16:12:09]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:12:11]   [DI 303] 🔍 Cari 'label_di_303.png' | file:433B | layar:1920×1080
+[2026-09-09 16:12:11]   [DI 303] ✅ Ditemukan di (578,534) ukuran 35×18
+[2026-09-09 16:12:11]   [DI 303] 🖱  Klik Nomor di (755, 543)
+[2026-09-09 16:12:12]   [DI 303]
+[2026-09-09 16:12:12]     Nomor  : '0'
+[2026-09-09 16:12:13]     Tahun  : '1990'
+[2026-09-09 16:12:14]     Tanggal: '01/01/1990'
+[2026-09-09 16:12:14]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:12:16]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:12:16]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:12:16]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:12:17]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:12:17]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 16:12:17] ✅  Putaran 2 selesai.
+[2026-09-09 16:12:18] 
+── Putaran 3 ────────────────────────────────
+[2026-09-09 16:12:18]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 16:12:18]   [SERI] ⏭  Dilewati.
+[2026-09-09 16:12:18]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:12:20]   [DI 303] 🔍 Cari 'label_di_303.png' | file:433B | layar:1920×1080
+[2026-09-09 16:12:20]   [DI 303] ✅ Ditemukan di (578,534) ukuran 35×18
+[2026-09-09 16:12:20]   [DI 303] 🖱  Klik Nomor di (755, 543)
+[2026-09-09 16:12:21]   [DI 303]
+[2026-09-09 16:12:21]     Nomor  : '0'
+[2026-09-09 16:12:22]     Tahun  : '1990'
+[2026-09-09 16:12:23]     Tanggal: '01/01/1990'
+[2026-09-09 16:12:24]   [DI 307] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:12:25]   [Keadaan Tanah] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:12:25]   [Tanda-Tanda Batas] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:12:25]   [Pengukuran dan Pemetaan] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:12:26]   [Hal Lain-Lain] ⏭  Dilewati (Tab saja).
+[2026-09-09 16:12:26]   [SIMPAN] ⚠️  Tombol simpan tidak ditemukan.
+[2026-09-09 16:12:26] ✅  Putaran 3 selesai.
+[2026-09-09 16:12:27] 
+── Putaran 4 ────────────────────────────────
+[2026-09-09 16:12:27]   [TAB] ℹ️  Image tab_detil.png belum ada, skip.
+[2026-09-09 16:12:28]   [SERI] ⏭  Dilewati.
+[2026-09-09 16:12:28]   [DI 302] ⏭  Dilewati — Tab 4x untuk skip.
+[2026-09-09 16:12:29] 
+■  Loop dihentikan.
+[2026-09-09 16:12:29]    Total putaran selesai: 4
+[2026-09-09 16:12:29] ✅  Selesai.
+[2026-09-09 16:12:57] 🔎  Mulai cek asset — pastikan halaman DETIL terbuka di browser…
+[2026-09-09 16:12:57] ═══ DIAGNOSTIK ASSET  |  Resolusi layar: 1920×1080 ═══
+[2026-09-09 16:12:57]   (Detail Lain-Lain: tidak butuh image, pakai Tab otomatis)
+[2026-09-09 16:12:57]   ✅  [DI 302] 'label_di_302.png' — DITEMUKAN di (310,627)
+[2026-09-09 16:12:58]   ✅  [DI 303] 'label_di_303.png' — DITEMUKAN di (253,190)
+[2026-09-09 16:12:58]   ✅  [DI 307] 'label_di_307.png' — DITEMUKAN di (310,629)
+[2026-09-09 16:12:58] ═══ Hasil: 3 OK  |  0 GAGAL ═══
+[2026-09-09 16:27:24] 🔎  Mulai cek asset — pastikan halaman DETIL terbuka di browser…
+[2026-09-09 16:27:24] ═══ DIAGNOSTIK ASSET  |  Resolusi layar: 1920×1080 ═══
+[2026-09-09 16:27:24]     Region pencarian: (90, 100, 980, 530)
+[2026-09-09 16:27:24]     (Detail Lain-Lain: tidak butuh image, pakai Tab otomatis)
+[2026-09-09 16:27:25]   ⚠️  [DI 302] 'label_di_302.png' (481B) — TIDAK DITEMUKAN (zoom 100%? crop ulang?)
+[2026-09-09 16:27:25]   ⚠️  [DI 303] 'label_di_303.png' (433B) — TIDAK DITEMUKAN (zoom 100%? crop ulang?)
+[2026-09-09 16:27:25]   ⚠️  [DI 307] 'label_di_307.png' (492B) — TIDAK DITEMUKAN (zoom 100%? crop ulang?)
+[2026-09-09 16:27:25] ═══ Hasil: 0 OK  |  3 GAGAL ═══
+[2026-09-09 16:31:27] ═══ DIAGNOSTIK ASSET  |  Resolusi layar: 1920×1080 ═══
+[2026-09-09 16:31:27] 🔎  Mulai cek asset — pastikan halaman DETIL terbuka di browser…
+[2026-09-09 16:31:27]     Region pencarian: (90, 100, 980, 530)
+[2026-09-09 16:31:27]     (Detail Lain-Lain: tidak butuh image, pakai Tab otomatis)
+[2026-09-09 16:31:27]   ⚠️  [DI 302] 'label_di_302.png' (481B) — TIDAK DITEMUKAN (zoom 100%? crop ulang?)
+[2026-09-09 16:31:27]   ⚠️  [DI 303] 'label_di_303.png' (433B) — TIDAK DITEMUKAN (zoom 100%? crop ulang?)
+[2026-09-09 16:31:28]   ⚠️  [DI 307] 'label_di_307.png' (492B) — TIDAK DITEMUKAN (zoom 100%? crop ulang?)
+[2026-09-09 16:31:28] ═══ Hasil: 0 OK  |  3 GAGAL ═══
+[2026-09-09 16:39:31] 🔎  Mulai cek asset — pastikan halaman DETIL terbuka di browser…
+[2026-09-09 16:39:32] ═══ DIAGNOSTIK ASSET  |  Resolusi layar: 1920×1080 ═══
+[2026-09-09 16:39:32]     Region pencarian: (88, 140, 560, 380)
+[2026-09-09 16:39:32]     (Detail Lain-Lain: tidak butuh image, pakai Tab otomatis)
+[2026-09-09 16:39:32]   ⚠️  [DI 302] 'label_di_302.png' (481B) — TIDAK DITEMUKAN (zoom 100%? crop ulang?)
+[2026-09-09 16:39:33]   ⚠️  [DI 303] 'label_di_303.png' (433B) — TIDAK DITEMUKAN (zoom 100%? crop ulang?)
+[2026-09-09 16:39:33]   ⚠️  [DI 307] 'label_di_307.png' (492B) — TIDAK DITEMUKAN (zoom 100%? crop ulang?)
+[2026-09-09 16:39:33] ═══ Hasil: 0 OK  |  3 GAGAL ═══
+[2026-09-09 22:32:53] 🔎  Mulai cek asset — pastikan halaman DETIL terbuka di browser…
+[2026-09-09 22:32:54] ═══ DIAGNOSTIK  |  Layar: 1920×1080  |  Region: (88, 140, 950, 520) ═══
+[2026-09-09 22:32:55]   ⚠️  [DI 302] 'label_di_302.png' (32×21px / 487B) — TIDAK DITEMUKAN di region. Zoom browser 100%? Warna UI berubah? Crop ulang?
+[2026-09-09 22:32:55]   ✅  [DI 303] 'label_di_303.png' (35×18px / 433B) — ditemukan (211,243) 35×18px  tengah=(228,252)
+[2026-09-09 22:32:56]   ✅  [DI 307] 'label_di_307.png' (31×15px / 463B) — ditemukan (359,314) 31×15px  tengah=(374,321)
+[2026-09-09 22:32:56] ═══ 2 OK  |  1 GAGAL ═══
+[2026-09-09 22:32:56] 💡 TIP offset: dari koordinat tengah label, tambah offset nomor/tahun/tanggal dari config di_offset.
+[2026-09-09 22:37:11] ✅  Konfigurasi disimpan.
+[2026-09-09 22:37:14] ▶  Memulai loop auto-paste…
+[2026-09-09 22:37:14] ════════════════════════════════════════════════════
+[2026-09-09 22:37:14]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-09 22:37:14] ════════════════════════════════════════════════════
+[2026-09-09 22:37:15] 
+── Putaran 1 ─────────────────────────────
+[2026-09-09 22:37:15]   [SERI] ⏭
+[2026-09-09 22:37:15]   [DI 302] ⏭  Skip — Tab 4x.
+[2026-09-09 22:37:16]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 22:37:17]   [DI 303] ✅ di (325,448) 35×18px
+[2026-09-09 22:37:18]     → (452,457) '0'
+[2026-09-09 22:37:19]     → (592,457) '1990'
+[2026-09-09 22:37:20]     → (712,457) '01/01/1990'
+[2026-09-09 22:37:20]   [DI 307] ⏭  Skip — Tab 4x.
+[2026-09-09 22:37:21]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 22:37:22]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 22:37:22]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 22:37:22]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 22:37:22]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 22:37:23]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 22:37:23] ✅  Putaran 1 selesai.
+[2026-09-09 22:37:24] 
+── Putaran 2 ─────────────────────────────
+[2026-09-09 22:37:24]   [SERI] ⏭
+[2026-09-09 22:37:24]   [DI 302] ⏭  Skip — Tab 4x.
+[2026-09-09 22:37:25]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 22:37:25]   [DI 303] ✅ di (325,448) 35×18px
+[2026-09-09 22:37:26]     → (452,457) '0'
+[2026-09-09 22:37:27]     → (592,457) '1990'
+[2026-09-09 22:37:28]     → (712,457) '01/01/1990'
+[2026-09-09 22:37:29]   [DI 307] ⏭  Skip — Tab 4x.
+[2026-09-09 22:37:30]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 22:37:30]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 22:37:30]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 22:37:31]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 22:37:31]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 22:37:31]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 22:37:31] ✅  Putaran 2 selesai.
+[2026-09-09 22:37:32] 
+── Putaran 3 ─────────────────────────────
+[2026-09-09 22:37:32]   [SERI] ⏭
+[2026-09-09 22:37:32]   [DI 302] ⏭  Skip — Tab 4x.
+[2026-09-09 22:37:34]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 22:37:34]   [DI 303] ✅ di (325,448) 35×18px
+[2026-09-09 22:37:35]     → (452,457) '0'
+[2026-09-09 22:37:36]     → (592,457) '1990'
+[2026-09-09 22:37:37]     → (712,457) '01/01/1990'
+[2026-09-09 22:37:37] 
+■  Berhenti. Total putaran: 3
+[2026-09-09 22:37:37] ✅  Selesai.
+[2026-09-09 22:38:07] ✅  Konfigurasi disimpan.
+[2026-09-09 22:38:10] ▶  Memulai loop auto-paste…
+[2026-09-09 22:38:10] ════════════════════════════════════════════════════
+[2026-09-09 22:38:10]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-09 22:38:10] ════════════════════════════════════════════════════
+[2026-09-09 22:38:10] 
+── Putaran 1 ─────────────────────────────
+[2026-09-09 22:38:10]   [SERI] ⏭
+[2026-09-09 22:38:10]   [DI 302] ⏭  Skip — Tab 4x.
+[2026-09-09 22:38:12]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 22:38:12]   [DI 303] ✅ di (328,196) 35×18px
+[2026-09-09 22:38:13]     → (455,205) '0'
+[2026-09-09 22:38:14]     → (595,205) '1990'
+[2026-09-09 22:38:15]     → (715,205) '01/01/1990'
+[2026-09-09 22:38:15]   [DI 307] ⏭  Skip — Tab 4x.
+[2026-09-09 22:38:17]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 22:38:17]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 22:38:17]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 22:38:17]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 22:38:18]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 22:38:18]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 22:38:18] ✅  Putaran 1 selesai.
+[2026-09-09 22:38:19] 
+── Putaran 2 ─────────────────────────────
+[2026-09-09 22:38:19]   [SERI] ⏭
+[2026-09-09 22:38:19]   [DI 302] ⏭  Skip — Tab 4x.
+[2026-09-09 22:38:20]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 22:38:21]   [DI 303] ✅ di (328,196) 35×18px
+[2026-09-09 22:38:22]     → (455,205) '0'
+[2026-09-09 22:38:23]     → (595,205) '1990'
+[2026-09-09 22:38:24]     → (715,205) '01/01/1990'
+[2026-09-09 22:38:24]   [DI 307] ⏭  Skip — Tab 4x.
+[2026-09-09 22:38:25]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 22:38:26]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 22:38:26]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 22:38:26]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 22:38:26]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 22:38:27]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 22:38:27] ✅  Putaran 2 selesai.
+[2026-09-09 22:38:28] 
+── Putaran 3 ─────────────────────────────
+[2026-09-09 22:38:28]   [SERI] ⏭
+[2026-09-09 22:38:28]   [DI 302] ⏭  Skip — Tab 4x.
+[2026-09-09 22:38:29]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 22:38:29]   [DI 303] ✅ di (254,539) 35×18px
+[2026-09-09 22:38:30]     → (381,548) '0'
+[2026-09-09 22:38:31]     → (521,548) '1990'
+[2026-09-09 22:38:32]     → (641,548) '01/01/1990'
+[2026-09-09 22:38:33]   [DI 307] ⏭  Skip — Tab 4x.
+[2026-09-09 22:38:34]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 22:38:34]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 22:38:34]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 22:38:35]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 22:38:35]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 22:38:35]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 22:38:35] ✅  Putaran 3 selesai.
+[2026-09-09 22:38:36] 
+── Putaran 4 ─────────────────────────────
+[2026-09-09 22:38:36]   [SERI] ⏭
+[2026-09-09 22:38:36]   [DI 302] ⏭  Skip — Tab 4x.
+[2026-09-09 22:38:37]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 22:38:38]   [DI 303] ✅ di (328,196) 35×18px
+[2026-09-09 22:38:39]     → (455,205) '0'
+[2026-09-09 22:38:40]     → (595,205) '1990'
+[2026-09-09 22:38:41]     → (715,205) '01/01/1990'
+[2026-09-09 22:38:41]   [DI 307] ⏭  Skip — Tab 4x.
+[2026-09-09 22:38:42]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 22:38:43]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 22:38:43]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 22:38:43]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 22:38:43]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 22:38:44]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 22:38:44] ✅  Putaran 4 selesai.
+[2026-09-09 22:38:45] 
+── Putaran 5 ─────────────────────────────
+[2026-09-09 22:38:45]   [SERI] ⏭
+[2026-09-09 22:38:45]   [DI 302] ⏭  Skip — Tab 4x.
+[2026-09-09 22:38:46]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 22:38:46]   [DI 303] ✅ di (254,539) 35×18px
+[2026-09-09 22:38:47]     → (381,548) '0'
+[2026-09-09 22:38:48]     → (521,548) '1990'
+[2026-09-09 22:38:49]     → (641,548) '01/01/1990'
+[2026-09-09 22:38:50] 
+■  Berhenti. Total putaran: 5
+[2026-09-09 22:38:50] ✅  Selesai.
+[2026-09-09 22:39:21] ✅  Konfigurasi disimpan.
+[2026-09-09 22:39:23] ▶  Memulai loop auto-paste…
+[2026-09-09 22:39:23] ════════════════════════════════════════════════════
+[2026-09-09 22:39:23]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-09 22:39:23] ════════════════════════════════════════════════════
+[2026-09-09 22:39:23] 
+── Putaran 1 ─────────────────────────────
+[2026-09-09 22:39:23]   [SERI] ⏭
+[2026-09-09 22:39:23]   [DI 302] ⏭  Skip — Tab 4x.
+[2026-09-09 22:39:25]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 22:39:25]   [DI 303] ✅ di (328,196) 35×18px
+[2026-09-09 22:39:26]     → (455,205) '0'
+[2026-09-09 22:39:27]     → (595,205) '1990'
+[2026-09-09 22:39:28]     → (715,205) '01/01/1990'
+[2026-09-09 22:39:28]   [DI 307] ⏭  Skip — Tab 4x.
+[2026-09-09 22:39:30]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 22:39:30]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 22:39:30]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 22:39:30]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 22:39:31]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 22:39:31]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 22:39:31] ✅  Putaran 1 selesai.
+[2026-09-09 22:39:32] 
+── Putaran 2 ─────────────────────────────
+[2026-09-09 22:39:32]   [SERI] ⏭
+[2026-09-09 22:39:32]   [DI 302] ⏭  Skip — Tab 4x.
+[2026-09-09 22:39:33]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 22:39:34]   [DI 303] ✅ di (254,539) 35×18px
+[2026-09-09 22:39:35]     → (381,548) '0'
+[2026-09-09 22:39:35]     → (521,548) '1990'
+[2026-09-09 22:39:36]     → (641,548) '01/01/1990'
+[2026-09-09 22:39:37]   [DI 307] ⏭  Skip — Tab 4x.
+[2026-09-09 22:39:38]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 22:39:38]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 22:39:39]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 22:39:39]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 22:39:39]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 22:39:39]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 22:39:39] ✅  Putaran 2 selesai.
+[2026-09-09 22:39:40] 
+■  Berhenti. Total putaran: 2
+[2026-09-09 22:39:40] ✅  Selesai.
+[2026-09-09 22:40:20] 🔎  Mulai cek asset — pastikan halaman DETIL terbuka di browser…
+[2026-09-09 22:40:20] ═══ DIAGNOSTIK  |  Layar: 1920×1080  |  Region: (88, 140, 950, 520) ═══
+[2026-09-09 22:40:20]   ✅  [DI 302] 'label_di_302.png' (32×21px / 487B) — ditemukan (284,193) 32×21px  tengah=(300,203)
+[2026-09-09 22:40:21]   ✅  [DI 303] 'label_di_303.png' (35×18px / 433B) — ditemukan (211,243) 35×18px  tengah=(228,252)
+[2026-09-09 22:40:21]   ✅  [DI 307] 'label_di_307.png' (31×15px / 463B) — ditemukan (360,321) 31×15px  tengah=(375,328)
+[2026-09-09 22:40:21] ═══ 3 OK  |  0 GAGAL ═══
+[2026-09-09 22:40:21] 💡 TIP offset: dari koordinat tengah label, tambah offset nomor/tahun/tanggal dari config di_offset.
+[2026-09-09 23:06:46] ✅  Konfigurasi disimpan.
+[2026-09-09 23:06:51] ▶  Memulai loop auto-paste…
+[2026-09-09 23:06:51] ════════════════════════════════════════════════════
+[2026-09-09 23:06:51]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-09 23:06:51] ════════════════════════════════════════════════════
+[2026-09-09 23:06:51] 
+── Putaran 1 ─────────────────────────────
+[2026-09-09 23:06:51]   [FOKUS] (563,180)
+[2026-09-09 23:06:52]   [SERI] ⏭
+[2026-09-09 23:06:52]   [DI 302] ⏭  Skip — Tab 4x.
+[2026-09-09 23:06:53]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 23:06:54]   [DI 303] ✅ label tengah=(271,548) | off: nom=110 thn=250 tgl=370
+[2026-09-09 23:06:54]   [DI 303] Target klik: Nomor=(381,548) Tahun=(521,548) Tanggal=(641,548)
+[2026-09-09 23:06:55]     → (381,548) '0'
+[2026-09-09 23:06:56]     → (521,548) '1990'
+[2026-09-09 23:06:57]     → (641,548) '01/01/1990'
+[2026-09-09 23:06:57]   [DI 307] ⏭  Skip — Tab 4x.
+[2026-09-09 23:06:59]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 23:06:59]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 23:06:59]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 23:06:59]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 23:07:00]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 23:07:00]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 23:07:00] ✅  Putaran 1 selesai.
+[2026-09-09 23:07:01] 
+── Putaran 2 ─────────────────────────────
+[2026-09-09 23:07:01]   [FOKUS] (563,180)
+[2026-09-09 23:07:02]   [SERI] ⏭
+[2026-09-09 23:07:02]   [DI 302] ⏭  Skip — Tab 4x.
+[2026-09-09 23:07:03]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 23:07:03]   [DI 303] ✅ label tengah=(345,205) | off: nom=110 thn=250 tgl=370
+[2026-09-09 23:07:03]   [DI 303] Target klik: Nomor=(455,205) Tahun=(595,205) Tanggal=(715,205)
+[2026-09-09 23:07:04]     → (455,205) '0'
+[2026-09-09 23:07:06]     → (595,205) '1990'
+[2026-09-09 23:07:07]     → (715,205) '01/01/1990'
+[2026-09-09 23:07:07]   [DI 307] ⏭  Skip — Tab 4x.
+[2026-09-09 23:07:08]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 23:07:09]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 23:07:09]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 23:07:09]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 23:07:09]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 23:07:10]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 23:07:10] ✅  Putaran 2 selesai.
+[2026-09-09 23:07:11] 
+── Putaran 3 ─────────────────────────────
+[2026-09-09 23:07:11]   [FOKUS] (563,180)
+[2026-09-09 23:07:11]   [SERI] ⏭
+[2026-09-09 23:07:11]   [DI 302] ⏭  Skip — Tab 4x.
+[2026-09-09 23:07:13]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 23:07:13]   [DI 303] ✅ label tengah=(345,205) | off: nom=110 thn=250 tgl=370
+[2026-09-09 23:07:13]   [DI 303] Target klik: Nomor=(455,205) Tahun=(595,205) Tanggal=(715,205)
+[2026-09-09 23:07:14]     → (455,205) '0'
+[2026-09-09 23:07:15]     → (595,205) '1990'
+[2026-09-09 23:07:16]     → (715,205) '01/01/1990'
+[2026-09-09 23:07:17]   [DI 307] ⏭  Skip — Tab 4x.
+[2026-09-09 23:07:18]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 23:07:18]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 23:07:19]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 23:07:19]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 23:07:19]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 23:07:19]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 23:07:19] ✅  Putaran 3 selesai.
+[2026-09-09 23:07:20] 
+── Putaran 4 ─────────────────────────────
+[2026-09-09 23:07:20]   [FOKUS] (563,180)
+[2026-09-09 23:07:21]   [SERI] ⏭
+[2026-09-09 23:07:21]   [DI 302] ⏭  Skip — Tab 4x.
+[2026-09-09 23:07:22]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 23:07:23]   [DI 303] ✅ label tengah=(271,548) | off: nom=110 thn=250 tgl=370
+[2026-09-09 23:07:23]   [DI 303] Target klik: Nomor=(381,548) Tahun=(521,548) Tanggal=(641,548)
+[2026-09-09 23:07:24]     → (381,548) '0'
+[2026-09-09 23:07:25]     → (521,548) '1990'
+[2026-09-09 23:07:26]     → (641,548) '01/01/1990'
+[2026-09-09 23:07:27]   [DI 307] ⏭  Skip — Tab 4x.
+[2026-09-09 23:07:28]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 23:07:28]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 23:07:29]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 23:07:29]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 23:07:29]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 23:07:29]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 23:07:29] ✅  Putaran 4 selesai.
+[2026-09-09 23:07:30] 
+── Putaran 5 ─────────────────────────────
+[2026-09-09 23:07:30]   [FOKUS] (563,180)
+[2026-09-09 23:07:31]   [SERI] ⏭
+[2026-09-09 23:07:31]   [DI 302] ⏭  Skip — Tab 4x.
+[2026-09-09 23:07:32]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 23:07:33]   [DI 303] ✅ label tengah=(345,205) | off: nom=110 thn=250 tgl=370
+[2026-09-09 23:07:33]   [DI 303] Target klik: Nomor=(455,205) Tahun=(595,205) Tanggal=(715,205)
+[2026-09-09 23:07:34]     → (455,205) '0'
+[2026-09-09 23:07:35]     → (595,205) '1990'
+[2026-09-09 23:07:36]     → (715,205) '01/01/1990'
+[2026-09-09 23:07:36]   [DI 307] ⏭  Skip — Tab 4x.
+[2026-09-09 23:07:38]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 23:07:38]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 23:07:38]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 23:07:38]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 23:07:39]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 23:07:39]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 23:07:39] ✅  Putaran 5 selesai.
+[2026-09-09 23:07:40] 
+── Putaran 6 ─────────────────────────────
+[2026-09-09 23:07:40]   [FOKUS] (563,180)
+[2026-09-09 23:07:41]   [SERI] ⏭
+[2026-09-09 23:07:41] 
+■  Berhenti. Total putaran: 6
+[2026-09-09 23:07:41] ✅  Selesai.
+[2026-09-09 23:10:05] ── Lacak Cursor 3 detik ──
+[2026-09-09 23:10:05]    🖱  x=683  y=348
+[2026-09-09 23:10:05]    🖱  x=683  y=348
+[2026-09-09 23:10:05]    🖱  x=683  y=348
+[2026-09-09 23:10:05]    🖱  x=683  y=348
+[2026-09-09 23:10:06]    🖱  x=683  y=348
+[2026-09-09 23:10:06]    🖱  x=683  y=348
+[2026-09-09 23:10:06]    🖱  x=683  y=348
+[2026-09-09 23:10:06]    🖱  x=636  y=264
+[2026-09-09 23:10:06]    🖱  x=620  y=234
+[2026-09-09 23:10:07]    🖱  x=617  y=226
+[2026-09-09 23:10:07]    🖱  x=617  y=226
+[2026-09-09 23:10:07]    🖱  x=617  y=226
+[2026-09-09 23:10:07]    🖱  x=617  y=226
+[2026-09-09 23:10:07]    🖱  x=617  y=226
+[2026-09-09 23:10:08]    🖱  x=617  y=226
+[2026-09-09 23:10:08] ── selesai ──
+[2026-09-09 23:13:13] ✅  Konfigurasi disimpan.
+[2026-09-09 23:13:13] ▶  Memulai loop auto-paste…
+[2026-09-09 23:13:13] ════════════════════════════════════════════════════
+[2026-09-09 23:13:13]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-09 23:13:13] ════════════════════════════════════════════════════
+[2026-09-09 23:13:13] 
+── Putaran 1 ─────────────────────────────
+[2026-09-09 23:13:13]   [FOKUS] (563,180)
+[2026-09-09 23:13:14]   [SERI] ⏭
+[2026-09-09 23:13:14]   [DI 302] ⏭  Skip — Tab 4x.
+[2026-09-09 23:13:15]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 23:13:16]   [DI 303] ✅ label tengah=(345,205) | off: nom=110 thn=250 tgl=370
+[2026-09-09 23:13:16]   [DI 303] Target klik: Nomor=(455,205) Tahun=(595,205) Tanggal=(715,205)
+[2026-09-09 23:13:17]     → (455,205) '0'
+[2026-09-09 23:13:18]     → (595,205) '1990'
+[2026-09-09 23:13:19]     → (715,205) '01/01/1990'
+[2026-09-09 23:13:19]   [DI 307] ⏭  Skip — Tab 4x.
+[2026-09-09 23:13:21]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 23:13:21]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 23:13:21]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 23:13:22]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 23:13:22]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 23:13:22]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 23:13:22] ✅  Putaran 1 selesai.
+[2026-09-09 23:13:23] 
+── Putaran 2 ─────────────────────────────
+[2026-09-09 23:13:23]   [FOKUS] (563,180)
+[2026-09-09 23:13:23] ⏸  Dijeda.
+[2026-09-09 23:13:24]   [SERI] ⏭
+[2026-09-09 23:13:32] ↺  Reset.
+[2026-09-09 23:13:32]   [DI 302] ⏭  Skip — Tab 4x.
+[2026-09-09 23:13:33] 
+■  Berhenti. Total putaran: 2
+[2026-09-09 23:13:33] ✅  Selesai.
+[2026-09-09 23:13:45] ── Lacak Cursor 3 detik ──
+[2026-09-09 23:13:45]    🖱  x=957  y=325
+[2026-09-09 23:13:45]    🖱  x=635  y=527
+[2026-09-09 23:13:45]    🖱  x=421  y=694
+[2026-09-09 23:13:45]    🖱  x=351  y=741
+[2026-09-09 23:13:45]    🖱  x=347  y=732
+[2026-09-09 23:13:46]    🖱  x=342  y=724
+[2026-09-09 23:13:46]    🖱  x=341  y=724
+[2026-09-09 23:13:46]    🖱  x=341  y=724
+[2026-09-09 23:13:46]    🖱  x=341  y=724
+[2026-09-09 23:13:47]    🖱  x=341  y=724
+[2026-09-09 23:13:47]    🖱  x=341  y=724
+[2026-09-09 23:13:47]    🖱  x=341  y=724
+[2026-09-09 23:13:47]    🖱  x=341  y=724
+[2026-09-09 23:13:47]    🖱  x=341  y=724
+[2026-09-09 23:13:48]    🖱  x=341  y=724
+[2026-09-09 23:13:48] ── selesai ──
+[2026-09-09 23:14:13] ── Lacak Cursor 3 detik ──
+[2026-09-09 23:14:13]    🖱  x=941  y=331
+[2026-09-09 23:14:14]    🖱  x=624  y=504
+[2026-09-09 23:14:14]    🖱  x=471  y=612
+[2026-09-09 23:14:14]    🖱  x=366  y=725
+[2026-09-09 23:14:14]    🖱  x=340  y=749
+[2026-09-09 23:14:14]    🖱  x=336  y=755
+[2026-09-09 23:14:15]    🖱  x=335  y=741
+[2026-09-09 23:14:15]    🖱  x=339  y=723
+[2026-09-09 23:14:15]    🖱  x=339  y=721
+[2026-09-09 23:14:15]    🖱  x=339  y=721
+[2026-09-09 23:14:15]    🖱  x=339  y=721
+[2026-09-09 23:14:16]    🖱  x=339  y=721
+[2026-09-09 23:14:16]    🖱  x=339  y=721
+[2026-09-09 23:14:16]    🖱  x=339  y=721
+[2026-09-09 23:14:16]    🖱  x=339  y=721
+[2026-09-09 23:14:16] ── selesai ──
+[2026-09-09 23:15:02] ── Lacak Cursor 3 detik ──
+[2026-09-09 23:15:02]    🖱  x=978  y=328
+[2026-09-09 23:15:03]    🖱  x=349  y=710
+[2026-09-09 23:15:03]    🖱  x=292  y=743
+[2026-09-09 23:15:03]    🖱  x=316  y=746
+[2026-09-09 23:15:03]    🖱  x=332  y=736
+[2026-09-09 23:15:03]    🖱  x=344  y=725
+[2026-09-09 23:15:04]    🖱  x=349  y=722
+[2026-09-09 23:15:04]    🖱  x=349  y=722
+[2026-09-09 23:15:04]    🖱  x=349  y=722
+[2026-09-09 23:15:04]    🖱  x=349  y=722
+[2026-09-09 23:15:04]    🖱  x=349  y=722
+[2026-09-09 23:15:05]    🖱  x=349  y=722
+[2026-09-09 23:15:05]    🖱  x=349  y=722
+[2026-09-09 23:15:05]    🖱  x=349  y=722
+[2026-09-09 23:15:05]    🖱  x=349  y=722
+[2026-09-09 23:15:06] ── selesai ──
+[2026-09-09 23:24:15] ✅  Konfigurasi disimpan.
+[2026-09-09 23:24:15] ▶  Memulai loop auto-paste…
+[2026-09-09 23:24:16] ════════════════════════════════════════════════════
+[2026-09-09 23:24:16]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-09 23:24:16] ════════════════════════════════════════════════════
+[2026-09-09 23:24:16] 
+── Putaran 1 ─────────────────────────────
+[2026-09-09 23:24:16]   [FOKUS] (349,220)
+[2026-09-09 23:24:17]   [SERI] ⏭
+[2026-09-09 23:24:17]   [DI 302] ⏭  Skip (disabled).
+[2026-09-09 23:24:17]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 23:24:18]   [DI 303] ✅ label tengah=(271,548) | off: nom=110 thn=250 tgl=390
+[2026-09-09 23:24:18]   [DI 303] Target klik: Nomor=(381,548) Tahun=(521,548) Tanggal=(661,548)
+[2026-09-09 23:24:19]     → (381,548) '0'
+[2026-09-09 23:24:20]     → (521,548) '1990'
+[2026-09-09 23:24:21]     → (661,548) '01/01/1990'
+[2026-09-09 23:24:21]   [DI 307] ⏭  Skip (disabled).
+[2026-09-09 23:24:22]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 23:24:22]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:22]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:23]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:23]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:23]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 23:24:23] ✅  Putaran 1 selesai.
+[2026-09-09 23:24:24] 
+── Putaran 2 ─────────────────────────────
+[2026-09-09 23:24:24]   [FOKUS] (349,220)
+[2026-09-09 23:24:25]   [SERI] ⏭
+[2026-09-09 23:24:25]   [DI 302] ⏭  Skip (disabled).
+[2026-09-09 23:24:25]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 23:24:25]   [DI 303] ✅ label tengah=(342,686) | off: nom=110 thn=250 tgl=390
+[2026-09-09 23:24:25]   [DI 303] Target klik: Nomor=(452,686) Tahun=(592,686) Tanggal=(732,686)
+[2026-09-09 23:24:27]     → (452,686) '0'
+[2026-09-09 23:24:28]     → (592,686) '1990'
+[2026-09-09 23:24:29]     → (732,686) '01/01/1990'
+[2026-09-09 23:24:29]   [DI 307] ⏭  Skip (disabled).
+[2026-09-09 23:24:30]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 23:24:30]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:30]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:30]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:30]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:31]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 23:24:31] ✅  Putaran 2 selesai.
+[2026-09-09 23:24:32] 
+── Putaran 3 ─────────────────────────────
+[2026-09-09 23:24:32]   [FOKUS] (349,220)
+[2026-09-09 23:24:32]   [SERI] ⏭
+[2026-09-09 23:24:32]   [DI 302] ⏭  Skip (disabled).
+[2026-09-09 23:24:33]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 23:24:33]   [DI 303] ✅ label tengah=(342,686) | off: nom=110 thn=250 tgl=390
+[2026-09-09 23:24:33]   [DI 303] Target klik: Nomor=(452,686) Tahun=(592,686) Tanggal=(732,686)
+[2026-09-09 23:24:34]     → (452,686) '0'
+[2026-09-09 23:24:35]     → (592,686) '1990'
+[2026-09-09 23:24:36]     → (732,686) '01/01/1990'
+[2026-09-09 23:24:37]   [DI 307] ⏭  Skip (disabled).
+[2026-09-09 23:24:37]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 23:24:37]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:38]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:38]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:38]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:38]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 23:24:38] ✅  Putaran 3 selesai.
+[2026-09-09 23:24:39] 
+── Putaran 4 ─────────────────────────────
+[2026-09-09 23:24:39]   [FOKUS] (349,220)
+[2026-09-09 23:24:40]   [SERI] ⏭
+[2026-09-09 23:24:40]   [DI 302] ⏭  Skip (disabled).
+[2026-09-09 23:24:40]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 23:24:41]   [DI 303] ✅ label tengah=(342,686) | off: nom=110 thn=250 tgl=390
+[2026-09-09 23:24:41]   [DI 303] Target klik: Nomor=(452,686) Tahun=(592,686) Tanggal=(732,686)
+[2026-09-09 23:24:42]     → (452,686) '0'
+[2026-09-09 23:24:43]     → (592,686) '1990'
+[2026-09-09 23:24:44]     → (732,686) '01/01/1990'
+[2026-09-09 23:24:44]   [DI 307] ⏭  Skip (disabled).
+[2026-09-09 23:24:45]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 23:24:45]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:45]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:45]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:46]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:46]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 23:24:46] ✅  Putaran 4 selesai.
+[2026-09-09 23:24:47] 
+── Putaran 5 ─────────────────────────────
+[2026-09-09 23:24:47]   [FOKUS] (349,220)
+[2026-09-09 23:24:48]   [SERI] ⏭
+[2026-09-09 23:24:48]   [DI 302] ⏭  Skip (disabled).
+[2026-09-09 23:24:48]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 23:24:48]   [DI 303] ✅ label tengah=(342,686) | off: nom=110 thn=250 tgl=390
+[2026-09-09 23:24:48]   [DI 303] Target klik: Nomor=(452,686) Tahun=(592,686) Tanggal=(732,686)
+[2026-09-09 23:24:49]     → (452,686) '0'
+[2026-09-09 23:24:50]     → (592,686) '1990'
+[2026-09-09 23:24:51]     → (732,686) '01/01/1990'
+[2026-09-09 23:24:52]   [DI 307] ⏭  Skip (disabled).
+[2026-09-09 23:24:52]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 23:24:53]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:53]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:53]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:53]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 23:24:54]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 23:24:54] ✅  Putaran 5 selesai.
+[2026-09-09 23:24:55] 
+── Putaran 6 ─────────────────────────────
+[2026-09-09 23:24:55]   [FOKUS] (349,220)
+[2026-09-09 23:24:55]   [SERI] ⏭
+[2026-09-09 23:24:55]   [DI 302] ⏭  Skip (disabled).
+[2026-09-09 23:24:56]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 23:24:56]   [DI 303] ✅ label tengah=(342,686) | off: nom=110 thn=250 tgl=390
+[2026-09-09 23:24:56]   [DI 303] Target klik: Nomor=(452,686) Tahun=(592,686) Tanggal=(732,686)
+[2026-09-09 23:24:57]     → (452,686) '0'
+[2026-09-09 23:24:58]     → (592,686) '1990'
+[2026-09-09 23:24:59]     → (732,686) '01/01/1990'
+[2026-09-09 23:25:00] 
+■  Berhenti. Total putaran: 6
+[2026-09-09 23:25:00] ✅  Selesai.
+[2026-09-09 23:38:18] ✅  Konfigurasi disimpan.
+[2026-09-09 23:38:18] ▶  Memulai loop auto-paste…
+[2026-09-09 23:38:19] 🔴  MODE DEBUG — tanda merah di tiap klik
+[2026-09-09 23:38:19] ════════════════════════════════════════════════════
+[2026-09-09 23:38:19]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-09 23:38:19] ════════════════════════════════════════════════════
+[2026-09-09 23:38:19] 
+── Putaran 1 ─────────────────────────────
+[2026-09-09 23:38:19]   [FOKUS] (349,220)
+[2026-09-09 23:38:19]   [SERI] ⏭
+[2026-09-09 23:38:19]   [DI 302] ⏭  Skip (disabled).
+[2026-09-09 23:38:20]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 23:38:20]   [DI 303] ✅ label tengah=(271,548)
+[2026-09-09 23:38:20]   [DI 303] Target: Nomor=(381,548) Tahun=(521,548) Tanggal=(661,548)
+[2026-09-09 23:38:22]     → (381,548) '0'
+[2026-09-09 23:38:24]     → (521,548) '1990'
+[2026-09-09 23:38:25]     → (661,548) '01/01/1990'
+[2026-09-09 23:38:26]   [DI 307] ⏭  Skip (disabled).
+[2026-09-09 23:38:26]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 23:38:27]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 23:38:27]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 23:38:27]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 23:38:27]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 23:38:28]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 23:38:28] ✅  Putaran 1 selesai.
+[2026-09-09 23:38:28] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-09 23:38:40] ▶  Melanjutkan.
+[2026-09-09 23:38:41] 
+── Putaran 2 ─────────────────────────────
+[2026-09-09 23:38:41]   [FOKUS] (349,220)
+[2026-09-09 23:38:41]   [SERI] ⏭
+[2026-09-09 23:38:41]   [DI 302] ⏭  Skip (disabled).
+[2026-09-09 23:38:42]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 23:38:42]   [DI 303] ✅ label tengah=(271,548)
+[2026-09-09 23:38:42]   [DI 303] Target: Nomor=(381,548) Tahun=(521,548) Tanggal=(661,548)
+[2026-09-09 23:38:44]     → (381,548) '0'
+[2026-09-09 23:38:45]     → (521,548) '1990'
+[2026-09-09 23:38:47]     → (661,548) '01/01/1990'
+[2026-09-09 23:38:48]   [DI 307] ⏭  Skip (disabled).
+[2026-09-09 23:38:48]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 23:38:48]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 23:38:49]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 23:38:49]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 23:38:49]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 23:38:49]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 23:38:49] ✅  Putaran 2 selesai.
+[2026-09-09 23:38:49] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-09 23:38:54] ▶  Melanjutkan.
+[2026-09-09 23:38:55] 
+── Putaran 3 ─────────────────────────────
+[2026-09-09 23:38:55]   [FOKUS] (349,220)
+[2026-09-09 23:38:55]   [SERI] ⏭
+[2026-09-09 23:38:55]   [DI 302] ⏭  Skip (disabled).
+[2026-09-09 23:38:56]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 23:38:56]   [DI 303] ✅ label tengah=(342,686)
+[2026-09-09 23:38:56]   [DI 303] Target: Nomor=(452,686) Tahun=(592,686) Tanggal=(732,686)
+[2026-09-09 23:38:58]     → (452,686) '0'
+[2026-09-09 23:38:59]     → (592,686) '1990'
+[2026-09-09 23:39:01]     → (732,686) '01/01/1990'
+[2026-09-09 23:39:01]   [DI 307] ⏭  Skip (disabled).
+[2026-09-09 23:39:02]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 23:39:02]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 23:39:02]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 23:39:03]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 23:39:03]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 23:39:03]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 23:39:03] ✅  Putaran 3 selesai.
+[2026-09-09 23:39:03] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-09 23:39:36] ▶  Melanjutkan.
+[2026-09-09 23:39:37] 
+── Putaran 4 ─────────────────────────────
+[2026-09-09 23:39:37]   [FOKUS] (349,220)
+[2026-09-09 23:39:37]   [SERI] ⏭
+[2026-09-09 23:39:37]   [DI 302] ⏭  Skip (disabled).
+[2026-09-09 23:39:38]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 23:39:38]   [DI 303] ✅ label tengah=(342,686)
+[2026-09-09 23:39:38]   [DI 303] Target: Nomor=(452,686) Tahun=(592,686) Tanggal=(732,686)
+[2026-09-09 23:39:40]     → (452,686) '0'
+[2026-09-09 23:39:41]     → (592,686) '1990'
+[2026-09-09 23:39:43]     → (732,686) '01/01/1990'
+[2026-09-09 23:39:44]   [DI 307] ⏭  Skip (disabled).
+[2026-09-09 23:39:44]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 23:39:44]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 23:39:44]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 23:39:45]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 23:39:45]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 23:39:45]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 23:39:45] ✅  Putaran 4 selesai.
+[2026-09-09 23:39:45] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-09 23:44:48] ✅  Konfigurasi disimpan.
+[2026-09-09 23:44:48] ▶  Memulai loop auto-paste…
+[2026-09-09 23:44:48] ════════════════════════════════════════════════════
+[2026-09-09 23:44:49]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-09 23:44:49] ════════════════════════════════════════════════════
+[2026-09-09 23:44:49] 
+── Putaran 1 ─────────────────────────────
+[2026-09-09 23:44:49]   [FOKUS] (349,220)
+[2026-09-09 23:44:49]   [SERI] ⏭
+[2026-09-09 23:44:49]   [DI 302] ⏭  Skip (disabled).
+[2026-09-09 23:44:50]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 23:44:50]   [DI 303] ✅ label tengah=(342,686) offset_y=20 → klik y=706
+[2026-09-09 23:44:50]   [DI 303] Klik Nomor=(452,706) lalu Tab→Tahun→Tab→Tanggal
+[2026-09-09 23:44:51]     → (452,706) '0'
+[2026-09-09 23:44:52]     Tahun  : '1990'
+[2026-09-09 23:44:53]     Tanggal: '01/01/1990'
+[2026-09-09 23:44:54]   [DI 307] ⏭  Skip (disabled).
+[2026-09-09 23:44:54]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 23:44:54]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 23:44:55]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 23:44:55]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 23:44:55]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 23:44:55]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 23:44:55] ✅  Putaran 1 selesai.
+[2026-09-09 23:44:55] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-09 23:45:17] ▶  Melanjutkan.
+[2026-09-09 23:45:17] 
+── Putaran 2 ─────────────────────────────
+[2026-09-09 23:45:17]   [FOKUS] (349,220)
+[2026-09-09 23:45:18]   [SERI] ⏭
+[2026-09-09 23:45:18]   [DI 302] ⏭  Skip (disabled).
+[2026-09-09 23:45:19]   [DI 303] 🔍 'label_di_303.png' (35×18px) — menunggu…
+[2026-09-09 23:45:19]   [DI 303] ✅ label tengah=(342,686) offset_y=20 → klik y=706
+[2026-09-09 23:45:19]   [DI 303] Klik Nomor=(452,706) lalu Tab→Tahun→Tab→Tanggal
+[2026-09-09 23:45:20]     → (452,706) '0'
+[2026-09-09 23:45:21]     Tahun  : '1990'
+[2026-09-09 23:45:22]     Tanggal: '01/01/1990'
+[2026-09-09 23:45:23]   [DI 307] ⏭  Skip (disabled).
+[2026-09-09 23:45:23]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 23:45:23]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 23:45:24]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 23:45:24]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 23:45:24]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 23:45:24]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 23:45:24] ✅  Putaran 2 selesai.
+[2026-09-09 23:45:24] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-09 23:46:51] 🔎  Mulai cek asset — pastikan halaman DETIL terbuka di browser…
+[2026-09-09 23:46:51] ═══ DIAGNOSTIK  |  Layar: 1920×1080  |  Region: (88, 140, 950, 650) ═══
+[2026-09-09 23:46:51]   ✅  [DI 302] 'label_di_302.png' (32×21px / 487B) — ditemukan (372,720) 32×21px  tengah=(388,730)
+[2026-09-09 23:46:52]   ✅  [DI 303] 'label_di_303.png' (35×18px / 433B) — ditemukan (326,720) 35×18px  tengah=(343,729)
+[2026-09-09 23:46:52]   ✅  [DI 307] 'label_di_307.png' (31×15px / 463B) — ditemukan (373,723) 31×15px  tengah=(388,730)
+[2026-09-09 23:46:52] ═══ 3 OK  |  0 GAGAL ═══
+[2026-09-09 23:46:52] 💡 TIP offset: dari koordinat tengah label, tambah offset nomor/tahun/tanggal dari config di_offset.
+[2026-09-09 23:47:00] 🔎  Mulai cek asset — pastikan halaman DETIL terbuka di browser…
+[2026-09-09 23:47:00] ═══ DIAGNOSTIK  |  Layar: 1920×1080  |  Region: (88, 140, 950, 650) ═══
+[2026-09-09 23:47:01]   ✅  [DI 302] 'label_di_302.png' (32×21px / 487B) — ditemukan (372,720) 32×21px  tengah=(388,730)
+[2026-09-09 23:47:01]   ✅  [DI 303] 'label_di_303.png' (35×18px / 433B) — ditemukan (326,720) 35×18px  tengah=(343,729)
+[2026-09-09 23:47:01]   ✅  [DI 307] 'label_di_307.png' (31×15px / 463B) — ditemukan (373,723) 31×15px  tengah=(388,730)
+[2026-09-09 23:47:01] ═══ 3 OK  |  0 GAGAL ═══
+[2026-09-09 23:47:02] 💡 TIP offset: dari koordinat tengah label, tambah offset nomor/tahun/tanggal dari config di_offset.
+[2026-09-09 23:56:51] ✅  Konfigurasi disimpan.
+[2026-09-09 23:56:51] ▶  Memulai loop auto-paste…
+[2026-09-09 23:56:51] ════════════════════════════════════════════════════
+[2026-09-09 23:56:51]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-09 23:56:51] ════════════════════════════════════════════════════
+[2026-09-09 23:56:51] 
+── Putaran 1 ─────────────────────────────
+[2026-09-09 23:56:51]   [FOKUS] (349,220)
+[2026-09-09 23:56:52]   [SERI] ⏭
+[2026-09-09 23:56:52]   [DI 302] ⏭  Skip (disabled).
+[2026-09-09 23:56:52]   [DI 303] 📍 Koordinat absolut (349,722)
+[2026-09-09 23:56:52]   [DI 303] Klik Nomor=(459,722) → Tab→Tahun → Tab→Tanggal
+[2026-09-09 23:56:53]     → (459,722) '0'
+[2026-09-09 23:56:54]     Tahun  : '1990'
+[2026-09-09 23:56:56]     Tanggal: '01/01/1990'
+[2026-09-09 23:56:56]   [DI 307] ⏭  Skip (disabled).
+[2026-09-09 23:56:56]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 23:56:57]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 23:56:57]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 23:56:57]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 23:56:57]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 23:56:58]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 23:56:58] ✅  Putaran 1 selesai.
+[2026-09-09 23:56:58] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-09 23:57:08] ▶  Melanjutkan.
+[2026-09-09 23:57:08] 
+── Putaran 2 ─────────────────────────────
+[2026-09-09 23:57:09]   [FOKUS] (349,220)
+[2026-09-09 23:57:09]   [SERI] ⏭
+[2026-09-09 23:57:09]   [DI 302] ⏭  Skip (disabled).
+[2026-09-09 23:57:09]   [DI 303] 📍 Koordinat absolut (349,722)
+[2026-09-09 23:57:10]   [DI 303] Klik Nomor=(459,722) → Tab→Tahun → Tab→Tanggal
+[2026-09-09 23:57:11]     → (459,722) '0'
+[2026-09-09 23:57:12]     Tahun  : '1990'
+[2026-09-09 23:57:13]     Tanggal: '01/01/1990'
+[2026-09-09 23:57:13]   [DI 307] ⏭  Skip (disabled).
+[2026-09-09 23:57:14]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-09 23:57:14]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-09 23:57:14]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-09 23:57:14]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-09 23:57:15]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-09 23:57:15]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-09 23:57:15] ✅  Putaran 2 selesai.
+[2026-09-09 23:57:15] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 00:14:31] ✅  Konfigurasi disimpan.
+[2026-09-10 00:14:31] ▶  Memulai loop auto-paste…
+[2026-09-10 00:14:32] ════════════════════════════════════════════════════
+[2026-09-10 00:14:32]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-10 00:14:32] ════════════════════════════════════════════════════
+[2026-09-10 00:14:32] 
+── Putaran 1 ─────────────────────────────
+[2026-09-10 00:14:32]   [FOKUS] (349,220)
+[2026-09-10 00:14:33]   [SERI] ⏭
+[2026-09-10 00:14:33]   [DI 303] 📍 y=722 | Nomor x=459  Tahun x=600  Tanggal x=740
+[2026-09-10 00:14:34]     → (459,722) '0'
+[2026-09-10 00:14:35]     → (600,722) '1990'
+[2026-09-10 00:14:36]     → (740,722) '01/01/1990'
+[2026-09-10 00:14:37]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-10 00:14:37]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-10 00:14:37]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-10 00:14:37]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-10 00:14:38]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-10 00:14:38]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 00:14:38] ✅  Putaran 1 selesai.
+[2026-09-10 00:14:38] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 00:23:00] ✅  Konfigurasi disimpan.
+[2026-09-10 00:23:00] ▶  Memulai…
+[2026-09-10 00:23:01] ════════════════════════════════════════════════════
+[2026-09-10 00:23:01]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-10 00:23:01] ════════════════════════════════════════════════════
+[2026-09-10 00:23:01] 
+── Putaran 1 ─────────────────────────────
+[2026-09-10 00:23:01]   [FOKUS] (349,220)
+[2026-09-10 00:23:02]   [SERI] ⏭
+[2026-09-10 00:23:02]   [DI 303] 📍 y=722 | Nomor x=459  Tahun x=600  Tanggal x=780
+[2026-09-10 00:23:03]     → (459,722) '0'
+[2026-09-10 00:23:04]     → (600,722) '1990'
+[2026-09-10 00:23:05]     → (780,722) '01/01/1990'
+[2026-09-10 00:23:05]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-10 00:23:06]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-10 00:23:06]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-10 00:23:06]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-10 00:23:06]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-10 00:23:07]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 00:23:07] ✅  Putaran 1 selesai.
+[2026-09-10 00:23:07] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 00:23:21] ▶  Melanjutkan.
+[2026-09-10 00:23:21] 
+── Putaran 2 ─────────────────────────────
+[2026-09-10 00:23:21]   [FOKUS] (349,220)
+[2026-09-10 00:23:21]   [SERI] ⏭
+[2026-09-10 00:23:21]   [DI 303] 📍 y=722 | Nomor x=459  Tahun x=600  Tanggal x=780
+[2026-09-10 00:23:22]     → (459,722) '0'
+[2026-09-10 00:23:23]     → (600,722) '1990'
+[2026-09-10 00:23:24]     → (780,722) '01/01/1990'
+[2026-09-10 00:23:25]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-10 00:23:25]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-10 00:23:25]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-10 00:23:26]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-10 00:23:26]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-10 00:23:26]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 00:23:26] ✅  Putaran 2 selesai.
+[2026-09-10 00:23:26] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 00:23:27] ▶  Melanjutkan.
+[2026-09-10 00:23:28] 
+── Putaran 3 ─────────────────────────────
+[2026-09-10 00:23:28]   [FOKUS] (349,220)
+[2026-09-10 00:23:29]   [SERI] ⏭
+[2026-09-10 00:23:29]   [DI 303] 📍 y=722 | Nomor x=459  Tahun x=600  Tanggal x=780
+[2026-09-10 00:23:30]     → (459,722) '0'
+[2026-09-10 00:23:31]     → (600,722) '1990'
+[2026-09-10 00:23:32]     → (780,722) '01/01/1990'
+[2026-09-10 00:23:33]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-10 00:23:33]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-10 00:23:33]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-10 00:23:33]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-10 00:23:34]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-10 00:23:34]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 00:23:34] ✅  Putaran 3 selesai.
+[2026-09-10 00:23:34] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 00:25:53] ✅  Konfigurasi disimpan.
+[2026-09-10 00:25:53] ▶  Memulai…
+[2026-09-10 00:25:54] ════════════════════════════════════════════════════
+[2026-09-10 00:25:54]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-10 00:25:54] ════════════════════════════════════════════════════
+[2026-09-10 00:25:54] 
+── Putaran 1 ─────────────────────────────
+[2026-09-10 00:25:54]   [FOKUS] (349,220)
+[2026-09-10 00:25:54]   [SERI] ⏭
+[2026-09-10 00:25:54]   [DI 303] 📍 y=722 | Nomor x=420  Tahun x=630  Tanggal x=780
+[2026-09-10 00:25:56]     → (420,722) '0'
+[2026-09-10 00:25:57]     → (630,722) '1990'
+[2026-09-10 00:25:58]     → (780,722) '01/01/1990'
+[2026-09-10 00:25:58]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-10 00:25:58]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-10 00:25:59]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-10 00:25:59]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-10 00:25:59]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-10 00:25:59]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 00:25:59] ✅  Putaran 1 selesai.
+[2026-09-10 00:25:59] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 00:27:28] ✅  Konfigurasi disimpan.
+[2026-09-10 00:27:28] ▶  Memulai…
+[2026-09-10 00:27:29] ════════════════════════════════════════════════════
+[2026-09-10 00:27:29]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-10 00:27:29] ════════════════════════════════════════════════════
+[2026-09-10 00:27:29] 
+── Putaran 1 ─────────────────────────────
+[2026-09-10 00:27:29]   [FOKUS] (349,220)
+[2026-09-10 00:27:29]   [SERI] ⏭
+[2026-09-10 00:27:29]   [DI 303] 📍 y=722 | Nomor x=420  Tahun x=630  Tanggal x=780
+[2026-09-10 00:27:30]     → (420,722) '0'
+[2026-09-10 00:27:31]     → (630,722) '1990'
+[2026-09-10 00:27:33]     → (780,722) '01/01/1990'
+[2026-09-10 00:27:33]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-10 00:27:33]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-10 00:27:33]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-10 00:27:34]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-10 00:27:34]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-10 00:27:34]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 00:27:34] ✅  Putaran 1 selesai.
+[2026-09-10 00:27:34] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 00:28:53] ✅  Konfigurasi disimpan.
+[2026-09-10 00:28:54] ▶  Memulai…
+[2026-09-10 00:28:54] ════════════════════════════════════════════════════
+[2026-09-10 00:28:54]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-10 00:28:54] ════════════════════════════════════════════════════
+[2026-09-10 00:28:54] 
+── Putaran 1 ─────────────────────────────
+[2026-09-10 00:28:54]   [FOKUS] (349,220)
+[2026-09-10 00:28:55]   [SERI] ⏭
+[2026-09-10 00:28:55]   [DI 303] 📍 y=722 | Nomor x=420  Tahun x=630  Tanggal x=780
+[2026-09-10 00:28:56]     → (420,722) '0'
+[2026-09-10 00:28:57]     → (630,722) '1990'
+[2026-09-10 00:28:58]     → (780,722) '01/01/1990'
+[2026-09-10 00:28:59]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-10 00:28:59]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-10 00:28:59]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-10 00:28:59]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-10 00:29:00]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-10 00:29:00]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 00:29:00] ✅  Putaran 1 selesai.
+[2026-09-10 00:29:00] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 00:29:52] ✅  Konfigurasi disimpan.
+[2026-09-10 00:30:03] ✅  Konfigurasi disimpan.
+[2026-09-10 00:30:12] ↺  Reset.
+[2026-09-10 00:30:12] 
+■  Berhenti. Total putaran: 1
+[2026-09-10 00:30:12] ✅  Selesai.
+[2026-09-10 00:30:14] ✅  Konfigurasi disimpan.
+[2026-09-10 00:30:14] ▶  Memulai…
+[2026-09-10 00:30:14] ════════════════════════════════════════════════════
+[2026-09-10 00:30:14]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-10 00:30:14] ════════════════════════════════════════════════════
+[2026-09-10 00:30:14] 
+── Putaran 1 ─────────────────────────────
+[2026-09-10 00:30:14]   [FOKUS] (349,220)
+[2026-09-10 00:30:15]   [SERI] ⏭
+[2026-09-10 00:30:15]   [DI 303] 📍 y=722 | Nomor x=400  Tahun x=630  Tanggal x=780
+[2026-09-10 00:30:16]     → (400,722) '0'
+[2026-09-10 00:30:17]     → (630,722) '1990'
+[2026-09-10 00:30:18]     → (780,722) '01/01/1990'
+[2026-09-10 00:30:19]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-10 00:30:19]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-10 00:30:19]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-10 00:30:20]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-10 00:30:20]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-10 00:30:20]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 00:30:20] ✅  Putaran 1 selesai.
+[2026-09-10 00:30:20] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 00:30:27] 
+■  Berhenti. Total putaran: 1
+[2026-09-10 00:30:27] ✅  Selesai.
+[2026-09-10 00:31:04] ── Lacak Cursor 3 detik ──
+[2026-09-10 00:31:04]    🖱  x=998  y=367
+[2026-09-10 00:31:04]    🖱  x=998  y=367
+[2026-09-10 00:31:04]    🖱  x=693  y=528
+[2026-09-10 00:31:04]    🖱  x=327  y=772
+[2026-09-10 00:31:05]    🖱  x=333  y=765
+[2026-09-10 00:31:05]    🖱  x=369  y=738
+[2026-09-10 00:31:05]    🖱  x=360  y=735
+[2026-09-10 00:31:05]    🖱  x=350  y=732
+[2026-09-10 00:31:06]    🖱  x=349  y=731
+[2026-09-10 00:31:06]    🖱  x=349  y=731
+[2026-09-10 00:31:06]    🖱  x=349  y=731
+[2026-09-10 00:31:06]    🖱  x=349  y=731
+[2026-09-10 00:31:06]    🖱  x=349  y=731
+[2026-09-10 00:31:07]    🖱  x=349  y=731
+[2026-09-10 00:31:07]    🖱  x=349  y=731
+[2026-09-10 00:31:07] ── selesai ──
+[2026-09-10 00:31:10] ── Lacak Cursor 3 detik ──
+[2026-09-10 00:31:10]    🖱  x=1000  y=376
+[2026-09-10 00:31:10]    🖱  x=604  y=613
+[2026-09-10 00:31:10]    🖱  x=464  y=666
+[2026-09-10 00:31:11]    🖱  x=385  y=732
+[2026-09-10 00:31:11]    🖱  x=377  y=737
+[2026-09-10 00:31:11]    🖱  x=377  y=737
+[2026-09-10 00:31:11]    🖱  x=377  y=737
+[2026-09-10 00:31:12]    🖱  x=377  y=737
+[2026-09-10 00:31:12]    🖱  x=375  y=734
+[2026-09-10 00:31:12]    🖱  x=373  y=733
+[2026-09-10 00:31:12]    🖱  x=372  y=732
+[2026-09-10 00:31:12]    🖱  x=372  y=731
+[2026-09-10 00:31:13]    🖱  x=372  y=731
+[2026-09-10 00:31:13]    🖱  x=372  y=731
+[2026-09-10 00:31:13]    🖱  x=372  y=731
+[2026-09-10 00:31:13] ── selesai ──
+[2026-09-10 00:31:57] ── Lacak Cursor 3 detik ──
+[2026-09-10 00:31:57]    🖱  x=975  y=375
+[2026-09-10 00:31:57]    🖱  x=707  y=622
+[2026-09-10 00:31:57]    🖱  x=657  y=672
+[2026-09-10 00:31:57]    🖱  x=600  y=741
+[2026-09-10 00:31:58]    🖱  x=588  y=749
+[2026-09-10 00:31:58]    🖱  x=593  y=728
+[2026-09-10 00:31:58]    🖱  x=593  y=728
+[2026-09-10 00:31:58]    🖱  x=593  y=728
+[2026-09-10 00:31:59]    🖱  x=593  y=728
+[2026-09-10 00:31:59]    🖱  x=593  y=728
+[2026-09-10 00:31:59]    🖱  x=593  y=728
+[2026-09-10 00:31:59]    🖱  x=593  y=728
+[2026-09-10 00:31:59]    🖱  x=593  y=728
+[2026-09-10 00:32:00]    🖱  x=593  y=728
+[2026-09-10 00:32:00]    🖱  x=593  y=728
+[2026-09-10 00:32:00] ── selesai ──
+[2026-09-10 00:32:14] ── Lacak Cursor 3 detik ──
+[2026-09-10 00:32:14]    🖱  x=979  y=377
+[2026-09-10 00:32:14]    🖱  x=898  y=559
+[2026-09-10 00:32:15]    🖱  x=854  y=657
+[2026-09-10 00:32:15]    🖱  x=833  y=708
+[2026-09-10 00:32:15]    🖱  x=824  y=723
+[2026-09-10 00:32:15]    🖱  x=821  y=728
+[2026-09-10 00:32:15]    🖱  x=820  y=730
+[2026-09-10 00:32:16]    🖱  x=820  y=730
+[2026-09-10 00:32:16]    🖱  x=820  y=730
+[2026-09-10 00:32:16]    🖱  x=820  y=730
+[2026-09-10 00:32:16]    🖱  x=820  y=730
+[2026-09-10 00:32:17]    🖱  x=820  y=730
+[2026-09-10 00:32:17]    🖱  x=820  y=730
+[2026-09-10 00:32:17]    🖱  x=820  y=730
+[2026-09-10 00:32:17]    🖱  x=820  y=730
+[2026-09-10 00:32:17] ── selesai ──
+[2026-09-10 00:32:27] ✅  Konfigurasi disimpan.
+[2026-09-10 00:32:32] ✅  Konfigurasi disimpan.
+[2026-09-10 00:32:32] ▶  Memulai…
+[2026-09-10 00:32:32] ════════════════════════════════════════════════════
+[2026-09-10 00:32:32]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-10 00:32:33] ════════════════════════════════════════════════════
+[2026-09-10 00:32:33] 
+── Putaran 1 ─────────────────────────────
+[2026-09-10 00:32:33]   [FOKUS] (349,220)
+[2026-09-10 00:32:33]   [SERI] ⏭
+[2026-09-10 00:32:33]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 00:32:34]     → (372,730) '0'
+[2026-09-10 00:32:36]     → (590,730) '1990'
+[2026-09-10 00:32:37]     → (810,730) '01/01/1990'
+[2026-09-10 00:32:37]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-10 00:32:37]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-10 00:32:38]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-10 00:32:38]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-10 00:32:38]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-10 00:32:38]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 00:32:38] ✅  Putaran 1 selesai.
+[2026-09-10 00:32:38] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 00:34:10] ── Lacak Cursor 3 detik ──
+[2026-09-10 00:34:10]    🖱  x=999  y=367
+[2026-09-10 00:34:10]    🖱  x=782  y=429
+[2026-09-10 00:34:10]    🖱  x=562  y=501
+[2026-09-10 00:34:11]    🖱  x=435  y=578
+[2026-09-10 00:34:11]    🖱  x=430  y=581
+[2026-09-10 00:34:11]    🖱  x=388  y=603
+[2026-09-10 00:34:11]    🖱  x=380  y=609
+[2026-09-10 00:34:12]    🖱  x=375  y=615
+[2026-09-10 00:34:12]    🖱  x=375  y=615
+[2026-09-10 00:34:12]    🖱  x=375  y=615
+[2026-09-10 00:34:12]    🖱  x=375  y=615
+[2026-09-10 00:34:12]    🖱  x=375  y=615
+[2026-09-10 00:34:13]    🖱  x=375  y=615
+[2026-09-10 00:34:13]    🖱  x=371  y=613
+[2026-09-10 00:34:13]    🖱  x=370  y=612
+[2026-09-10 00:34:13] ── selesai ──
+[2026-09-10 00:51:23] ✅  Konfigurasi disimpan.
+[2026-09-10 00:51:23] ▶  Memulai…
+[2026-09-10 00:51:24] ════════════════════════════════════════════════════
+[2026-09-10 00:51:24]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-10 00:51:24] ════════════════════════════════════════════════════
+[2026-09-10 00:51:24] 
+── Putaran 1 ─────────────────────────────
+[2026-09-10 00:51:24]   [FOKUS] (349,220)
+[2026-09-10 00:51:24]   [SERI] ⏭
+[2026-09-10 00:51:24]   [PENOMORAN] Tgl. Penemoran (370,612) → '15/08/2017'
+[2026-09-10 00:51:25]     → (370,612) '15/08/2017'
+[2026-09-10 00:51:25]   [PENOMORAN] ✅
+[2026-09-10 00:51:25]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 00:51:26]     → (372,730) '0'
+[2026-09-10 00:51:28]     → (590,730) '1990'
+[2026-09-10 00:51:29]     → (810,730) '01/01/1990'
+[2026-09-10 00:51:29]   [DETAIL] Tab 1x menuju Keadaan Tanah…
+[2026-09-10 00:51:29]   [Keadaan Tanah] ⏭  Skip — Tab 1x.
+[2026-09-10 00:51:30]   [Tanda-Tanda Batas] ⏭  Skip — Tab 1x.
+[2026-09-10 00:51:30]   [Pengukuran dan Pemetaan] ⏭  Skip — Tab 1x.
+[2026-09-10 00:51:30]   [Hal Lain-Lain] ⏭  Skip — Tab 1x.
+[2026-09-10 00:51:30]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 00:51:30] ✅  Putaran 1 selesai.
+[2026-09-10 00:51:30] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 00:51:31] 
+■  Berhenti. Total putaran: 1
+[2026-09-10 00:51:31] ✅  Selesai.
+[2026-09-10 00:53:49] ── Lacak Cursor 3 detik ──
+[2026-09-10 00:53:49]    🖱  x=912  y=328
+[2026-09-10 00:53:49]    🖱  x=912  y=328
+[2026-09-10 00:53:50]    🖱  x=597  y=621
+[2026-09-10 00:53:50]    🖱  x=587  y=630
+[2026-09-10 00:53:50]    🖱  x=437  y=772
+[2026-09-10 00:53:50]    🖱  x=385  y=816
+[2026-09-10 00:53:50]    🖱  x=376  y=832
+[2026-09-10 00:53:51]    🖱  x=376  y=832
+[2026-09-10 00:53:51]    🖱  x=376  y=832
+[2026-09-10 00:53:51]    🖱  x=376  y=832
+[2026-09-10 00:53:51]    🖱  x=374  y=832
+[2026-09-10 00:53:51]    🖱  x=370  y=832
+[2026-09-10 00:53:52]    🖱  x=370  y=832
+[2026-09-10 00:53:52]    🖱  x=370  y=832
+[2026-09-10 00:53:52]    🖱  x=370  y=832
+[2026-09-10 00:53:52] ── selesai ──
+[2026-09-10 00:56:12] ── Lacak Cursor 3 detik ──
+[2026-09-10 00:56:12]    🖱  x=901  y=344
+[2026-09-10 00:56:13]    🖱  x=532  y=816
+[2026-09-10 00:56:13]    🖱  x=468  y=853
+[2026-09-10 00:56:13]    🖱  x=385  y=911
+[2026-09-10 00:56:13]    🖱  x=375  y=919
+[2026-09-10 00:56:14]    🖱  x=375  y=919
+[2026-09-10 00:56:14]    🖱  x=375  y=919
+[2026-09-10 00:56:14]    🖱  x=374  y=920
+[2026-09-10 00:56:14]    🖱  x=371  y=925
+[2026-09-10 00:56:14]    🖱  x=370  y=926
+[2026-09-10 00:56:15]    🖱  x=368  y=927
+[2026-09-10 00:56:15]    🖱  x=368  y=927
+[2026-09-10 00:56:15]    🖱  x=368  y=928
+[2026-09-10 00:56:15]    🖱  x=368  y=928
+[2026-09-10 00:56:16]    🖱  x=368  y=928
+[2026-09-10 00:56:16] ── selesai ──
+[2026-09-10 00:56:54] ── Lacak Cursor 3 detik ──
+[2026-09-10 00:56:54]    🖱  x=934  y=337
+[2026-09-10 00:56:55]    🖱  x=478  y=786
+[2026-09-10 00:56:55]    🖱  x=478  y=786
+[2026-09-10 00:56:55]    🖱  x=381  y=865
+[2026-09-10 00:56:55]    🖱  x=378  y=881
+[2026-09-10 00:56:55]    🖱  x=373  y=881
+[2026-09-10 00:56:56]    🖱  x=373  y=881
+[2026-09-10 00:56:56]    🖱  x=373  y=881
+[2026-09-10 00:56:56]    🖱  x=373  y=881
+[2026-09-10 00:56:56]    🖱  x=373  y=881
+[2026-09-10 00:56:57]    🖱  x=373  y=881
+[2026-09-10 00:56:57]    🖱  x=373  y=881
+[2026-09-10 00:56:57]    🖱  x=373  y=881
+[2026-09-10 00:56:57]    🖱  x=373  y=881
+[2026-09-10 00:56:57]    🖱  x=373  y=881
+[2026-09-10 00:56:58] ── selesai ──
+[2026-09-10 00:57:44] ── Lacak Cursor 3 detik ──
+[2026-09-10 00:57:44]    🖱  x=971  y=340
+[2026-09-10 00:57:44]    🖱  x=509  y=727
+[2026-09-10 00:57:45]    🖱  x=431  y=825
+[2026-09-10 00:57:45]    🖱  x=398  y=856
+[2026-09-10 00:57:45]    🖱  x=379  y=877
+[2026-09-10 00:57:45]    🖱  x=372  y=879
+[2026-09-10 00:57:46]    🖱  x=369  y=880
+[2026-09-10 00:57:46]    🖱  x=369  y=880
+[2026-09-10 00:57:46]    🖱  x=369  y=880
+[2026-09-10 00:57:46]    🖱  x=369  y=880
+[2026-09-10 00:57:46]    🖱  x=369  y=880
+[2026-09-10 00:57:47]    🖱  x=369  y=880
+[2026-09-10 00:57:47]    🖱  x=369  y=880
+[2026-09-10 00:57:47]    🖱  x=369  y=880
+[2026-09-10 00:57:47]    🖱  x=369  y=880
+[2026-09-10 00:57:48] ── selesai ──
+[2026-09-10 00:59:41] ── Lacak Cursor 3 detik ──
+[2026-09-10 00:59:41]    🖱  x=913  y=345
+[2026-09-10 00:59:41]    🖱  x=913  y=345
+[2026-09-10 00:59:41]    🖱  x=418  y=763
+[2026-09-10 00:59:41]    🖱  x=386  y=821
+[2026-09-10 00:59:42]    🖱  x=369  y=873
+[2026-09-10 00:59:42]    🖱  x=369  y=881
+[2026-09-10 00:59:42]    🖱  x=369  y=882
+[2026-09-10 00:59:42]    🖱  x=369  y=882
+[2026-09-10 00:59:42]    🖱  x=369  y=882
+[2026-09-10 00:59:43]    🖱  x=369  y=882
+[2026-09-10 00:59:43]    🖱  x=369  y=882
+[2026-09-10 00:59:43]    🖱  x=369  y=882
+[2026-09-10 00:59:43]    🖱  x=369  y=882
+[2026-09-10 00:59:44]    🖱  x=369  y=882
+[2026-09-10 00:59:44]    🖱  x=369  y=882
+[2026-09-10 00:59:44] ── selesai ──
+[2026-09-10 01:00:05] ── Lacak Cursor 3 detik ──
+[2026-09-10 01:00:05]    🖱  x=958  y=344
+[2026-09-10 01:00:05]    🖱  x=519  y=797
+[2026-09-10 01:00:05]    🖱  x=510  y=816
+[2026-09-10 01:00:05]    🖱  x=416  y=923
+[2026-09-10 01:00:06]    🖱  x=396  y=951
+[2026-09-10 01:00:06]    🖱  x=382  y=938
+[2026-09-10 01:00:06]    🖱  x=373  y=933
+[2026-09-10 01:00:06]    🖱  x=371  y=931
+[2026-09-10 01:00:07]    🖱  x=369  y=928
+[2026-09-10 01:00:07]    🖱  x=368  y=928
+[2026-09-10 01:00:07]    🖱  x=368  y=928
+[2026-09-10 01:00:07]    🖱  x=368  y=928
+[2026-09-10 01:00:07]    🖱  x=368  y=928
+[2026-09-10 01:00:08]    🖱  x=368  y=928
+[2026-09-10 01:00:08]    🖱  x=368  y=928
+[2026-09-10 01:00:08] ── selesai ──
+[2026-09-10 01:04:22] ── Lacak Cursor 3 detik ──
+[2026-09-10 01:04:22]    🖱  x=904  y=340
+[2026-09-10 01:04:23]    🖱  x=904  y=340
+[2026-09-10 01:04:23]    🖱  x=527  y=795
+[2026-09-10 01:04:23]    🖱  x=509  y=838
+[2026-09-10 01:04:23]    🖱  x=392  y=975
+[2026-09-10 01:04:23]    🖱  x=377  y=986
+[2026-09-10 01:04:24]    🖱  x=371  y=983
+[2026-09-10 01:04:24]    🖱  x=370  y=981
+[2026-09-10 01:04:24]    🖱  x=370  y=981
+[2026-09-10 01:04:24]    🖱  x=370  y=981
+[2026-09-10 01:04:25]    🖱  x=370  y=981
+[2026-09-10 01:04:25]    🖱  x=370  y=981
+[2026-09-10 01:04:25]    🖱  x=370  y=981
+[2026-09-10 01:04:25]    🖱  x=370  y=981
+[2026-09-10 01:04:25]    🖱  x=370  y=981
+[2026-09-10 01:04:26] ── selesai ──
+[2026-09-10 02:03:46] ✅  Konfigurasi disimpan.
+[2026-09-10 02:03:46] ▶  Memulai…
+[2026-09-10 02:03:46] ════════════════════════════════════════════════════
+[2026-09-10 02:03:46]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-10 02:03:46] ════════════════════════════════════════════════════
+[2026-09-10 02:03:46] 
+── Putaran 1 ─────────────────────────────
+[2026-09-10 02:03:46]   [FOKUS] (349,220)
+[2026-09-10 02:03:47]   [PENOMORAN] ⏭  Dilewati.
+[2026-09-10 02:03:47]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 02:03:48]     → (372,730) '0'
+[2026-09-10 02:03:49]     → (590,730) '1990'
+[2026-09-10 02:03:50]     → (810,730) '01/01/1990'
+[2026-09-10 02:03:52]     → (373,881) 'Sebidang tanah bekas pertanian'
+[2026-09-10 02:03:52]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 02:03:53]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 02:03:53]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 02:03:54]   [Penunjukan dan Penetapan Batas] Nama diambil: '-'
+[2026-09-10 02:03:54]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+- (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 02:03:54]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 02:03:55]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 02:03:55]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 02:03:56]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 02:03:56] ✅  Putaran 1 selesai.
+[2026-09-10 02:03:56] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 05:53:46] ✅  Konfigurasi disimpan.
+[2026-09-10 05:53:46] ▶  Memulai…
+[2026-09-10 05:53:47] ════════════════════════════════════════════════════
+[2026-09-10 05:53:47]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-10 05:53:47] ════════════════════════════════════════════════════
+[2026-09-10 05:53:47] 
+── Putaran 1 ─────────────────────────────
+[2026-09-10 05:53:47]   [FOKUS] (349,220)
+[2026-09-10 05:53:48]   [PENOMORAN] ⏭  Dilewati.
+[2026-09-10 05:53:48]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 05:53:49]     → (372,730) '0'
+[2026-09-10 05:53:50]     → (590,730) '1990'
+[2026-09-10 05:53:51]     → (810,730) '01/01/1990'
+[2026-09-10 05:53:53]     → (373,881) 'Sebidang tanah bekas pertanian'
+[2026-09-10 05:53:53]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 05:53:54]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 05:53:54]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 05:53:55]   [Penunjukan dan Penetapan Batas] Nama diambil: ''
+[2026-09-10 05:53:55]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+ (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 05:53:55]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 05:53:56]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 05:53:56]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 05:53:56]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 05:53:56] ✅  Putaran 1 selesai.
+[2026-09-10 05:53:56] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 05:54:15] ▶  Melanjutkan.
+[2026-09-10 05:54:16] 
+── Putaran 2 ─────────────────────────────
+[2026-09-10 05:54:16]   [FOKUS] (349,220)
+[2026-09-10 05:54:16]   [PENOMORAN] ⏭  Dilewati.
+[2026-09-10 05:54:16]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 05:54:17]     → (372,730) '0'
+[2026-09-10 05:54:18]     → (590,730) '1990'
+[2026-09-10 05:54:19]     → (810,730) '01/01/1990'
+[2026-09-10 05:54:21]     → (373,881) 'Sebidang tanah bekas pertanian'
+[2026-09-10 05:54:21]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 05:54:22]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 05:54:22]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 05:54:23]   [Penunjukan dan Penetapan Batas] Nama diambil: ''
+[2026-09-10 05:54:23]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+ (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 05:54:24]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 05:54:25]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 05:54:25]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 05:54:25]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 05:54:25] ✅  Putaran 2 selesai.
+[2026-09-10 05:54:25] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 05:54:27] ▶  Melanjutkan.
+[2026-09-10 05:54:27] 
+── Putaran 3 ─────────────────────────────
+[2026-09-10 05:54:27]   [FOKUS] (349,220)
+[2026-09-10 05:54:27]   [PENOMORAN] ⏭  Dilewati.
+[2026-09-10 05:54:27]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 05:54:28]     → (372,730) '0'
+[2026-09-10 05:54:29]     → (590,730) '1990'
+[2026-09-10 05:54:31]     → (810,730) '01/01/1990'
+[2026-09-10 05:54:32]     → (373,881) 'Sebidang tanah bekas pertanian'
+[2026-09-10 05:54:32]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 05:54:33]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 05:54:33]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 05:54:33] ⏸  Dijeda.
+[2026-09-10 05:54:34]   [Penunjukan dan Penetapan Batas] Nama diambil: 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 05:54:34]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1. (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 05:54:35]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 05:54:36]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 05:54:36]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 05:54:36]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 05:54:36] ✅  Putaran 3 selesai.
+[2026-09-10 05:54:36] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 05:54:46] ▶  Melanjutkan.
+[2026-09-10 05:54:47] 
+── Putaran 4 ─────────────────────────────
+[2026-09-10 05:54:47]   [FOKUS] (349,220)
+[2026-09-10 05:54:48]   [PENOMORAN] ⏭  Dilewati.
+[2026-09-10 05:54:48]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 05:54:49]     → (372,730) '0'
+[2026-09-10 05:54:50] ⏸  Dijeda.
+[2026-09-10 05:54:50]     → (590,730) '1990'
+[2026-09-10 05:54:51]     → (810,730) '01/01/1990'
+[2026-09-10 05:54:53]     → (373,881) 'Sebidang tanah bekas pertanian'
+[2026-09-10 05:54:53]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 05:54:54]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 05:54:54]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 05:54:55]   [Penunjukan dan Penetapan Batas] Nama diambil: ''
+[2026-09-10 05:54:55]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+ (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 05:54:55]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 05:54:56]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 05:54:56]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 05:54:56]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 05:54:56] ✅  Putaran 4 selesai.
+[2026-09-10 05:54:56] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 05:54:57] ▶  Melanjutkan.
+[2026-09-10 05:54:58] 
+── Putaran 5 ─────────────────────────────
+[2026-09-10 05:54:58]   [FOKUS] (349,220)
+[2026-09-10 05:54:59]   [PENOMORAN] ⏭  Dilewati.
+[2026-09-10 05:54:59]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 05:55:00]     → (372,730) '0'
+[2026-09-10 05:55:00] ⏸  Dijeda.
+[2026-09-10 05:55:01]     → (590,730) '1990'
+[2026-09-10 05:55:02]     → (810,730) '01/01/1990'
+[2026-09-10 05:55:03]     → (373,881) 'Sebidang tanah bekas pertanian'
+[2026-09-10 05:55:04]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 05:55:05]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 05:55:05]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 05:55:05] ▶  Melanjutkan.
+[2026-09-10 05:55:06]   [Penunjukan dan Penetapan Batas] Nama diambil: ''
+[2026-09-10 05:55:06]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+ (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 05:55:06]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 05:55:07]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 05:55:07]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 05:55:07]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 05:55:07] ✅  Putaran 5 selesai.
+[2026-09-10 05:55:07] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 05:55:31] ▶  Melanjutkan.
+[2026-09-10 05:55:32] 
+── Putaran 6 ─────────────────────────────
+[2026-09-10 05:55:32]   [FOKUS] (349,220)
+[2026-09-10 05:55:32]   [PENOMORAN] ⏭  Dilewati.
+[2026-09-10 05:55:32]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 05:55:33]     → (372,730) '0'
+[2026-09-10 05:55:34]     → (590,730) '1990'
+[2026-09-10 05:55:35]     → (810,730) '01/01/1990'
+[2026-09-10 05:55:36] ⏸  Dijeda.
+[2026-09-10 05:55:37]     → (373,881) 'Sebidang tanah bekas pertanian'
+[2026-09-10 05:55:37]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 05:55:38]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 05:55:38]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 05:55:39]   [Penunjukan dan Penetapan Batas] Nama diambil: ''
+[2026-09-10 05:55:39]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+ (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 05:55:39]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 05:55:40] ▶  Melanjutkan.
+[2026-09-10 05:55:41]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 05:55:41]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 05:55:41]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 05:55:41] ✅  Putaran 6 selesai.
+[2026-09-10 05:55:41] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 05:58:11] ▶  Melanjutkan.
+[2026-09-10 05:58:11] 
+── Putaran 7 ─────────────────────────────
+[2026-09-10 05:58:11]   [FOKUS] (349,220)
+[2026-09-10 05:58:12]   [PENOMORAN] ⏭  Dilewati.
+[2026-09-10 05:58:12]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 05:58:13]     → (372,730) '0'
+[2026-09-10 05:58:14]     → (590,730) '1990'
+[2026-09-10 05:58:15]     → (810,730) '01/01/1990'
+[2026-09-10 05:58:17]     → (373,881) 'Sebidang tanah bekas pertanian'
+[2026-09-10 05:58:17]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 05:58:18] ⏸  Dijeda.
+[2026-09-10 05:58:18]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 05:58:18]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 05:58:19]   [Penunjukan dan Penetapan Batas] Nama diambil: 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 05:58:19]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1. (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 05:58:19]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 05:58:20]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 05:58:20]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 05:58:20]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 05:58:20] ✅  Putaran 7 selesai.
+[2026-09-10 05:58:20] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 05:58:21] ▶  Melanjutkan.
+[2026-09-10 05:58:22] 
+── Putaran 8 ─────────────────────────────
+[2026-09-10 05:58:23]   [FOKUS] (349,220)
+[2026-09-10 05:58:23]   [PENOMORAN] ⏭  Dilewati.
+[2026-09-10 05:58:23]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 05:58:24]     → (372,730) '0'
+[2026-09-10 05:58:25]     → (590,730) '1990'
+[2026-09-10 05:58:26]     → (810,730) '01/01/1990'
+[2026-09-10 05:58:28]     → (373,881) 'Sebidang tanah bekas pertanian'
+[2026-09-10 05:58:28]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 05:58:29]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 05:58:29]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 05:58:30]   [Penunjukan dan Penetapan Batas] Nama diambil: 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 05:58:30]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1. (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 05:58:31]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 05:58:32]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 05:58:32]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 05:58:32]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 05:58:32] ✅  Putaran 8 selesai.
+[2026-09-10 05:58:32] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 08:37:55] ▶  Melanjutkan.
+[2026-09-10 08:37:55] 
+── Putaran 9 ─────────────────────────────
+[2026-09-10 08:37:55]   [FOKUS] (349,220)
+[2026-09-10 08:37:55] ⏸  Dijeda.
+[2026-09-10 08:37:56] ▶  Melanjutkan.
+[2026-09-10 08:37:56] ⏸  Dijeda.
+[2026-09-10 08:37:56]   [PENOMORAN] ⏭  Dilewati.
+[2026-09-10 08:38:02] ▶  Melanjutkan.
+[2026-09-10 08:38:02]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 08:38:03] ⏸  Dijeda.
+[2026-09-10 08:38:03] ▶  Melanjutkan.
+[2026-09-10 08:38:04]     → (372,730) '0'
+[2026-09-10 08:38:05]     → (590,730) '1990'
+[2026-09-10 08:38:06]     → (810,730) '01/01/1990'
+[2026-09-10 08:38:07] ⏸  Dijeda.
+[2026-09-10 08:38:08]     → (373,881) 'Sebidang tanah bekas pertanian'
+[2026-09-10 08:38:08]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 08:38:09]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 08:38:09]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 08:38:10]   [Penunjukan dan Penetapan Batas] Nama diambil: 'Kementerian Agraria dan Tata Ruang / Badan Pertanahan Nasional'
+[2026-09-10 08:38:10]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+Kementerian Agraria dan Tata Ruang / Badan Pertanahan Nasional (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 08:38:10]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 08:38:12]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 08:38:12]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 08:38:12]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 08:38:12] ✅  Putaran 9 selesai.
+[2026-09-10 08:38:12] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 08:38:14] ▶  Melanjutkan.
+[2026-09-10 08:38:15] 
+── Putaran 10 ─────────────────────────────
+[2026-09-10 08:38:15]   [FOKUS] (349,220)
+[2026-09-10 08:38:16]   [PENOMORAN] ⏭  Dilewati.
+[2026-09-10 08:38:16]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 08:38:17] ⏸  Dijeda.
+[2026-09-10 08:38:17]     → (372,730) '0'
+[2026-09-10 08:38:18]     → (590,730) '1990'
+[2026-09-10 08:38:20]     → (810,730) '01/01/1990'
+[2026-09-10 08:38:21] ▶  Melanjutkan.
+[2026-09-10 08:38:21]     → (373,881) 'Sebidang tanah bekas pertanian'
+[2026-09-10 08:38:21]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 08:38:22]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 08:38:23]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 08:38:23] ⏸  Dijeda.
+[2026-09-10 08:38:23]   [Penunjukan dan Penetapan Batas] Nama diambil: 'Kementerian Agraria dan Tata Ruang / Badan Pertanahan Nasional'
+[2026-09-10 08:38:24]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+Kementerian Agraria dan Tata Ruang / Badan Pertanahan Nasional (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 08:38:24]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 08:38:25]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 08:38:25]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 08:38:25]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 08:38:26] ✅  Putaran 10 selesai.
+[2026-09-10 08:38:26] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 08:51:18] ✅  Konfigurasi disimpan.
+[2026-09-10 08:51:18] ▶  Memulai…
+[2026-09-10 08:51:20] ════════════════════════════════════════════════════
+[2026-09-10 08:51:20]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-10 08:51:20] ════════════════════════════════════════════════════
+[2026-09-10 08:51:20] 
+── Putaran 1 ─────────────────────────────
+[2026-09-10 08:51:20]   [FOKUS] (349,220)
+[2026-09-10 08:51:21]   [PENOMORAN] ⏭  Dilewati.
+[2026-09-10 08:51:21]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 08:51:22]     → (372,730) '0'
+[2026-09-10 08:51:23]     → (590,730) '1990'
+[2026-09-10 08:51:24]     → (810,730) '01/01/1990'
+[2026-09-10 08:51:26]     → (373,881) 'Sebidang tanah bekas pertanian'
+[2026-09-10 08:51:26]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 08:51:27]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 08:51:27]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 08:51:28]   [Penunjukan dan Penetapan Batas] Nama diambil: 'MUSTOFA'
+[2026-09-10 08:51:28]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+MUSTOFA (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 08:51:28]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 08:51:29]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 08:51:29]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 08:51:29]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 08:51:29] ✅  Putaran 1 selesai.
+[2026-09-10 08:51:29] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 08:52:02] ── Lacak Cursor 3 detik ──
+[2026-09-10 08:52:02]    🖱  x=937  y=366
+[2026-09-10 08:52:03]    🖱  x=937  y=366
+[2026-09-10 08:52:03]    🖱  x=488  y=711
+[2026-09-10 08:52:03]    🖱  x=405  y=755
+[2026-09-10 08:52:03]    🖱  x=391  y=732
+[2026-09-10 08:52:03]    🖱  x=383  y=725
+[2026-09-10 08:52:04]    🖱  x=380  y=730
+[2026-09-10 08:52:04]    🖱  x=388  y=796
+[2026-09-10 08:52:04]    🖱  x=379  y=821
+[2026-09-10 08:52:04]    🖱  x=377  y=825
+[2026-09-10 08:52:05]    🖱  x=377  y=825
+[2026-09-10 08:52:05]    🖱  x=377  y=825
+[2026-09-10 08:52:05]    🖱  x=377  y=825
+[2026-09-10 08:52:05]    🖱  x=377  y=825
+[2026-09-10 08:52:06]    🖱  x=377  y=825
+[2026-09-10 08:52:06] ── selesai ──
+[2026-09-10 08:52:36] ▶  Melanjutkan.
+[2026-09-10 08:52:36] 
+── Putaran 2 ─────────────────────────────
+[2026-09-10 08:52:36]   [FOKUS] (349,220)
+[2026-09-10 08:52:37]   [PENOMORAN] ⏭  Dilewati.
+[2026-09-10 08:52:37]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 08:52:38]     → (372,730) '0'
+[2026-09-10 08:52:39]     → (590,730) '1990'
+[2026-09-10 08:52:41]     → (810,730) '01/01/1990'
+[2026-09-10 08:52:42]     → (373,881) 'Sebidang tanah bekas pertanian'
+[2026-09-10 08:52:42]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 08:52:43]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 08:52:43]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 08:52:44]   [Penunjukan dan Penetapan Batas] Nama diambil: 'MUSTOFA'
+[2026-09-10 08:52:44]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+MUSTOFA (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 08:52:45]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 08:52:46]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 08:52:46]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 08:52:46]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 08:52:46] ✅  Putaran 2 selesai.
+[2026-09-10 08:52:46] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 08:53:19] ✅  Konfigurasi disimpan.
+[2026-09-10 08:53:43] ↺  Reset.
+[2026-09-10 08:53:43] 
+■  Berhenti. Total putaran: 2
+[2026-09-10 08:53:43] ✅  Selesai.
+[2026-09-10 08:53:46] ✅  Konfigurasi disimpan.
+[2026-09-10 08:53:46] ▶  Memulai…
+[2026-09-10 08:53:46] ════════════════════════════════════════════════════
+[2026-09-10 08:53:46]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-10 08:53:46] ════════════════════════════════════════════════════
+[2026-09-10 08:53:46] 
+── Putaran 1 ─────────────────────────────
+[2026-09-10 08:53:46]   [FOKUS] (349,220)
+[2026-09-10 08:53:47]   [PENOMORAN] ⏭  Dilewati.
+[2026-09-10 08:53:47]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 08:53:48]     → (372,730) '0'
+[2026-09-10 08:53:49]     → (590,730) '1990'
+[2026-09-10 08:53:51]     → (810,730) '01/01/1990'
+[2026-09-10 08:53:52]     → (377,825) 'Sebidang tanah bekas pertanian'
+[2026-09-10 08:53:52]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 08:53:53]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 08:53:53]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 08:53:54]   [Penunjukan dan Penetapan Batas] Nama diambil: 'MUSTOFA'
+[2026-09-10 08:53:54]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+MUSTOFA (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 08:53:55]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 08:53:56]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 08:53:56]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 08:53:56]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 08:53:56] ✅  Putaran 1 selesai.
+[2026-09-10 08:53:56] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 08:54:52] ▶  Melanjutkan.
+[2026-09-10 08:54:52] 
+── Putaran 2 ─────────────────────────────
+[2026-09-10 08:54:52]   [FOKUS] (349,220)
+[2026-09-10 08:54:53]   [PENOMORAN] ⏭  Dilewati.
+[2026-09-10 08:54:53]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 08:54:54]     → (372,730) '0'
+[2026-09-10 08:54:55]     → (590,730) '1990'
+[2026-09-10 08:54:56]     → (810,730) '01/01/1990'
+[2026-09-10 08:54:58]     → (377,825) 'Sebidang tanah bekas pertanian'
+[2026-09-10 08:54:58]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 08:54:59]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 08:54:59]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 08:55:00]   [Penunjukan dan Penetapan Batas] Nama diambil: 'Anggit'
+[2026-09-10 08:55:00]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+Anggit (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 08:55:00]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 08:55:02]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 08:55:02]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 08:55:02]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 08:55:02] ✅  Putaran 2 selesai.
+[2026-09-10 08:55:02] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 09:02:15] ↺  Reset.
+[2026-09-10 09:02:15] 
+■  Berhenti. Total putaran: 2
+[2026-09-10 09:02:15] ✅  Selesai.
+[2026-09-10 09:02:25] ✅  Konfigurasi disimpan.
+[2026-09-10 09:02:25] ▶  Memulai…
+[2026-09-10 09:02:25] ════════════════════════════════════════════════════
+[2026-09-10 09:02:25]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-10 09:02:25] ════════════════════════════════════════════════════
+[2026-09-10 09:02:25] 
+── Putaran 1 ─────────────────────────────
+[2026-09-10 09:02:25]   [FOKUS] (349,220)
+[2026-09-10 09:02:26]   [PENOMORAN] Tgl. Penemoran (370,612) → '01/01/1900'
+[2026-09-10 09:02:27]     → (370,612) '01/01/1900'
+[2026-09-10 09:02:27]   [PENOMORAN] ✅
+[2026-09-10 09:02:27]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 09:02:28]     → (372,730) '0'
+[2026-09-10 09:02:29]     → (590,730) '1990'
+[2026-09-10 09:02:31]     → (810,730) '01/01/1990'
+[2026-09-10 09:02:32]     → (377,825) 'Sebidang tanah bekas pertanian'
+[2026-09-10 09:02:32]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 09:02:33]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 09:02:33]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 09:02:34]   [Penunjukan dan Penetapan Batas] Nama diambil: 'Anggit'
+[2026-09-10 09:02:34]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+Anggit (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 09:02:35]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 09:02:36]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 09:02:36]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 09:02:36]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 09:02:36] ✅  Putaran 1 selesai.
+[2026-09-10 09:02:36] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 09:12:04] ✅  Konfigurasi disimpan.
+[2026-09-10 09:26:02] ✅  Konfigurasi disimpan.
+[2026-09-10 09:26:38] ✅  Konfigurasi disimpan.
+[2026-09-10 09:26:38] ▶  Memulai…
+[2026-09-10 09:26:39] ════════════════════════════════════════════════════
+[2026-09-10 09:26:39]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-10 09:26:39] ════════════════════════════════════════════════════
+[2026-09-10 09:26:39] 
+── Putaran 1 ─────────────────────────────
+[2026-09-10 09:26:39]   [FOKUS] (349,220)
+[2026-09-10 09:26:39]   [PENOMORAN] Tgl. Penemoran (370,612) → '01/01/1900'
+[2026-09-10 09:26:40]     → (370,612) '01/01/1900'
+[2026-09-10 09:26:40]   [PENOMORAN] ✅
+[2026-09-10 09:26:40]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 09:26:41]     → (372,730) '0'
+[2026-09-10 09:26:42]     → (590,730) '1990'
+[2026-09-10 09:26:44]     → (810,730) '01/01/1990'
+[2026-09-10 09:26:45]     → (377,825) 'Sebidang tanah bekas pertanian'
+[2026-09-10 09:26:45]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 09:26:46]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 09:26:46]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 09:26:47]   [Penunjukan dan Penetapan Batas] Nama diambil: 'Angun'
+[2026-09-10 09:26:47]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+Angun (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 09:26:48]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 09:26:49]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 09:26:49]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 09:26:49]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 09:26:49] ✅  Putaran 1 selesai.
+[2026-09-10 09:26:49] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 09:27:22] ✅  Konfigurasi disimpan.
+[2026-09-10 09:27:27] ▶  Melanjutkan.
+[2026-09-10 09:27:27] 
+── Putaran 2 ─────────────────────────────
+[2026-09-10 09:27:27]   [FOKUS] (349,220)
+[2026-09-10 09:27:27]   [PENOMORAN] Tgl. Penemoran (370,612) → '01/01/1900'
+[2026-09-10 09:27:28]     → (370,612) '01/01/1900'
+[2026-09-10 09:27:28]   [PENOMORAN] ✅
+[2026-09-10 09:27:28]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 09:27:29]     → (372,730) '0'
+[2026-09-10 09:27:31]     → (590,730) '1990'
+[2026-09-10 09:27:32]     → (810,730) '01/01/1990'
+[2026-09-10 09:27:33]     → (377,825) 'Sebidang tanah bekas pertanian'
+[2026-09-10 09:27:33]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 09:27:35]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 09:27:35]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 09:27:35]   [Penunjukan dan Penetapan Batas] Nama diambil: 'Angun'
+[2026-09-10 09:27:35]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+Angun (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 09:27:36]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 09:27:37]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 09:27:37]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 09:27:37]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 09:27:37] ✅  Putaran 2 selesai.
+[2026-09-10 09:27:37] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 09:27:41] ▶  Melanjutkan.
+[2026-09-10 09:27:41] 
+── Putaran 3 ─────────────────────────────
+[2026-09-10 09:27:41]   [FOKUS] (349,220)
+[2026-09-10 09:27:41]   [PENOMORAN] Tgl. Penemoran (370,612) → '01/01/1900'
+[2026-09-10 09:27:43]     → (370,612) '01/01/1900'
+[2026-09-10 09:27:43]   [PENOMORAN] ✅
+[2026-09-10 09:27:43]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 09:27:44]     → (372,730) '0'
+[2026-09-10 09:27:45]     → (590,730) '1990'
+[2026-09-10 09:27:46]     → (810,730) '01/01/1990'
+[2026-09-10 09:27:48]     → (377,825) 'Sebidang tanah bekas pertanian'
+[2026-09-10 09:27:48]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 09:27:49]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 09:27:49]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 09:27:50]   [Penunjukan dan Penetapan Batas] Nama diambil: 'Angun'
+[2026-09-10 09:27:50]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+Angun (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 09:27:50]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 09:27:51]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 09:27:51]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 09:27:51]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 09:27:51] ✅  Putaran 3 selesai.
+[2026-09-10 09:27:51] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 09:28:00] ▶  Melanjutkan.
+[2026-09-10 09:28:00] 
+── Putaran 4 ─────────────────────────────
+[2026-09-10 09:28:00]   [FOKUS] (349,220)
+[2026-09-10 09:28:00]   [PENOMORAN] Tgl. Penemoran (370,612) → '01/01/1900'
+[2026-09-10 09:28:02]     → (370,612) '01/01/1900'
+[2026-09-10 09:28:02]   [PENOMORAN] ✅
+[2026-09-10 09:28:02]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 09:28:03]     → (372,730) '0'
+[2026-09-10 09:28:04]     → (590,730) '1990'
+[2026-09-10 09:28:05]     → (810,730) '01/01/1990'
+[2026-09-10 09:28:07]     → (377,825) 'Sebidang tanah bekas pertanian'
+[2026-09-10 09:28:07]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 09:28:08]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 09:28:08]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 09:28:09]   [Penunjukan dan Penetapan Batas] Nama diambil: 'Angun'
+[2026-09-10 09:28:09]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+Angun (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 09:28:09]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 09:28:10]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 09:28:10]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 09:28:10]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 09:28:10] ✅  Putaran 4 selesai.
+[2026-09-10 09:28:10] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 09:28:12] ▶  Melanjutkan.
+[2026-09-10 09:28:12] 
+── Putaran 5 ─────────────────────────────
+[2026-09-10 09:28:12]   [FOKUS] (349,220)
+[2026-09-10 09:28:13]   [PENOMORAN] Tgl. Penemoran (370,612) → '01/01/1900'
+[2026-09-10 09:28:14]     → (370,612) '01/01/1900'
+[2026-09-10 09:28:14]   [PENOMORAN] ✅
+[2026-09-10 09:28:14]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 09:28:15]     → (372,730) '0'
+[2026-09-10 09:28:16]     → (590,730) '1990'
+[2026-09-10 09:28:17]     → (810,730) '01/01/1990'
+[2026-09-10 09:28:19]     → (377,825) 'Sebidang tanah bekas pertanian'
+[2026-09-10 09:28:19]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 09:28:20]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 09:28:20]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 09:28:21]   [Penunjukan dan Penetapan Batas] Nama diambil: 'Angun'
+[2026-09-10 09:28:21]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+Angun (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 09:28:21]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 09:28:22]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 09:28:22]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 09:28:22]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 09:28:22] ✅  Putaran 5 selesai.
+[2026-09-10 09:28:23] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 09:29:07] ── Lacak Cursor 3 detik ──
+[2026-09-10 09:29:07]    🖱  x=993  y=348
+[2026-09-10 09:29:07]    🖱  x=711  y=581
+[2026-09-10 09:29:07]    🖱  x=593  y=726
+[2026-09-10 09:29:08]    🖱  x=578  y=728
+[2026-09-10 09:29:08]    🖱  x=572  y=727
+[2026-09-10 09:29:08]    🖱  x=571  y=726
+[2026-09-10 09:29:08]    🖱  x=571  y=726
+[2026-09-10 09:29:08]    🖱  x=571  y=726
+[2026-09-10 09:29:09]    🖱  x=571  y=726
+[2026-09-10 09:29:09]    🖱  x=571  y=726
+[2026-09-10 09:29:09]    🖱  x=571  y=726
+[2026-09-10 09:29:09]    🖱  x=571  y=726
+[2026-09-10 09:29:10]    🖱  x=571  y=726
+[2026-09-10 09:29:10]    🖱  x=571  y=726
+[2026-09-10 09:29:10]    🖱  x=571  y=726
+[2026-09-10 09:29:10] ── selesai ──
+[2026-09-10 09:29:29] ✅  Konfigurasi disimpan.
+[2026-09-10 09:29:36] ▶  Melanjutkan.
+[2026-09-10 09:29:36] 
+── Putaran 6 ─────────────────────────────
+[2026-09-10 09:29:36]   [FOKUS] (349,220)
+[2026-09-10 09:29:36]   [PENOMORAN] Tgl. Penemoran (370,612) → '01/01/1900'
+[2026-09-10 09:29:38]     → (370,612) '01/01/1900'
+[2026-09-10 09:29:38]   [PENOMORAN] ✅
+[2026-09-10 09:29:38]   [DI 303] 📍 y=730 | Nomor x=372  Tahun x=590  Tanggal x=810
+[2026-09-10 09:29:39]     → (372,730) '0'
+[2026-09-10 09:29:40]     → (590,730) '1990'
+[2026-09-10 09:29:41]     → (810,730) '01/01/1990'
+[2026-09-10 09:29:43]     → (377,825) 'Sebidang tanah bekas pertanian'
+[2026-09-10 09:29:43]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 09:29:44]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 09:29:44]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 09:29:45]   [Penunjukan dan Penetapan Batas] Nama diambil: 'Angun'
+[2026-09-10 09:29:45]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+Angun (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 09:29:45]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 09:29:46]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 09:29:46]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 09:29:46]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 09:29:46] ✅  Putaran 6 selesai.
+[2026-09-10 09:29:46] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 09:29:51] ✅  Konfigurasi disimpan.
+[2026-09-10 09:29:56] ✅  Konfigurasi disimpan.
+[2026-09-10 09:30:26] ✅  Konfigurasi disimpan.
+[2026-09-10 09:30:26] ▶  Memulai…
+[2026-09-10 09:30:27] ════════════════════════════════════════════════════
+[2026-09-10 09:30:27]   AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop
+[2026-09-10 09:30:27] ════════════════════════════════════════════════════
+[2026-09-10 09:30:27] 
+── Putaran 1 ─────────────────────────────
+[2026-09-10 09:30:27]   [FOKUS] (349,220)
+[2026-09-10 09:30:27]   [PENOMORAN] Tgl. Penemoran (370,612) → '01/01/1990'
+[2026-09-10 09:30:28]     → (370,612) '01/01/1990'
+[2026-09-10 09:30:28]   [PENOMORAN] ✅
+[2026-09-10 09:30:28]   [DI 303] 📍 y=726 | Nomor x=571  Tahun x=590  Tanggal x=810
+[2026-09-10 09:30:29]     → (571,726) '0'
+[2026-09-10 09:30:31]     → (590,726) '1990'
+[2026-09-10 09:30:32]     → (810,726) '01/01/1990'
+[2026-09-10 09:30:33]     → (377,825) 'Sebidang tanah bekas pertanian'
+[2026-09-10 09:30:33]   [Keadaan Tanah] ✅  Diisi.
+[2026-09-10 09:30:34]     → (369,880) 'Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.'
+[2026-09-10 09:30:34]   [Tanda-Tanda Batas] ✅  Diisi.
+[2026-09-10 09:30:35]   [Penunjukan dan Penetapan Batas] Nama diambil: 'Angun'
+[2026-09-10 09:30:35]   [Penunjukan dan Penetapan Batas] Teks baru:
+Batas-batas ditunjukan oleh :
+Angun (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+Ditetapkan dan diukur oleh Anggit Sunarta.
+[2026-09-10 09:30:36]   [Penunjukan dan Penetapan Batas] ✅  Template selesai.
+[2026-09-10 09:30:37]     → (370,981) 'TIDAK ADA NOMOR GAMBAR UKUR 1871/2021'
+[2026-09-10 09:30:37]   [Hal Lain-Lain] ✅  Diisi.
+[2026-09-10 09:30:37]   [SIMPAN] ⚠️  Tombol tidak ditemukan.
+[2026-09-10 09:30:37] ✅  Putaran 1 selesai.
+[2026-09-10 09:30:37] ⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…
+[2026-09-10 09:32:47] ── Lacak Cursor 3 detik ──
+[2026-09-10 09:32:47]    🖱  x=447  y=428
+[2026-09-10 09:32:48]    🖱  x=938  y=462
+[2026-09-10 09:32:48]    🖱  x=1159  y=477
+[2026-09-10 09:32:48]    🖱  x=1180  y=488
+[2026-09-10 09:32:48]    🖱  x=1184  y=496
+[2026-09-10 09:32:48]    🖱  x=1184  y=496
+[2026-09-10 09:32:49]    🖱  x=1184  y=496
+[2026-09-10 09:32:49]    🖱  x=1184  y=496
+[2026-09-10 09:32:49]    🖱  x=1187  y=496
+[2026-09-10 09:32:49]    🖱  x=1188  y=495
+[2026-09-10 09:32:50]    🖱  x=1188  y=494
+[2026-09-10 09:32:50]    🖱  x=1188  y=494
+[2026-09-10 09:32:50]    🖱  x=1188  y=494
+[2026-09-10 09:32:51]    🖱  x=1188  y=494
+[2026-09-10 09:32:51]    🖱  x=1188  y=494
+[2026-09-10 09:32:51] ── selesai ──
+[2026-09-10 09:34:16] ── Lacak Cursor 3 detik ──
+[2026-09-10 09:34:16]    🖱  x=446  y=435
+[2026-09-10 09:34:16]    🖱  x=1145  y=436
+[2026-09-10 09:34:16]    🖱  x=1394  y=477
+[2026-09-10 09:34:16]    🖱  x=1361  y=511
+[2026-09-10 09:34:17]    🖱  x=1335  y=485
+[2026-09-10 09:34:17]    🖱  x=1326  y=501
+[2026-09-10 09:34:17]    🖱  x=1335  y=498
+[2026-09-10 09:34:17]    🖱  x=1338  y=496
+[2026-09-10 09:34:18]    🖱  x=1338  y=496
+[2026-09-10 09:34:18]    🖱  x=1338  y=496
+[2026-09-10 09:34:18]    🖱  x=1338  y=496
+[2026-09-10 09:34:19]    🖱  x=1338  y=496
+[2026-09-10 09:34:19]    🖱  x=1338  y=496
+[2026-09-10 09:34:19]    🖱  x=1338  y=496
+[2026-09-10 09:34:19]    🖱  x=1338  y=496
+[2026-09-10 09:34:20] ── selesai ──
+[2026-09-10 09:35:35] ── Lacak Cursor 3 detik ──
+[2026-09-10 09:35:35]    🖱  x=455  y=427
+[2026-09-10 09:35:35]    🖱  x=858  y=524
+[2026-09-10 09:35:35]    🖱  x=1095  y=627
+[2026-09-10 09:35:35]    🖱  x=1191  y=638
+[2026-09-10 09:35:35]    🖱  x=1203  y=630
+[2026-09-10 09:35:36]    🖱  x=1187  y=626
+[2026-09-10 09:35:36]    🖱  x=1187  y=626
+[2026-09-10 09:35:36]    🖱  x=1185  y=626
+[2026-09-10 09:35:36]    🖱  x=1184  y=627
+[2026-09-10 09:35:37]    🖱  x=1184  y=628
+[2026-09-10 09:35:37]    🖱  x=1184  y=628
+[2026-09-10 09:35:37]    🖱  x=1186  y=628
+[2026-09-10 09:35:37]    🖱  x=1186  y=628
+[2026-09-10 09:35:38]    🖱  x=1186  y=628
+[2026-09-10 09:35:38]    🖱  x=1186  y=628
+[2026-09-10 09:35:38] ── selesai ──
+[2026-09-10 09:36:58] ── Lacak Cursor 3 detik ──
+[2026-09-10 09:36:58]    🖱  x=421  y=430
+[2026-09-10 09:36:59]    🖱  x=981  y=550
+[2026-09-10 09:36:59]    🖱  x=1203  y=550
+[2026-09-10 09:36:59]    🖱  x=1216  y=536
+[2026-09-10 09:36:59]    🖱  x=1220  y=528
+[2026-09-10 09:37:00]    🖱  x=1220  y=528
+[2026-09-10 09:37:00]    🖱  x=1220  y=528
+[2026-09-10 09:37:00]    🖱  x=1220  y=528
+[2026-09-10 09:37:00]    🖱  x=1220  y=528
+[2026-09-10 09:37:01]    🖱  x=1220  y=528
+[2026-09-10 09:37:01]    🖱  x=1220  y=528
+[2026-09-10 09:37:01]    🖱  x=1220  y=528
+[2026-09-10 09:37:01]    🖱  x=1220  y=528
+[2026-09-10 09:37:02]    🖱  x=1220  y=528
+[2026-09-10 09:37:02]    🖱  x=1220  y=528
+[2026-09-10 09:37:02] ── selesai ──
+[2026-09-10 09:40:38] ── Lacak Cursor 3 detik ──
+[2026-09-10 09:40:38]    🖱  x=392  y=448
+[2026-09-10 09:40:38]    🖱  x=956  y=585
+[2026-09-10 09:40:38]    🖱  x=1154  y=633
+[2026-09-10 09:40:39]    🖱  x=1184  y=639
+[2026-09-10 09:40:39]    🖱  x=1189  y=630
+[2026-09-10 09:40:39]    🖱  x=1188  y=628
+[2026-09-10 09:40:39]    🖱  x=1186  y=628
+[2026-09-10 09:40:40]    🖱  x=1186  y=628
+[2026-09-10 09:40:40]    🖱  x=1186  y=628
+[2026-09-10 09:40:40]    🖱  x=1186  y=628
+[2026-09-10 09:40:40]    🖱  x=1186  y=628
+[2026-09-10 09:40:41]    🖱  x=1186  y=628
+[2026-09-10 09:40:41]    🖱  x=1186  y=628
+[2026-09-10 09:40:41]    🖱  x=1186  y=628
+[2026-09-10 09:40:42]    🖱  x=1186  y=628
+[2026-09-10 09:40:42] ── selesai ──
+[2026-09-10 09:42:06] ── Lacak Cursor 3 detik ──
+[2026-09-10 09:42:06]    🖱  x=389  y=444
+[2026-09-10 09:42:06]    🖱  x=698  y=506
+[2026-09-10 09:42:07]    🖱  x=1190  y=660
+[2026-09-10 09:42:07]    🖱  x=1332  y=642
+[2026-09-10 09:42:07]    🖱  x=1347  y=630
+[2026-09-10 09:42:07]    🖱  x=1347  y=630
+[2026-09-10 09:42:08]    🖱  x=1347  y=630
+[2026-09-10 09:42:08]    🖱  x=1347  y=630
+[2026-09-10 09:42:08]    🖱  x=1347  y=630
+[2026-09-10 09:42:08]    🖱  x=1347  y=630
+[2026-09-10 09:42:09]    🖱  x=1347  y=630
+[2026-09-10 09:42:09]    🖱  x=1347  y=630
+[2026-09-10 09:42:09]    🖱  x=1347  y=630
+[2026-09-10 09:42:09]    🖱  x=1347  y=630
+[2026-09-10 09:42:10]    🖱  x=1347  y=630
+[2026-09-10 09:42:10] ── selesai ──
+[2026-09-10 09:44:59] ── Lacak Cursor 3 detik ──
+[2026-09-10 09:44:59]    🖱  x=384  y=446
+[2026-09-10 09:44:59]    🖱  x=865  y=549
+[2026-09-10 09:44:59]    🖱  x=1125  y=665
+[2026-09-10 09:44:59]    🖱  x=1218  y=685
+[2026-09-10 09:45:00]    🖱  x=1227  y=665
+[2026-09-10 09:45:00]    🖱  x=1216  y=657
+[2026-09-10 09:45:00]    🖱  x=1211  y=661
+[2026-09-10 09:45:00]    🖱  x=1211  y=661
+[2026-09-10 09:45:01]    🖱  x=1211  y=661
+[2026-09-10 09:45:01]    🖱  x=1211  y=661
+[2026-09-10 09:45:01]    🖱  x=1211  y=661
+[2026-09-10 09:45:01]    🖱  x=1211  y=661
+[2026-09-10 09:45:02]    🖱  x=1211  y=661
+[2026-09-10 09:45:02]    🖱  x=1211  y=661
+[2026-09-10 09:45:02]    🖱  x=1211  y=661
+[2026-09-10 09:45:02] ── selesai ──
+[2026-09-10 09:45:31] ── Lacak Cursor 3 detik ──
+[2026-09-10 09:45:31]    🖱  x=392  y=446
+[2026-09-10 09:45:31]    🖱  x=976  y=638
+[2026-09-10 09:45:31]    🖱  x=1137  y=725
+[2026-09-10 09:45:31]    🖱  x=1186  y=726
+[2026-09-10 09:45:32]    🖱  x=1195  y=726
+[2026-09-10 09:45:32]    🖱  x=1205  y=724
+[2026-09-10 09:45:32]    🖱  x=1211  y=720
+[2026-09-10 09:45:32]    🖱  x=1213  y=720
+[2026-09-10 09:45:33]    🖱  x=1213  y=720
+[2026-09-10 09:45:33]    🖱  x=1213  y=720
+[2026-09-10 09:45:33]    🖱  x=1213  y=720
+[2026-09-10 09:45:33]    🖱  x=1213  y=720
+[2026-09-10 09:45:34]    🖱  x=1213  y=720
+[2026-09-10 09:45:34]    🖱  x=1213  y=720
+[2026-09-10 09:45:34]    🖱  x=1213  y=720
+[2026-09-10 09:45:34] ── selesai ──

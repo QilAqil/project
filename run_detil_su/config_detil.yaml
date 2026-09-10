@@ -1,48 +1,114 @@
 trigger_key: f1
-pause_key: f2
+pause_key: \
 reset_key: f3
 exit_key: esc
+search_region:
+- 88
+- 140
+- 950
+- 650
+fokus_form:
+- 349
+- 220
 delay:
   antar_field: 0.4
   setelah_klik: 0.5
   setelah_ketik: 0.3
   setelah_tab: 0.2
-seri:
+  antar_putaran: 1.0
+
+# ── Tgl. Penemoran ──────────────────────────────────────────
+penomoran:
+  tanggal_enabled: false
+  tanggal_nilai: ''
+  tanggal_x: 370
+  tanggal_y: 612
+
+# ── Pembukuan ────────────────────────────────────────────────
+# Alur:
+#   1. Klik centang checkbox An  (1188, 494)
+#   2. Klik field Jabatan        (1338, 496)  → dropdown terbuka → ketik teks → Enter
+#   3. Klik field Jabatan lagi   (1338, 496)  → ketik teks lagi (konfirmasi)
+#   4. Klik field Nama           (1220, 528)  → ketik nama
+pembukuan:
   enabled: false
-  nilai: '-'
+  nama: "Anggit Sunarta"
+  jabatan_teks: "Kepala Seksi Survei dan Pemetaan"
+  centang_x: 1188
+  centang_y: 494
+  jabatan_x: 1338
+  jabatan_y: 496
+  nama_x: 1220
+  nama_y: 528
+
+# ── Penerbitan Sertifikat ────────────────────────────────────
+# Alur:
+#   1. Klik centang checkbox An  (1188, 563)
+#   2. Klik field Jabatan atas   (1338, 565)  → ketik teks → Enter
+#   3. Klik field Jabatan atas   (1338, 565)  → ketik teks (konfirmasi)
+#   4. Klik field Nama atas      (1220, 597)  → ketik nama
+#   5. Klik field Jabatan bawah  (1347, 630)  → ketik teks → Enter
+#   6. Klik field Jabatan bawah  (1347, 630)  → ketik teks (konfirmasi)
+#   7. Klik field Nama bawah     (1211, 661)  → ketik nama
+#   8. Klik akhir                (1213, 720)
+penerbitan_sertifikat:
+  enabled: false
+  nama: "Anggit Sunarta"
+  jabatan_teks: "Kepala Seksi Survei dan Pemetaan"
+  jabatan2_teks: "Kepala Seksi Survei dan Pemetaan"
+  centang_x: 1188
+  centang_y: 563
+  jabatan_x: 1338
+  jabatan_y: 565
+  nama_x: 1220
+  nama_y: 597
+  jabatan2_x: 1347
+  jabatan2_y: 630
+  nama2_x: 1211
+  nama2_y: 661
+  klik_akhir_x: 1213
+  klik_akhir_y: 720
+
+# ── Daftar Isian ─────────────────────────────────────────────
 daftar_isian:
   enabled: true
   kolom:
-  - id: DI 302
-    enabled: false
-    image: label_di_302.png
-    nomor: '034'
-    tahun: '2020'
-    tanggal: 25/03/2023
   - id: DI 303
     enabled: true
-    image: label_di_303.png
     nomor: '0'
     tahun: '1990'
     tanggal: 01/01/1990
-  - id: DI 307
-    enabled: false
-    image: label_di_307.png
-    nomor: '120510'
-    tahun: '2021'
-    tanggal: 03/10/2021
+    y: 726
+    x_nomor: 571
+    x_tahun: 590
+    x_tanggal: 810
+
+# ── Detail Lain-Lain ─────────────────────────────────────────
 detail_lain:
   keadaan_tanah:
     enabled: false
+    x: 377
+    y: 825
     nilai: Sebidang tanah bekas pertanian
+
   tanda_tanda_batas:
-    enabled: true
-    nilai: Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997
-      jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertahanan Nasional Nomor
-      3 Tahun 1997 Pasal 22 Ayat 1.
+    enabled: false
+    x: 369
+    y: 880
+    nilai: >-
+      Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997
+      jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional
+      Nomor 3 Tahun 1997 Pasal 22 Ayat 1.
+
   pengukuran_dan_pemetaan:
     enabled: false
-    nilai: MUHKSONI
+    x: 368
+    y: 928
+    mode: template_nama
+    template: "Batas-batas ditunjukan oleh :\n{nama} (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.\nDitetapkan dan diukur oleh Anggit Sunarta."
+
   hal_lain_lain:
     enabled: false
+    x: 370
+    y: 981
     nilai: TIDAK ADA NOMOR GAMBAR UKUR 1871/2021
