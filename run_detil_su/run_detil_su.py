@@ -156,9 +156,14 @@ class AppDetilSU(tk.Tk):
         self.resizable(True, True)
         self._center(1020, 640)
         self._cfg     = load_config()
-        self._running = False
-        self._paused  = False
-        self._worker  = None
+        # ── SU state ─────────────────────────────────────────
+        self._su_stop_ev  = threading.Event()   # set = stop
+        self._su_run_ev   = threading.Event()   # set = boleh jalan (tidak paused)
+        self._su_worker   = None
+        # ── BT state ─────────────────────────────────────────
+        self._bt_stop_ev  = threading.Event()   # set = stop
+        self._bt_run_ev   = threading.Event()   # set = boleh jalan (tidak paused)
+        self._bt_worker   = None
         self._build_ui()
         self._bind_keys()
 
@@ -194,26 +199,68 @@ class AppDetilSU(tk.Tk):
         self._build_kanan(body)
 
     # ══════════════════════════════════════════════════════════
-    #  KIRI — KONFIGURASI + KONTROL
+    #  KIRI — TAB SU + TAB BT
     # ══════════════════════════════════════════════════════════
     def _build_kiri(self, body):
         outer = frm(body, bg=BG)
         outer.grid(row=0, column=0, sticky="nsew", padx=(0,2))
 
+        # Notebook untuk SU / BT
+        style = ttk.Style()
+        style.configure("L.TNotebook",
+                        background=BG, borderwidth=0, tabmargins=[0,2,0,0])
+        style.configure("L.TNotebook.Tab",
+                        background=BG3, foreground=TEXT_DIM,
+                        padding=[14, 4], font=("Segoe UI", 9))
+        style.map("L.TNotebook.Tab",
+                  background=[("selected", BG2)],
+                  foreground=[("selected", ACCENT)])
+
+        self._lnb = ttk.Notebook(outer, style="L.TNotebook")
+        self._lnb.pack(fill="both", expand=True)
+
+        tab_su = self._build_tab_su(self._lnb)
+        tab_bt = self._build_tab_bt(self._lnb)
+        self._lnb.add(tab_su, text="  Surat Ukur (SU)  ")
+        self._lnb.add(tab_bt, text="  Buku Tanah (BT)  ")
+
+    # ── helper: scrollable frame ──────────────────────────────
+    def _scrollable(self, parent):
+        """Return (outer_frame, inner_frame) dengan canvas scroll."""
+        outer  = frm(parent, bg=BG)
         canvas = tk.Canvas(outer, bg=BG, highlightthickness=0)
         vsb    = ttk.Scrollbar(outer, orient="vertical", command=canvas.yview)
         canvas.configure(yscrollcommand=vsb.set)
         vsb.pack(side="right", fill="y")
         canvas.pack(side="left", fill="both", expand=True)
-
         inner = frm(canvas, bg=BG)
         win   = canvas.create_window((0,0), window=inner, anchor="nw")
         inner.bind("<Configure>",
                    lambda _: canvas.configure(scrollregion=canvas.bbox("all")))
         canvas.bind("<Configure>",
                     lambda e: canvas.itemconfig(win, width=e.width))
-        canvas.bind_all("<MouseWheel>",
-                        lambda e: canvas.yview_scroll(int(-1*(e.delta/120)), "units"))
+
+        # Scroll hanya aktif saat mouse masuk area canvas ini
+        # — tidak pakai bind_all agar tidak bentrok antar tab
+        def _on_enter(_):
+            canvas.bind_all("<MouseWheel>",
+                            lambda e: canvas.yview_scroll(
+                                int(-1*(e.delta/120)), "units"))
+        def _on_leave(_):
+            canvas.unbind_all("<MouseWheel>")
+
+        canvas.bind("<Enter>", _on_enter)
+        canvas.bind("<Leave>", _on_leave)
+        inner.bind("<Enter>",  _on_enter)
+        inner.bind("<Leave>",  _on_leave)
+
+        return outer, inner
+
+    # ══════════════════════════════════════════════════════════
+    #  TAB SU — SURAT UKUR
+    # ══════════════════════════════════════════════════════════
+    def _build_tab_su(self, nb):
+        outer, inner = self._scrollable(nb)
 
         # ── KONTROL ──────────────────────────────────────────
         section_bar(inner, "KONTROL")
@@ -272,40 +319,14 @@ class AppDetilSU(tk.Tk):
 
         # ── PEMBUKUAN ─────────────────────────────────────────
         section_bar(inner, "PEMBUKUAN")
-        pb_f = frm(inner, bg=BG2)
-        pb_f.pack(fill="x", padx=4, pady=2)
-        pb_cfg = self._cfg.get("pembukuan", {})
-        self._pb_en   = tk.BooleanVar(value=pb_cfg.get("enabled", False))
-        self._pb_nama = tk.StringVar(value=str(pb_cfg.get("nama", "")))
-        self._pb_jab  = tk.StringVar(value=str(pb_cfg.get("jabatan_teks", "Kepala Seksi Survei dan Pemetaan")))
-        pb_r = frm(pb_f, bg=BG2)
-        pb_r.pack(fill="x", padx=8, pady=4)
-        chk(pb_r, "Aktif", self._pb_en, bg=BG2).pack(side="left")
-        lbl(pb_r, "  Jabatan:", color=TEXT_DIM, bg=BG2).pack(side="left", padx=(8,2))
-        ent(pb_r, var=self._pb_jab, w=24).pack(side="left")
-        lbl(pb_r, "  Nama:", color=TEXT_DIM, bg=BG2).pack(side="left", padx=(8,2))
-        ent(pb_r, var=self._pb_nama, w=20).pack(side="left")
+        self._pb_vars = self._build_panel_pejabat(
+            inner, "pembukuan", self._cfg.get("pembukuan", {}))
 
         # ── PENERBITAN SERTIFIKAT ─────────────────────────────
         section_bar(inner, "PENERBITAN SERTIFIKAT")
-        ps_f = frm(inner, bg=BG2)
-        ps_f.pack(fill="x", padx=4, pady=2)
-        ps_cfg = self._cfg.get("penerbitan_sertifikat", {})
-        self._ps_en   = tk.BooleanVar(value=ps_cfg.get("enabled", False))
-        self._ps_nama = tk.StringVar(value=str(ps_cfg.get("nama", "")))
-        self._ps_jab  = tk.StringVar(value=str(ps_cfg.get("jabatan_teks",  "Kepala Seksi Survei dan Pemetaan")))
-        self._ps_jab2 = tk.StringVar(value=str(ps_cfg.get("jabatan2_teks", "Kepala Seksi Survei dan Pemetaan")))
-        ps_r = frm(ps_f, bg=BG2)
-        ps_r.pack(fill="x", padx=8, pady=4)
-        chk(ps_r, "Aktif", self._ps_en, bg=BG2).pack(side="left")
-        lbl(ps_r, "  Jabatan:", color=TEXT_DIM, bg=BG2).pack(side="left", padx=(8,2))
-        ent(ps_r, var=self._ps_jab, w=28).pack(side="left")
-        lbl(ps_r, "  Nama:", color=TEXT_DIM, bg=BG2).pack(side="left", padx=(8,2))
-        ent(ps_r, var=self._ps_nama, w=20).pack(side="left")
-        ps_r2 = frm(ps_f, bg=BG2)
-        ps_r2.pack(fill="x", padx=8, pady=(0,4))
-        lbl(ps_r2, "  Jabatan bawah:", color=TEXT_DIM, bg=BG2).pack(side="left")
-        ent(ps_r2, var=self._ps_jab2, w=28).pack(side="left", padx=(2,0))
+        self._ps_vars = self._build_panel_pejabat(
+            inner, "penerbitan_sertifikat",
+            self._cfg.get("penerbitan_sertifikat", {}))
 
         # ── DAFTAR ISIAN ─────────────────────────────────────
         section_bar(inner, "DAFTAR ISIAN")
@@ -337,6 +358,140 @@ class AppDetilSU(tk.Tk):
             self._build_dl_field(dl, key, lbl_text, sub, ml)
 
         # ── SIMPAN dihapus dari sini (sudah dipindah ke baris kontrol) ──
+        return outer   # kembalikan frame untuk notebook
+
+    # ══════════════════════════════════════════════════════════
+    #  TAB BT — BUKU TANAH
+    # ══════════════════════════════════════════════════════════
+    def _build_tab_bt(self, nb):
+        outer, inner = self._scrollable(nb)
+
+        # ── KONTROL BT ───────────────────────────────────────
+        section_bar(inner, "KONTROL BT")
+        cf = frm(inner, bg=BG2)
+        cf.pack(fill="x", padx=4, pady=2)
+
+        self._bt_status_var   = tk.StringVar(value="⏸  Menunggu…")
+        self._bt_progress_var = tk.StringVar(value="Putaran: -")
+
+        st_row = frm(cf, bg=BG2)
+        st_row.pack(fill="x", padx=6, pady=(4,2))
+        lbl(st_row, "", textvariable=self._bt_status_var,
+            bold=True, color=SUCCESS, bg=BG2, size=10).pack(side="left")
+        lbl(st_row, "", textvariable=self._bt_progress_var,
+            color=WARNING, bg=BG2, size=9).pack(side="right", padx=6)
+
+        br = frm(cf, bg=BG2)
+        br.pack(fill="x", padx=6, pady=(2,6))
+        btn(br, "▶ MULAI F1",  self._bt_start,  color=SUCCESS, w=13).pack(side="left", padx=3)
+        btn(br, "⏸ JEDA  `",   self._bt_pause,  color=WARNING, w=13).pack(side="left", padx=2)
+        btn(br, "↺ RESET F3",  self._bt_reset,  color=ACCENT,  w=13).pack(side="left", padx=2)
+        btn(br, "■ STOP ESC",  self._bt_stop,   color=DANGER,  w=13).pack(side="left", padx=2)
+        btn(br, "💾 Simpan",   self._bt_save,   color="#2d6a4f", w=10).pack(side="left", padx=2)
+
+        # ── PEMBUKUAN BT ──────────────────────────────────────
+        section_bar(inner, "PEMBUKUAN BT")
+        self._pb_bt_vars = self._build_panel_pejabat(
+            inner, "pembukuan_bt", self._cfg.get("pembukuan_bt", {}))
+
+        # ── PENERBITAN SERTIFIKAT BT ──────────────────────────
+        section_bar(inner, "PENERBITAN SERTIFIKAT BT")
+        self._ps_bt_vars = self._build_panel_pejabat(
+            inner, "penerbitan_sertifikat_bt",
+            self._cfg.get("penerbitan_sertifikat_bt", {}))
+
+        # ── DAFTAR ISIAN BT ───────────────────────────────────
+        section_bar(inner, "DAFTAR ISIAN BT")
+        df = frm(inner, bg=BG2)
+        df.pack(fill="x", padx=4, pady=2)
+        bt_cfg = self._cfg.get("bt", {})
+        di_bt  = bt_cfg.get("daftar_isian", {})
+        self._bt_di_en = tk.BooleanVar(value=di_bt.get("enabled", True))
+        dr2 = frm(df, bg=BG2)
+        dr2.pack(fill="x", padx=8, pady=(4,2))
+        chk(dr2, "Proses Daftar Isian BT", self._bt_di_en).pack(side="left")
+
+        self._bt_panel_di = PanelDaftarIsian(
+            df, kolom_data=di_bt.get("kolom", []))
+        self._bt_panel_di.pack(fill="x", padx=4, pady=(2,4))
+
+        return outer
+
+    # ── BT worker controls ───────────────────────────────────
+    def _bt_save(self):
+        cfg = dict(self._cfg)
+        cfg["bt"] = {
+            "daftar_isian": {
+                "enabled": self._bt_di_en.get(),
+                "kolom":   self._bt_panel_di.get_data(),
+            }
+        }
+        cfg["pembukuan_bt"]             = self._get_pejabat_data(self._pb_bt_vars)
+        cfg["penerbitan_sertifikat_bt"] = self._get_pejabat_data(self._ps_bt_vars)
+        save_config(cfg)
+        self._cfg = cfg
+        self._log("✅  Config BT disimpan.")
+
+    def _bt_start(self):
+        if self._bt_running: return
+        self._bt_save()
+        self._bt_running = True
+        self._bt_paused  = True   # langsung jeda, tunggu `
+        self._bt_status_var.set("⏸  BT siap — tekan ` untuk lanjut")
+        self._log("▶  BT dimulai (auto-jeda) — tekan ` untuk lanjut")
+        self._bt_worker = threading.Thread(target=self._run_bt, daemon=True)
+        self._bt_worker.start()
+
+    def _bt_pause(self):
+        if not self._bt_running: return
+        self._bt_paused = not self._bt_paused
+        if self._bt_paused:
+            self._bt_status_var.set("⏸  BT Dijeda…")
+            self._log("⏸  BT Dijeda.")
+        else:
+            self._bt_status_var.set("▶  BT Melanjutkan…")
+            self._log("▶  BT Melanjutkan.")
+
+    def _bt_reset(self):
+        self._bt_stop()
+        self._bt_status_var.set("↺  BT Reset.")
+        self._bt_progress_var.set("Putaran: -")
+        self._log("↺  BT Reset.")
+
+    def _bt_stop(self):
+        self._bt_running = False
+        self._bt_paused  = False
+        self._bt_status_var.set("■  BT Dihentikan.")
+
+    def _run_bt(self):
+        """Loop auto-paste Buku Tanah."""
+        try:
+            from auto_paste_detil import jalankan_paste_bt
+            jalankan_paste_bt(
+                cfg           = self._cfg,
+                assets_dir    = ASSETS_DIR,
+                is_running    = lambda: self._bt_running,
+                is_paused     = lambda: self._bt_paused,
+                log_fn        = self._log,
+                progress_fn   = lambda m: self._bt_progress_var.set(m),
+                status_fn     = lambda m, *_: self._bt_status_var.set(m),
+                set_paused_fn = self._set_bt_paused,
+                debug         = self._debug_var.get(),
+            )
+        except Exception as ex:
+            self._log(f"❌  BT Error: {ex}")
+        finally:
+            self._bt_running = False
+            self._bt_status_var.set("✅  BT Selesai.")
+            self._log("✅  BT Selesai.")
+
+    def _set_bt_paused(self, val: bool):
+        """Set BT paused langsung agar worker thread bisa baca segera."""
+        self._bt_paused = val   # set langsung, tidak via after
+        def _ui():
+            if val:
+                self._bt_status_var.set("⏸  BT selesai isi — tekan ` untuk lanjut")
+        self.after(0, _ui)
 
     # ══════════════════════════════════════════════════════════
     #  KANAN — LOG
@@ -360,6 +515,79 @@ class AppDetilSU(tk.Tk):
             color=BG3, w=14).pack(side="right")
 
     # ── Detail Lain-Lain field builder ───────────────────────
+    def _build_panel_pejabat(self, parent, cfg_key: str, cfg_data: dict) -> dict:
+        """
+        Panel editable untuk Pembukuan / Penerbitan Sertifikat.
+        Menampilkan: Aktif | Jabatan | Nama | koordinat (x,y) tiap klik.
+        Return dict vars untuk dipakai saat simpan.
+        """
+        bg  = BG2
+        pf  = frm(parent, bg=bg)
+        pf.pack(fill="x", padx=4, pady=2)
+        v   = {}
+
+        # baris 1: enabled + jabatan + nama
+        r1 = frm(pf, bg=bg)
+        r1.pack(fill="x", padx=8, pady=(4,1))
+        v["enabled"] = tk.BooleanVar(value=cfg_data.get("enabled", False))
+        chk(r1, "Aktif", v["enabled"], bg=bg).pack(side="left")
+        lbl(r1, "  Jabatan:", color=TEXT_DIM, bg=bg).pack(side="left", padx=(8,2))
+        v["jabatan_teks"] = tk.StringVar(value=str(cfg_data.get("jabatan_teks", "")))
+        ent(r1, var=v["jabatan_teks"], w=28).pack(side="left")
+        lbl(r1, "  Nama:", color=TEXT_DIM, bg=bg).pack(side="left", padx=(6,2))
+        v["nama"] = tk.StringVar(value=str(cfg_data.get("nama", "")))
+        ent(r1, var=v["nama"], w=18).pack(side="left")
+
+        # helper baris koordinat
+        def coord_row(label_text, keys):
+            r = frm(pf, bg=bg)
+            r.pack(fill="x", padx=8, pady=1)
+            lbl(r, label_text, color=TEXT_DIM, bg=bg, width=18).pack(side="left")
+            for k, w in keys:
+                lbl(r, f"{k.split('_')[-1].upper()}:", color=TEXT_DIM,
+                    bg=bg, size=8).pack(side="left", padx=(4,1))
+                v[k] = tk.StringVar(value=str(cfg_data.get(k, "")))
+                ent(r, var=v[k], w=6).pack(side="left", padx=(0,2))
+
+        # centang
+        coord_row("Centang (x,y):",
+                  [("centang_x",""),("centang_y","")])
+        # tambah toggle untuk centang
+        r_centang_en = frm(pf, bg=bg)
+        r_centang_en.pack(fill="x", padx=8, pady=(0,2))
+        v["centang_enabled"] = tk.BooleanVar(
+            value=cfg_data.get("centang_enabled", False))
+        chk(r_centang_en, "Lakukan klik centang",
+            v["centang_enabled"], bg=bg).pack(side="left")
+        # jabatan klik1 dan klik2
+        coord_row("Jabatan klik1 (x,y):",
+                  [("jabatan_x",""),("jabatan_y","")])
+        coord_row("Jabatan klik2 (x,y):",
+                  [("jabatan_klik2_x",""),("jabatan_klik2_y","")])
+        # nama klik1 dan klik2
+        coord_row("Nama klik1 (x,y):",
+                  [("nama_x",""),("nama_y","")])
+        coord_row("Nama klik2 (x,y):",
+                  [("nama_klik2_x",""),("nama_klik2_y","")])
+
+        v["_cfg_key"] = cfg_key
+        return v
+
+    def _get_pejabat_data(self, v: dict) -> dict:
+        """Ambil data dari vars panel pejabat untuk disimpan ke config."""
+        d = {"enabled": v["enabled"].get(),
+             "centang_enabled": v["centang_enabled"].get(),
+             "jabatan_teks": v["jabatan_teks"].get(),
+             "nama": v["nama"].get()}
+        for k in ("centang_x","centang_y",
+                  "jabatan_x","jabatan_y",
+                  "jabatan_klik2_x","jabatan_klik2_y",
+                  "nama_x","nama_y",
+                  "nama_klik2_x","nama_klik2_y"):
+            try: d[k] = int(v[k].get())
+            except (ValueError, KeyError): pass
+        return d
+
     def _build_dl_field(self, parent, key, label_text, sub, multiline):
         bg = BG2
         f  = frm(parent, bg=bg)
@@ -438,19 +666,9 @@ class AppDetilSU(tk.Tk):
             pass
         cfg["daftar_isian"] = {"enabled": self._di_en.get(),
                                "kolom":   self._panel_di.get_data()}
-        # pembukuan
-        pb = self._cfg.get("pembukuan", {})
-        pb.update({"enabled": self._pb_en.get(),
-                   "nama":    self._pb_nama.get(),
-                   "jabatan_teks": self._pb_jab.get()})
-        cfg["pembukuan"] = pb
-        # penerbitan sertifikat
-        ps = self._cfg.get("penerbitan_sertifikat", {})
-        ps.update({"enabled": self._ps_en.get(),
-                   "nama":    self._ps_nama.get(),
-                   "jabatan_teks":  self._ps_jab.get(),
-                   "jabatan2_teks": self._ps_jab2.get()})
-        cfg["penerbitan_sertifikat"] = ps
+        # pembukuan & penerbitan sertifikat SU
+        cfg["pembukuan"]              = self._get_pejabat_data(self._pb_vars)
+        cfg["penerbitan_sertifikat"]  = self._get_pejabat_data(self._ps_vars)
         dl_out = {}
         for key, d in self._dl.items():
             w = d["w"]
@@ -492,18 +710,182 @@ class AppDetilSU(tk.Tk):
     # ── hotkeys global ───────────────────────────────────────
     def _bind_keys(self):
         import keyboard
-        for k in ("f1","\\","f3","esc"):
+        for k in ("f1","\\","`","f3","esc"):
             try: keyboard.remove_hotkey(k)
             except Exception: pass
-        keyboard.add_hotkey("f1",   lambda: self.after(0, self._start_worker), suppress=False)
-        keyboard.add_hotkey("\\",   lambda: self.after(0, self._toggle_pause), suppress=False)
-        keyboard.add_hotkey("f3",   lambda: self.after(0, self._reset_worker), suppress=False)
-        keyboard.add_hotkey("esc",  lambda: self.after(0, self._stop_worker),  suppress=False)
+
+        # F1 — mulai tab yang sedang aktif
+        keyboard.add_hotkey("f1",  lambda: self.after(0, self._start_aktif),  suppress=False)
+        # \ — jeda/lanjut SU
+        keyboard.add_hotkey("\\",  lambda: self.after(0, self._toggle_pause), suppress=False)
+        # ` — jeda/lanjut BT
+        keyboard.add_hotkey("`",   lambda: self.after(0, self._bt_jeda),      suppress=False)
+        # F3 — reset tab aktif
+        keyboard.add_hotkey("f3",  lambda: self.after(0, self._reset_aktif),  suppress=False)
+        # ESC — stop semua
+        keyboard.add_hotkey("esc", lambda: self.after(0, self._stop_semua),   suppress=False)
+
+    def _tab_aktif(self) -> str:
+        try:
+            idx = self._lnb.index(self._lnb.select())
+            return "bt" if idx == 1 else "su"
+        except Exception:
+            return "su"
+
+    # ── SU controls ──────────────────────────────────────────
+    def _su_aktif(self) -> bool:
+        return not self._su_stop_ev.is_set()
+
+    def _su_paused(self) -> bool:
+        return not self._su_run_ev.is_set()
+
+    def _start_aktif(self):
+        """F1: mulai SU dan BT sekaligus, langsung auto-jeda menunggu \\  atau `."""
+        # Simpan kedua config dulu sebelum thread dimulai
+        self._save_config()
+        self._bt_save()
+
+        # SU — mulai jika belum jalan
+        if self._su_worker is None or not self._su_worker.is_alive():
+            self._su_stop_ev.clear()
+            self._su_run_ev.clear()          # mulai dalam kondisi paused
+            self._set_status("⏸  SU siap — tekan \\ untuk lanjut", WARNING)
+            self._log("▶  SU dimulai — tekan \\ untuk lanjut")
+            self._su_worker = threading.Thread(target=self._run_paste, daemon=True)
+            self._su_worker.start()
+
+        # BT — mulai jika belum jalan
+        if self._bt_worker is None or not self._bt_worker.is_alive():
+            self._bt_save()
+            self._bt_stop_ev.clear()
+            self._bt_run_ev.clear()          # mulai dalam kondisi paused
+            self._bt_status_var.set("⏸  BT siap — tekan ` untuk lanjut")
+            self._log("▶  BT dimulai — tekan ` untuk lanjut")
+            self._bt_worker = threading.Thread(target=self._run_bt, daemon=True)
+            self._bt_worker.start()
+
+    def _su_jeda(self):
+        """\\ : toggle jeda SU — jika paused → lanjut, jika jalan → pause."""
+        if self._su_stop_ev.is_set(): return
+        if self._su_run_ev.is_set():
+            # sedang jalan → pause
+            self._su_run_ev.clear()
+            self._set_status("⏸  SU Dijeda…", WARNING)
+            self._log("⏸  SU Dijeda.")
+        else:
+            # sedang paused → lanjut
+            self._su_run_ev.set()
+            self._set_status("▶  SU Melanjutkan…", SUCCESS)
+            self._log("▶  SU Melanjutkan.")
+
+    def _set_su_paused(self, val: bool):
+        """Dipanggil dari worker thread SU untuk auto-pause setelah isi."""
+        if val:
+            self._su_run_ev.clear()
+            def _ui(): self._set_status("⏸  SU selesai isi — tekan \\ untuk lanjut", WARNING)
+        else:
+            self._su_run_ev.set()
+            def _ui(): self._set_status("▶  SU Melanjutkan…", SUCCESS)
+        self.after(0, _ui)
+
+    def _start_worker(self):
+        """Tombol MULAI di tab SU (sama dengan F1 khusus SU)."""
+        if self._su_worker and self._su_worker.is_alive(): return
+        self._save_config()
+        self._su_stop_ev.clear()
+        self._su_run_ev.clear()
+        self._set_status("⏸  SU siap — tekan \\ untuk lanjut", WARNING)
+        self._log("▶  SU dimulai — tekan \\ untuk lanjut")
+        self._su_worker = threading.Thread(target=self._run_paste, daemon=True)
+        self._su_worker.start()
+
+    def _toggle_pause(self):
+        """Tombol JEDA di tab SU — sama dengan hotkey \\."""
+        self._su_jeda()
+
+    def _reset_worker(self):
+        self._su_stop_ev.set()
+        self._su_run_ev.set()   # lepas block agar thread bisa keluar
+        self._set_status("↺  SU Reset.", ACCENT)
+        self._log("↺  SU Reset.")
+        self._progress_var.set("Putaran: -")
+
+    def _stop_worker(self):
+        self._su_stop_ev.set()
+        self._su_run_ev.set()
+        self._set_status("■  SU Dihentikan.", DANGER)
+
+    # ── BT controls ──────────────────────────────────────────
+    def _bt_aktif(self) -> bool:
+        return not self._bt_stop_ev.is_set()
+
+    def _bt_jeda(self):
+        """` : toggle jeda BT."""
+        if self._bt_stop_ev.is_set(): return
+        if self._bt_run_ev.is_set():
+            self._bt_run_ev.clear()
+            self._bt_status_var.set("⏸  BT Dijeda…")
+            self._log("⏸  BT Dijeda.")
+        else:
+            self._bt_run_ev.set()
+            self._bt_status_var.set("▶  BT Melanjutkan…")
+            self._log("▶  BT Melanjutkan.")
+
+    def _set_bt_paused(self, val: bool):
+        """Dipanggil dari worker thread BT untuk auto-pause setelah isi."""
+        if val:
+            self._bt_run_ev.clear()
+            def _ui(): self._bt_status_var.set("⏸  BT selesai isi — tekan ` untuk lanjut")
+        else:
+            self._bt_run_ev.set()
+            def _ui(): self._bt_status_var.set("▶  BT Melanjutkan…")
+        self.after(0, _ui)
+
+    def _bt_start(self):
+        """Tombol MULAI di tab BT."""
+        if self._bt_worker and self._bt_worker.is_alive(): return
+        self._bt_save()
+        self._bt_stop_ev.clear()
+        self._bt_run_ev.clear()
+        self._bt_status_var.set("⏸  BT siap — tekan ` untuk lanjut")
+        self._log("▶  BT dimulai — tekan ` untuk lanjut")
+        self._bt_worker = threading.Thread(target=self._run_bt, daemon=True)
+        self._bt_worker.start()
+
+    def _bt_pause(self):
+        """Tombol JEDA di tab BT — sama dengan hotkey `."""
+        self._bt_jeda()
+
+    def _bt_reset(self):
+        self._bt_stop_ev.set()
+        self._bt_run_ev.set()
+        self._bt_status_var.set("↺  BT Reset.")
+        self._bt_progress_var.set("Putaran: -")
+        self._log("↺  BT Reset.")
+
+    def _bt_stop(self):
+        self._bt_stop_ev.set()
+        self._bt_run_ev.set()
+        self._bt_status_var.set("■  BT Dihentikan.")
+
+    def _reset_aktif(self):
+        if self._tab_aktif() == "bt":
+            self._bt_reset()
+        else:
+            self._reset_worker()
+
+    def _stop_semua(self):
+        self._su_stop_ev.set(); self._su_run_ev.set()
+        self._bt_stop_ev.set(); self._bt_run_ev.set()
+        self._set_status("■  Semua dihentikan.", DANGER)
+        self._bt_status_var.set("■  BT Dihentikan.")
 
     def destroy(self):
         try:
             import keyboard; keyboard.unhook_all_hotkeys()
         except Exception: pass
+        self._su_stop_ev.set(); self._su_run_ev.set()
+        self._bt_stop_ev.set(); self._bt_run_ev.set()
         super().destroy()
 
     # ── status ───────────────────────────────────────────────
@@ -511,46 +893,7 @@ class AppDetilSU(tk.Tk):
         self._sb_var.set(msg)
         self._status_var.set(msg)
 
-    # ── worker controls ──────────────────────────────────────
-    def _start_worker(self):
-        if self._running: return
-        self._set_status("💾  Menyimpan config…", TEXT_DIM)
-        self._save_config()
-        self._running = True
-        self._paused  = False
-        self._set_status("▶  Berjalan…", SUCCESS)
-        self._log("▶  Memulai…")
-        self._worker = threading.Thread(target=self._run_paste, daemon=True)
-        self._worker.start()
-
-    def _toggle_pause(self):
-        if not self._running: return
-        self._paused = not self._paused
-        if self._paused:
-            self._set_status("⏸  Dijeda…", WARNING)
-            self._log("⏸  Dijeda.")
-        else:
-            self._set_status("▶  Melanjutkan…", SUCCESS)
-            self._log("▶  Melanjutkan.")
-
-    def _set_paused(self, val: bool):
-        def _do():
-            self._paused = val
-            if val:
-                self._set_status("⏸  Selesai isi — tekan F2 untuk lanjut", WARNING)
-        self.after(0, _do)
-
-    def _reset_worker(self):
-        self._stop_worker()
-        self._set_status("↺  Reset.", ACCENT)
-        self._log("↺  Reset.")
-        self._progress_var.set("Putaran: -")
-
-    def _stop_worker(self):
-        self._running = False
-        self._paused  = False
-        self._set_status("■  Dihentikan.", DANGER)
-
+    # ── utilitas ─────────────────────────────────────────────
     def _show_cursor_pos(self):
         import pyautogui as _pg
         self._log("── Lacak Cursor 3 detik ──")
@@ -572,28 +915,50 @@ class AppDetilSU(tk.Tk):
         threading.Thread(target=_run, daemon=True).start()
         self._log("🔎  Cek asset — buka halaman DETIL dulu…")
 
+    # ── run threads ──────────────────────────────────────────
     def _run_paste(self):
         try:
             from auto_paste_detil import jalankan_paste
             jalankan_paste(
                 cfg           = self._cfg,
                 assets_dir    = ASSETS_DIR,
-                is_running    = lambda: self._running,
-                is_paused     = lambda: self._paused,
+                is_running    = lambda: not self._su_stop_ev.is_set(),
+                is_paused     = lambda: not self._su_run_ev.is_set(),
                 log_fn        = self._log,
                 progress_fn   = lambda m: self._progress_var.set(m),
                 status_fn     = self._set_status,
-                set_paused_fn = self._set_paused,
+                set_paused_fn = self._set_su_paused,
                 debug         = self._debug_var.get(),
             )
         except ImportError:
             self._log("⚠️  auto_paste_detil.py tidak ditemukan.")
         except Exception as ex:
-            self._log(f"❌  Error: {ex}")
+            self._log(f"❌  SU Error: {ex}")
         finally:
-            self._running = False
-            self._set_status("✅  Selesai.", SUCCESS)
-            self._log("✅  Selesai.")
+            self._su_stop_ev.set()
+            self._set_status("✅  SU Selesai.", SUCCESS)
+            self._log("✅  SU Selesai.")
+
+    def _run_bt(self):
+        try:
+            from auto_paste_detil import jalankan_paste_bt
+            jalankan_paste_bt(
+                cfg           = self._cfg,
+                assets_dir    = ASSETS_DIR,
+                is_running    = lambda: not self._bt_stop_ev.is_set(),
+                is_paused     = lambda: not self._bt_run_ev.is_set(),
+                log_fn        = self._log,
+                progress_fn   = lambda m: self._bt_progress_var.set(m),
+                status_fn     = lambda m, *_: self._bt_status_var.set(m),
+                set_paused_fn = self._set_bt_paused,
+                debug         = self._debug_var.get(),
+            )
+        except Exception as ex:
+            self._log(f"❌  BT Error: {ex}")
+        finally:
+            self._bt_stop_ev.set()
+            self._bt_status_var.set("✅  BT Selesai.")
+            self._log("✅  BT Selesai.")
 
 
 if __name__ == "__main__":

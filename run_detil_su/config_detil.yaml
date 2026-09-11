@@ -11,65 +11,76 @@ fokus_form:
 - 349
 - 220
 delay:
-  antar_field: 0.4
-  setelah_klik: 0.5
-  setelah_ketik: 0.3
-  setelah_tab: 0.2
-  antar_putaran: 1.0
-
-# ── Tgl. Penemoran ──────────────────────────────────────────
+  antar_field: 0.2
+  setelah_klik: 0.25
+  setelah_ketik: 0.15
+  setelah_tab: 0.1
+  antar_putaran: 0.5
 penomoran:
-  tanggal_enabled: false
-  tanggal_nilai: ''
+  tanggal_enabled: true
+  tanggal_nilai: 06/08/2015
   tanggal_x: 370
   tanggal_y: 612
-
-# ── Pembukuan ────────────────────────────────────────────────
-# Alur:
-#   1. Klik centang checkbox An  (1188, 494)
-#   2. Klik field Jabatan        (1338, 496)  → dropdown terbuka → ketik teks → Enter
-#   3. Klik field Jabatan lagi   (1338, 496)  → ketik teks lagi (konfirmasi)
-#   4. Klik field Nama           (1220, 528)  → ketik nama
 pembukuan:
-  enabled: false
-  nama: "Anggit Sunarta"
-  jabatan_teks: "Kepala Seksi Survei dan Pemetaan"
-  centang_x: 1188
-  centang_y: 494
-  jabatan_x: 1338
-  jabatan_y: 496
-  nama_x: 1220
-  nama_y: 528
-
-# ── Penerbitan Sertifikat ────────────────────────────────────
-# Alur:
-#   1. Klik centang checkbox An  (1188, 563)
-#   2. Klik field Jabatan atas   (1338, 565)  → ketik teks → Enter
-#   3. Klik field Jabatan atas   (1338, 565)  → ketik teks (konfirmasi)
-#   4. Klik field Nama atas      (1220, 597)  → ketik nama
-#   5. Klik field Jabatan bawah  (1347, 630)  → ketik teks → Enter
-#   6. Klik field Jabatan bawah  (1347, 630)  → ketik teks (konfirmasi)
-#   7. Klik field Nama bawah     (1211, 661)  → ketik nama
-#   8. Klik akhir                (1213, 720)
+  enabled: true
+  centang_enabled: false
+  jabatan_teks: Kepala Seksi Survei, Pengukuran dan Pemetaan
+  nama: karjono a.ptnh
+  centang_x: 1883
+  centang_y: 495
+  jabatan_x: 1339
+  jabatan_y: 494
+  jabatan_klik2_x: 1339
+  jabatan_klik2_y: 551
+  nama_x: 1200
+  nama_y: 529
+  nama_klik2_x: 1200
+  nama_klik2_y: 581
 penerbitan_sertifikat:
-  enabled: false
-  nama: "Anggit Sunarta"
-  jabatan_teks: "Kepala Seksi Survei dan Pemetaan"
-  jabatan2_teks: "Kepala Seksi Survei dan Pemetaan"
+  enabled: true
+  centang_enabled: false
+  jabatan_teks: kepala kantor pertanahan
+  nama: agus suprijanto
   centang_x: 1188
-  centang_y: 563
-  jabatan_x: 1338
-  jabatan_y: 565
-  nama_x: 1220
-  nama_y: 597
-  jabatan2_x: 1347
-  jabatan2_y: 630
-  nama2_x: 1211
-  nama2_y: 661
-  klik_akhir_x: 1213
-  klik_akhir_y: 720
-
-# ── Daftar Isian ─────────────────────────────────────────────
+  centang_y: 627
+  jabatan_x: 1336
+  jabatan_y: 633
+  jabatan_klik2_x: 1336
+  jabatan_klik2_y: 679
+  nama_x: 1200
+  nama_y: 666
+  nama_klik2_x: 1200
+  nama_klik2_y: 719
+pembukuan_bt:
+  enabled: true
+  centang_enabled: false
+  jabatan_teks: ajudi
+  nama: agus hariadi
+  centang_x: 1200
+  centang_y: 683
+  jabatan_x: 1333
+  jabatan_y: 680
+  jabatan_klik2_x: 1333
+  jabatan_klik2_y: 735
+  nama_x: 1200
+  nama_y: 712
+  nama_klik2_x: 1200
+  nama_klik2_y: 767
+penerbitan_sertifikat_bt:
+  enabled: true
+  centang_enabled: false
+  jabatan_teks: ajudi
+  nama: agus hariadi
+  centang_x: 1200
+  centang_y: 830
+  jabatan_x: 1330
+  jabatan_y: 826
+  jabatan_klik2_x: 1330
+  jabatan_klik2_y: 805
+  nama_x: 1200
+  nama_y: 866
+  nama_klik2_x: 1205
+  nama_klik2_y: 840
 daftar_isian:
   enabled: true
   kolom:
@@ -82,33 +93,44 @@ daftar_isian:
     x_nomor: 571
     x_tahun: 590
     x_tanggal: 810
-
-# ── Detail Lain-Lain ─────────────────────────────────────────
 detail_lain:
   keadaan_tanah:
-    enabled: false
+    enabled: true
+    nilai: Sebidang tanah diatasnya berdiri bangunan.
     x: 377
     y: 825
-    nilai: Sebidang tanah bekas pertanian
-
   tanda_tanda_batas:
-    enabled: false
+    enabled: true
+    nilai: Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997
+      jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor
+      3 Tahun 1997 Pasal 22 Ayat 1.
     x: 369
     y: 880
-    nilai: >-
-      Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997
-      jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional
-      Nomor 3 Tahun 1997 Pasal 22 Ayat 1.
-
   pengukuran_dan_pemetaan:
-    enabled: false
+    enabled: true
+    template: 'Batas-batas ditunjukan oleh :
+
+      {nama} (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+
+      Ditetapkan dan diukur oleh WIDODO JUNIARTO'
+    mode: template_nama
     x: 368
     y: 928
-    mode: template_nama
-    template: "Batas-batas ditunjukan oleh :\n{nama} (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.\nDitetapkan dan diukur oleh Anggit Sunarta."
-
   hal_lain_lain:
-    enabled: false
+    enabled: true
+    nilai: TIDAK ADA NOMOR GAMBAR UKUR 1871/2021
     x: 370
     y: 981
-    nilai: TIDAK ADA NOMOR GAMBAR UKUR 1871/2021
+bt:
+  daftar_isian:
+    enabled: true
+    kolom:
+    - id: DI 301
+      enabled: true
+      nomor: '0'
+      tahun: '1990'
+      tanggal: 01/01/1990
+      y: 455
+      x_nomor: 385
+      x_tahun: 649
+      x_tanggal: 850

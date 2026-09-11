@@ -13,7 +13,7 @@ import pyautogui
 import pyperclip
 
 pyautogui.FAILSAFE = True
-pyautogui.PAUSE    = 0.03   # lebih cepat, delay manual diatur sendiri
+pyautogui.PAUSE    = 0.01   # lebih cepat
 
 
 # ── path helper ──────────────────────────────────────────────
@@ -130,7 +130,7 @@ def _find_image(image_path: str, confidence: float = 0.75,
 
 
 def _wait_image(image_path: str, confidence: float = 0.75,
-                timeout: float = None, interval: float = 0.5,
+                timeout: float = None, interval: float = 0.3,
                 is_running=None, is_paused=None,
                 log_fn=None) -> object:
     """
@@ -151,7 +151,7 @@ def _wait_image(image_path: str, confidence: float = 0.75,
         # tunggu saat dijeda
         if is_paused is not None:
             while is_paused() and (is_running is None or is_running()):
-                time.sleep(0.2)
+                time.sleep(0.1)
             if is_running is not None and not is_running():
                 return None
 
@@ -177,7 +177,7 @@ def _wait_image(image_path: str, confidence: float = 0.75,
         time.sleep(interval)
 
 
-def _klik(x: int, y: int, label: str = "", delay_after: float = 0.3):
+def _klik(x: int, y: int, label: str = "", delay_after: float = 0.2):
     """Klik koordinat absolut. Tampilkan marker jika debug aktif."""
     # Batasi koordinat agar tidak klik di luar area konten browser
     # (header browser, taskbar, sidebar)
@@ -206,10 +206,10 @@ def _isi_field(x: int, y: int, nilai: str, cfg: dict,
     menggeser fokus ke luar form.
     """
     # 1. Klik sekali untuk fokus ke field
-    _klik(x, y, label=label, delay_after=0.2)
+    _klik(x, y, label=label, delay_after=0.1)
     # 2. Triple-click di posisi yang sama untuk select semua isi field
-    pyautogui.click(x, y, clicks=3, interval=0.1)
-    time.sleep(0.15)
+    pyautogui.click(x, y, clicks=3, interval=0.07)
+    time.sleep(0.08)
     # 3. Paste via clipboard
     pyperclip.copy(str(nilai))
     pyautogui.hotkey("ctrl", "v")
@@ -244,7 +244,7 @@ def _fokus_ke_form(cfg: dict, log_fn):
         fx, fy = 400, 180
     log_fn(f"  [FOKUS] ({fx},{fy})")
     pyautogui.click(fx, fy)
-    time.sleep(float(cfg.get("delay", {}).get("setelah_klik", 0.4)))
+    time.sleep(float(cfg.get("delay", {}).get("setelah_klik", 0.25)))
 
 
 # ════════════════════════════════════════════════════════════
@@ -483,7 +483,7 @@ def _ketik_dropdown(teks: str, cfg: dict, log_fn, label: str = ""):
     time.sleep(0.05)
     pyperclip.copy(str(teks))
     pyautogui.hotkey("ctrl", "v")
-    time.sleep(0.4)   # tunggu dropdown filter tampil
+    time.sleep(0.25)   # tunggu dropdown filter tampil
     # Enter untuk pilih item pertama dari dropdown
     pyautogui.press("enter")
     _sleep(cfg, "setelah_ketik", 0.3)
@@ -493,118 +493,137 @@ def _ketik_dropdown(teks: str, cfg: dict, log_fn, label: str = ""):
 
 def _ketik(teks: str, cfg: dict, log_fn, label: str = ""):
     """Triple-click select-all lalu paste teks biasa (bukan dropdown)."""
-    pyautogui.click(clicks=3, interval=0.1)
-    time.sleep(0.1)
+    pyautogui.click(clicks=3, interval=0.07)
+    time.sleep(0.07)
     pyperclip.copy(str(teks))
     pyautogui.hotkey("ctrl", "v")
-    _sleep(cfg, "setelah_ketik", 0.3)
+    _sleep(cfg, "setelah_ketik", 0.15)
     if log_fn:
         log_fn(f"    {label}: '{teks}'")
 
 
-def aksi_pembukuan(cfg: dict, log_fn) -> bool:
+def aksi_pembukuan(cfg: dict, log_fn, cfg_key: str = "pembukuan") -> bool:
     """
-    Isi section Pembukuan:
-    1. Centang checkbox
-    2. Klik field Jabatan → ketik jabatan
-    3. Klik field Jabatan lagi → ketik jabatan (konfirmasi)
-    4. Klik field Nama → ketik nama
+    Isi section Pembukuan (SU atau BT via cfg_key).
+    Alur:
+      1. Centang checkbox
+      2. Klik jabatan_x/y → paste jabatan
+      3. Klik jabatan_klik2_x/y → paste jabatan (konfirmasi/pilih dropdown)
+      4. Klik nama_x/y → paste nama
+      5. Klik nama_klik2_x/y (konfirmasi)
     """
-    pen = cfg.get("pembukuan", {})
+    pen = cfg.get(cfg_key, {})
     if not pen.get("enabled", False):
-        log_fn("  [PEMBUKUAN] ⏭  Skip.")
-        return True
-
-    nama          = str(pen.get("nama", ""))
-    jabatan_teks  = str(pen.get("jabatan_teks", "kepala seksi survei,"))
-    cx, cy        = int(pen.get("centang_x", 0)),  int(pen.get("centang_y", 0))
-    jx, jy        = int(pen.get("jabatan_x", 0)),  int(pen.get("jabatan_y", 0))
-    nx, ny        = int(pen.get("nama_x",    0)),   int(pen.get("nama_y",    0))
-
-    log_fn("  [PEMBUKUAN] Mulai…")
-
-    # 1. Centang checkbox "An"
-    _klik(cx, cy, label="centang pembukuan", delay_after=0.4)
-    log_fn(f"    ✓ Centang ({cx},{cy})")
-
-    # 2. Klik field Jabatan → dropdown muncul → ketik filter → Enter
-    _klik(jx, jy, label="jabatan pembukuan klik1", delay_after=0.3)
-    _ketik_dropdown(jabatan_teks, cfg, log_fn, label="Jabatan")
-
-    # 3. Klik field Jabatan lagi → pilih lagi (untuk konfirmasi/dropdown ke-2)
-    _klik(jx, jy, label="jabatan pembukuan klik2", delay_after=0.3)
-    _ketik_dropdown(jabatan_teks, cfg, log_fn, label="Jabatan (klik2)")
-
-    # 4. Klik field Nama → ketik nama
-    _klik(nx, ny, label="nama pembukuan", delay_after=0.3)
-    _ketik(nama, cfg, log_fn, label="Nama")
-
-    log_fn("  [PEMBUKUAN] ✅")
-    return True
-
-
-def aksi_penerbitan_sertifikat(cfg: dict, log_fn) -> bool:
-    """
-    Isi section Penerbitan Sertifikat:
-    1. Centang checkbox
-    2. Klik jabatan atas → ketik jabatan (2x)
-    3. Klik nama atas → ketik nama
-    4. Klik jabatan bawah → ketik jabatan (2x)
-    5. Klik nama bawah → ketik nama
-    6. Klik koordinat akhir
-    """
-    pen = cfg.get("penerbitan_sertifikat", {})
-    if not pen.get("enabled", False):
-        log_fn("  [PENERBITAN SERTIFIKAT] ⏭  Skip.")
+        log_fn(f"  [{cfg_key.upper()}] ⏭  Skip.")
         return True
 
     nama         = str(pen.get("nama", ""))
-    jab_teks     = str(pen.get("jabatan_teks",  "kepala seksi survei,"))
-    jab2_teks    = str(pen.get("jabatan2_teks", "kepala seksi survei,"))
+    jabatan_teks = str(pen.get("jabatan_teks", ""))
+    cx,  cy   = int(pen.get("centang_x",       0)), int(pen.get("centang_y",       0))
+    jx,  jy   = int(pen.get("jabatan_x",       0)), int(pen.get("jabatan_y",       0))
+    jx2, jy2  = int(pen.get("jabatan_klik2_x", 0)), int(pen.get("jabatan_klik2_y", 0))
+    nx,  ny   = int(pen.get("nama_x",          0)), int(pen.get("nama_y",          0))
+    nx2, ny2  = int(pen.get("nama_klik2_x",    0)), int(pen.get("nama_klik2_y",    0))
 
-    cx,  cy   = int(pen.get("centang_x",  0)), int(pen.get("centang_y",  0))
-    jx,  jy   = int(pen.get("jabatan_x",  0)), int(pen.get("jabatan_y",  0))
-    nx,  ny   = int(pen.get("nama_x",     0)), int(pen.get("nama_y",     0))
-    jx2, jy2  = int(pen.get("jabatan2_x", 0)), int(pen.get("jabatan2_y", 0))
-    nx2, ny2  = int(pen.get("nama2_x",    0)), int(pen.get("nama2_y",    0))
-    ax,  ay   = int(pen.get("klik_akhir_x", 0)), int(pen.get("klik_akhir_y", 0))
+    log_fn(f"  [{cfg_key.upper()}] Mulai…")
 
-    log_fn("  [PENERBITAN SERTIFIKAT] Mulai…")
+    # 1. Centang — hanya jika centang_enabled: true
+    if pen.get("centang_enabled", False) and cx and cy:
+        _klik(cx, cy, label="centang", delay_after=0.2)
+        log_fn(f"    ✓ Centang ({cx},{cy})")
+    else:
+        log_fn(f"    ↷ Centang dilewati.")
 
-    # 1. Centang checkbox "An"
-    _klik(cx, cy, label="centang sertifikat", delay_after=0.4)
-    log_fn(f"    ✓ Centang ({cx},{cy})")
+    # 2. Klik jabatan → paste
+    if jx and jy:
+        _klik(jx, jy, label="jabatan klik1", delay_after=0.15)
+        pyautogui.hotkey("ctrl", "a"); time.sleep(0.05)
+        pyperclip.copy(jabatan_teks); pyautogui.hotkey("ctrl", "v")
+        _sleep(cfg, "setelah_ketik", 0.15)
+        log_fn(f"    Jabatan → '{jabatan_teks}'")
 
-    # 2. Jabatan atas klik 1 → dropdown → Enter
-    _klik(jx, jy, label="jabatan atas klik1", delay_after=0.3)
-    _ketik_dropdown(jab_teks, cfg, log_fn, label="Jabatan atas")
+    # 3. Klik jabatan klik2 → paste (konfirmasi/pilih dari list)
+    if jx2 and jy2:
+        _klik(jx2, jy2, label="jabatan klik2", delay_after=0.15)
+        pyautogui.hotkey("ctrl", "a"); time.sleep(0.05)
+        pyperclip.copy(jabatan_teks); pyautogui.hotkey("ctrl", "v")
+        _sleep(cfg, "setelah_ketik", 0.15)
+        log_fn(f"    Jabatan klik2 → '{jabatan_teks}'")
 
-    # 3. Jabatan atas klik 2 → dropdown → Enter
-    _klik(jx, jy, label="jabatan atas klik2", delay_after=0.3)
-    _ketik_dropdown(jab_teks, cfg, log_fn, label="Jabatan atas (klik2)")
+    # 4. Klik nama → paste
+    if nx and ny:
+        _klik(nx, ny, label="nama klik1", delay_after=0.15)
+        pyautogui.hotkey("ctrl", "a"); time.sleep(0.05)
+        pyperclip.copy(nama); pyautogui.hotkey("ctrl", "v")
+        _sleep(cfg, "setelah_ketik", 0.15)
+        log_fn(f"    Nama → '{nama}'")
 
-    # 4. Nama atas → ketik
-    _klik(nx, ny, label="nama atas", delay_after=0.3)
-    _ketik(nama, cfg, log_fn, label="Nama atas")
+    # 5. Klik nama klik2 (konfirmasi)
+    if nx2 and ny2:
+        _klik(nx2, ny2, label="nama klik2", delay_after=0.15)
+        pyautogui.hotkey("ctrl", "a"); time.sleep(0.05)
+        pyperclip.copy(nama); pyautogui.hotkey("ctrl", "v")
+        _sleep(cfg, "setelah_ketik", 0.15)
+        log_fn(f"    Nama klik2 → '{nama}'")
 
-    # 5. Jabatan bawah klik 1 → dropdown → Enter
-    _klik(jx2, jy2, label="jabatan bawah klik1", delay_after=0.3)
-    _ketik_dropdown(jab2_teks, cfg, log_fn, label="Jabatan bawah")
+    log_fn(f"  [{cfg_key.upper()}] ✅")
+    return True
 
-    # 6. Jabatan bawah klik 2 → dropdown → Enter
-    _klik(jx2, jy2, label="jabatan bawah klik2", delay_after=0.3)
-    _ketik_dropdown(jab2_teks, cfg, log_fn, label="Jabatan bawah (klik2)")
 
-    # 7. Nama bawah → ketik
-    _klik(nx2, ny2, label="nama bawah", delay_after=0.3)
-    _ketik(nama, cfg, log_fn, label="Nama bawah")
+def aksi_penerbitan_sertifikat(cfg: dict, log_fn,
+                                cfg_key: str = "penerbitan_sertifikat") -> bool:
+    """
+    Isi section Penerbitan Sertifikat (SU atau BT via cfg_key).
+    Alur identik dengan Pembukuan — jabatan & nama masing-masing 2 klik.
+    """
+    pen = cfg.get(cfg_key, {})
+    if not pen.get("enabled", False):
+        log_fn(f"  [{cfg_key.upper()}] ⏭  Skip.")
+        return True
 
-    # 8. Klik akhir
-    if ax and ay:
-        _klik(ax, ay, label="klik akhir sertifikat", delay_after=0.3)
-        log_fn(f"    ✓ Klik akhir ({ax},{ay})")
+    nama         = str(pen.get("nama", ""))
+    jabatan_teks = str(pen.get("jabatan_teks", ""))
+    cx,  cy   = int(pen.get("centang_x",       0)), int(pen.get("centang_y",       0))
+    jx,  jy   = int(pen.get("jabatan_x",       0)), int(pen.get("jabatan_y",       0))
+    jx2, jy2  = int(pen.get("jabatan_klik2_x", 0)), int(pen.get("jabatan_klik2_y", 0))
+    nx,  ny   = int(pen.get("nama_x",          0)), int(pen.get("nama_y",          0))
+    nx2, ny2  = int(pen.get("nama_klik2_x",    0)), int(pen.get("nama_klik2_y",    0))
 
-    log_fn("  [PENERBITAN SERTIFIKAT] ✅")
+    log_fn(f"  [{cfg_key.upper()}] Mulai…")
+
+    if cx and cy:
+        _klik(cx, cy, label="centang", delay_after=0.2)
+        log_fn(f"    ✓ Centang ({cx},{cy})")
+
+    if jx and jy:
+        _klik(jx, jy, label="jabatan klik1", delay_after=0.15)
+        pyautogui.hotkey("ctrl", "a"); time.sleep(0.05)
+        pyperclip.copy(jabatan_teks); pyautogui.hotkey("ctrl", "v")
+        _sleep(cfg, "setelah_ketik", 0.15)
+        log_fn(f"    Jabatan → '{jabatan_teks}'")
+
+    if jx2 and jy2:
+        _klik(jx2, jy2, label="jabatan klik2", delay_after=0.15)
+        pyautogui.hotkey("ctrl", "a"); time.sleep(0.05)
+        pyperclip.copy(jabatan_teks); pyautogui.hotkey("ctrl", "v")
+        _sleep(cfg, "setelah_ketik", 0.15)
+        log_fn(f"    Jabatan klik2 → '{jabatan_teks}'")
+
+    if nx and ny:
+        _klik(nx, ny, label="nama klik1", delay_after=0.15)
+        pyautogui.hotkey("ctrl", "a"); time.sleep(0.05)
+        pyperclip.copy(nama); pyautogui.hotkey("ctrl", "v")
+        _sleep(cfg, "setelah_ketik", 0.15)
+        log_fn(f"    Nama → '{nama}'")
+
+    if nx2 and ny2:
+        _klik(nx2, ny2, label="nama klik2", delay_after=0.15)
+        pyautogui.hotkey("ctrl", "a"); time.sleep(0.05)
+        pyperclip.copy(nama); pyautogui.hotkey("ctrl", "v")
+        _sleep(cfg, "setelah_ketik", 0.15)
+        log_fn(f"    Nama klik2 → '{nama}'")
+
+    log_fn(f"  [{cfg_key.upper()}] ✅")
     return True
 
 
@@ -637,7 +656,7 @@ def aksi_detail_lain(cfg: dict, assets_dir: str, log_fn,
             template = str(sub.get("template", "{nama}"))
 
             # 1. Klik field
-            _klik(x, y, label=lbl_text, delay_after=0.3)
+            _klik(x, y, label=lbl_text, delay_after=0.15)
 
             # 2. Ctrl+A → Ctrl+C ambil isi lama (nama saja, misal "ROMLI")
             pyautogui.hotkey("ctrl", "a")
@@ -679,7 +698,7 @@ def aksi_detail_lain(cfg: dict, assets_dir: str, log_fn,
         elif mode == "sisip_sebelum_kurung":
             # ── Mode lama — masih didukung ──────────────────
             teks_tambah = str(sub.get("teks_tambah", ""))
-            _klik(x, y, label=lbl_text, delay_after=0.3)
+            _klik(x, y, label=lbl_text, delay_after=0.15)
             pyautogui.hotkey("ctrl", "a")
             time.sleep(0.15)
             pyautogui.hotkey("ctrl", "c")
@@ -899,20 +918,99 @@ def jalankan_paste(cfg, assets_dir, is_running, is_paused,
         log_fn(f"✅  Putaran {rec_idx} selesai.")
 
         # ── Otomatis jeda setelah selesai isi ────────────────
-        log_fn("⏸  Otomatis jeda — periksa hasil, tekan F2 untuk lanjut…")
-        status_fn("⏸  Selesai isi — tekan F2 untuk lanjut")
+        log_fn("⏸  Selesai isi — tekan \\ untuk lanjut ke record berikutnya…")
+        status_fn("⏸  Selesai isi — tekan \\ untuk lanjut")
         if set_paused_fn:
             set_paused_fn(True)
+        # Tunggu sampai di-unpause (is_paused() False) atau di-stop
         while is_paused() and is_running():
-            time.sleep(0.2)
+            time.sleep(0.1)
         if not is_running():
             break
 
-        status_fn(f"⏳  Jeda {delay_loop}s…")
-        t_end = time.time() + delay_loop
-        while time.time() < t_end:
-            if not is_running() or is_paused():
-                break
-            time.sleep(0.1)
+        log_fn("▶  Melanjutkan ke record berikutnya…")
 
     log_fn(f"\n■  Berhenti. Total putaran: {rec_idx}")
+
+
+# ════════════════════════════════════════════════════════════
+#  BUKU TANAH (BT) — loop auto-paste
+# ════════════════════════════════════════════════════════════
+
+def jalankan_paste_bt(cfg, assets_dir, is_running, is_paused,
+                      log_fn, progress_fn, status_fn,
+                      set_paused_fn=None, debug=False):
+    """
+    Loop auto-paste Buku Tanah.
+    Hanya mengisi Daftar Isian BT (DI 301 dst) via koordinat absolut.
+    """
+    set_debug(debug)
+    set_region(cfg.get("search_region", None))
+    _set_callbacks(is_running, is_paused)
+
+    log_fn("═" * 52)
+    log_fn("  AUTO-PASTE BUKU TANAH (BT)  |  \\=Jeda  ESC=Stop")
+    log_fn("═" * 52)
+
+    bt_cfg      = cfg.get("bt", {})
+    di_cfg      = bt_cfg.get("daftar_isian", {})
+    kolom_list  = di_cfg.get("kolom", []) if di_cfg.get("enabled", True) else []
+    delay_loop  = float(cfg.get("delay", {}).get("antar_putaran", 1.0))
+    rec_idx     = 0
+
+    while is_running():
+
+        if is_paused():
+            status_fn("⏸  Dijeda…")
+            while is_paused() and is_running():
+                time.sleep(0.2)
+            if not is_running():
+                break
+
+        rec_idx += 1
+        progress_fn(f"Putaran ke-{rec_idx}")
+        log_fn(f"\n── BT Putaran {rec_idx} ──────────────────────────")
+        status_fn(f"▶  BT Putaran {rec_idx}…")
+
+        # Fokus ke form
+        _fokus_ke_form(cfg, log_fn)
+        if not is_running(): break
+
+        # Pembukuan BT
+        aksi_pembukuan(cfg, log_fn, cfg_key="pembukuan_bt")
+        if not is_running(): break
+
+        # Penerbitan Sertifikat BT
+        aksi_penerbitan_sertifikat(cfg, log_fn, cfg_key="penerbitan_sertifikat_bt")
+        if not is_running(): break
+
+        # Isi semua kolom DI BT
+        if di_cfg.get("enabled", True) and kolom_list:
+            for kolom in kolom_list:
+                if not is_running(): break
+                while is_paused() and is_running():
+                    time.sleep(0.2)
+                aksi_satu_kolom_di(cfg, assets_dir, log_fn, kolom)
+                _sleep(cfg, "antar_field", 0.4)
+        else:
+            log_fn("  [BT DI] ⏭  Dilewati.")
+        if not is_running(): break
+
+        # Simpan
+        aksi_simpan(cfg, assets_dir, log_fn)
+        log_fn(f"✅  BT Putaran {rec_idx} selesai.")
+
+        # Otomatis jeda
+        log_fn("⏸  BT Selesai isi — tekan ` untuk lanjut ke record berikutnya…")
+        status_fn("⏸  BT Selesai — tekan ` untuk lanjut")
+        if set_paused_fn:
+            set_paused_fn(True)
+        # Tunggu sampai di-unpause atau di-stop
+        while is_paused() and is_running():
+            time.sleep(0.1)
+        if not is_running():
+            break
+
+        log_fn("▶  BT Melanjutkan ke record berikutnya…")
+
+    log_fn(f"\n■  BT Berhenti. Total putaran: {rec_idx}")
