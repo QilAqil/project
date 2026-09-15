@@ -8,9 +8,18 @@ import os
 import sys
 import time
 import threading
+import re
 import tkinter as tk
+# pyrefly: ignore [untyped-import]
 import pyautogui
+# pyrefly: ignore [untyped-import]
 import pyperclip
+
+try:
+    # pyrefly: ignore [missing-import]
+    from PIL import Image as _PIL_Image
+except ImportError:
+    _PIL_Image = None
 
 pyautogui.FAILSAFE = True
 pyautogui.PAUSE    = 0.01   # lebih cepat
@@ -29,7 +38,7 @@ def base_path():
 
 class _ClickMarker:
     @classmethod
-    def show(cls, x, y, label="", duration=0.8):
+    def show(cls, x, y, label="", duration=0.6):
         threading.Thread(
             target=cls._draw, args=(x, y, label, duration), daemon=True
         ).start()
@@ -130,7 +139,7 @@ def _find_image(image_path: str, confidence: float = 0.75,
 
 
 def _wait_image(image_path: str, confidence: float = 0.75,
-                timeout: float = None, interval: float = 0.3,
+                timeout: float | None = None, interval: float = 0.3,
                 is_running=None, is_paused=None,
                 log_fn=None) -> object:
     """
@@ -201,19 +210,18 @@ def _klik(x: int, y: int, label: str = "", delay_after: float = 0.2):
 def _isi_field(x: int, y: int, nilai: str, cfg: dict,
                label: str = "", log_fn=None):
     """
-    Klik field di (x,y), triple-click select all isi field, lalu paste.
-    Menggunakan klik 3x di posisi yang SAMA (bukan Ctrl+A) agar tidak
-    menggeser fokus ke luar form.
+    Klik field di (x,y), select-all isi field secara tuntas, lalu paste.
+    Menggunakan kombinasi triple-click dan Ctrl+A agar bersih
+    baik pada input satu baris maupun textarea multi-baris.
     """
-    # 1. Klik sekali untuk fokus ke field
-    _klik(x, y, label=label, delay_after=0.1)
-    # 2. Triple-click di posisi yang sama untuk select semua isi field
-    pyautogui.click(x, y, clicks=3, interval=0.07)
-    time.sleep(0.08)
-    # 3. Paste via clipboard
+    _klik(x, y, label=label, delay_after=0.08)
+    pyautogui.click(x, y, clicks=3, interval=0.05)
+    pyautogui.hotkey("ctrl", "a")
+    time.sleep(0.04)
+    # pyrefly: ignore [unnecessary-type-conversion]
     pyperclip.copy(str(nilai))
     pyautogui.hotkey("ctrl", "v")
-    _sleep(cfg, "setelah_ketik", 0.3)
+    _sleep(cfg, "setelah_ketik", 0.15)
     if log_fn:
         log_fn(f"    → ({x},{y}) '{nilai}'")
 
@@ -252,7 +260,7 @@ def _fokus_ke_form(cfg: dict, log_fn):
 # ════════════════════════════════════════════════════════════
 
 def _cari_dan_klik(image_path: str, offset_x: int = 0, offset_y: int = 0,
-                   confidence: float = 0.75, timeout: float = None,
+                   confidence: float = 0.75, timeout: float | None = None,
                    log_fn=None, label: str = "", delay_after: float = 0.4,
                    is_running=None, is_paused=None) -> tuple:
     """
@@ -264,34 +272,15 @@ def _cari_dan_klik(image_path: str, offset_x: int = 0, offset_y: int = 0,
                       log_fn=log_fn)
     if loc is None:
         return None, None
+    # pyrefly: ignore [missing-attribute]
     cx = loc.left + loc.width  // 2 + offset_x
+    # pyrefly: ignore [missing-attribute]
     cy = loc.top  + loc.height // 2 + offset_y
     _klik(cx, cy, label=label or os.path.basename(image_path),
           delay_after=delay_after)
     return cx, cy
 
 
-# ════════════════════════════════════════════════════════════
-#  AKSI: SERI
-# ════════════════════════════════════════════════════════════
-
-def aksi_seri(cfg: dict, assets_dir: str, log_fn, nilai: str) -> bool:
-    img = os.path.join(assets_dir, "label_field_seri.png")
-    if not os.path.exists(img):
-        log_fn("  [SERI] ℹ️  Image tidak ada, skip.")
-        return False
-    log_fn("  [SERI] ⏳  Menunggu field Seri…")
-    cx, cy = _cari_dan_klik(img, offset_x=80, confidence=0.75,
-                             timeout=None,
-                             is_running=_is_running_ref,
-                             is_paused=_is_paused_ref,
-                             log_fn=log_fn, label="Seri input")
-    if cx is None:
-        log_fn("  [SERI] ■  Dihentikan.")
-        return False
-    _isi_field(cx, cy, nilai, cfg, label="Seri", log_fn=log_fn)
-    log_fn(f"  [SERI] ✅  '{nilai}'")
-    return True
 
 
 # ════════════════════════════════════════════════════════════
@@ -363,8 +352,6 @@ def aksi_satu_kolom_di(cfg: dict, assets_dir: str, log_fn,
     x_tanggal = kolom.get("x_tanggal")
 
     # Juga dukung format lama: x + y (pakai offset dari config)
-    if ky is None:
-        ky = kolom.get("y")
     if x_nomor is None and kolom.get("x") is not None:
         di_off  = cfg.get("di_offset", {})
         base_x  = int(kolom.get("x"))
@@ -396,13 +383,14 @@ def aksi_satu_kolom_di(cfg: dict, assets_dir: str, log_fn,
     img_path = os.path.join(assets_dir, img_name)
 
     if img_name and os.path.exists(img_path):
-        try:
-            from PIL import Image as _Im
-            with _Im.open(img_path) as im:
-                pw, ph = im.size
-            px_info = f"{pw}×{ph}px"
-        except Exception:
-            px_info = "?"
+        px_info = "?"
+        if _PIL_Image:
+            try:
+                with _PIL_Image.open(img_path) as im:
+                    pw, ph = im.size
+                px_info = f"{pw}×{ph}px"
+            except Exception:
+                pass
 
         log_fn(f"  [{col_id}] 🔍 '{img_name}' ({px_info}) — menunggu…")
         loc = _wait_image(img_path, confidence=0.75, timeout=None,
@@ -412,7 +400,9 @@ def aksi_satu_kolom_di(cfg: dict, assets_dir: str, log_fn,
             log_fn(f"  [{col_id}] ■  Dihentikan.")
             return False
 
+        # pyrefly: ignore [missing-attribute]
         cx  = loc.left + loc.width  // 2
+        # pyrefly: ignore [missing-attribute]
         cy  = loc.top  + loc.height // 2
         off_y = int(di_off.get("offset_y", 0))
         ky2   = cy + off_y
@@ -447,59 +437,8 @@ def aksi_satu_kolom_di(cfg: dict, assets_dir: str, log_fn,
 
 
 # ════════════════════════════════════════════════════════════
-#  AKSI: DETAIL LAIN-LAIN
-#
-#  Murni Tab — tidak pakai image.
-#  Tiap field dilewati dengan Tab 1x (meski disabled),
-#  agar posisi cursor selalu sinkron.
-#
-#  Urutan field di halaman:
-#    Keadaan Tanah → Tanda-Tanda Batas → Pengukuran → Hal Lain-Lain
-#
-#  Asumsi masuk: cursor di field Tanggal baris DI terakhir yang diproses.
-#  Dari sana ke Keadaan Tanah ada beberapa Tab — nilai di config:
-#    tab_sebelum_detail  (default 1)
-# ════════════════════════════════════════════════════════════
-
-_URUTAN_DETAIL = [
-    ("keadaan_tanah",          "Keadaan Tanah"),
-    ("tanda_tanda_batas",      "Tanda-Tanda Batas"),
-    ("pengukuran_dan_pemetaan","Penunjukan dan Penetapan Batas"),
-    ("hal_lain_lain",          "Hal Lain-Lain"),
-]
-
-
-# ════════════════════════════════════════════════════════════
 #  AKSI: PEMBUKUAN
 # ════════════════════════════════════════════════════════════
-
-def _ketik_dropdown(teks: str, cfg: dict, log_fn, label: str = ""):
-    """
-    Untuk field dropdown: klik field → ketik untuk filter → Enter untuk pilih.
-    Berbeda dari _ketik biasa yang hanya paste.
-    """
-    # Clear field lalu ketik teks filter
-    pyautogui.hotkey("ctrl", "a")
-    time.sleep(0.05)
-    pyperclip.copy(str(teks))
-    pyautogui.hotkey("ctrl", "v")
-    time.sleep(0.25)   # tunggu dropdown filter tampil
-    # Enter untuk pilih item pertama dari dropdown
-    pyautogui.press("enter")
-    _sleep(cfg, "setelah_ketik", 0.3)
-    if log_fn:
-        log_fn(f"    {label}: '{teks}' (dropdown→Enter)")
-
-
-def _ketik(teks: str, cfg: dict, log_fn, label: str = ""):
-    """Triple-click select-all lalu paste teks biasa (bukan dropdown)."""
-    pyautogui.click(clicks=3, interval=0.07)
-    time.sleep(0.07)
-    pyperclip.copy(str(teks))
-    pyautogui.hotkey("ctrl", "v")
-    _sleep(cfg, "setelah_ketik", 0.15)
-    if log_fn:
-        log_fn(f"    {label}: '{teks}'")
 
 
 def aksi_pembukuan(cfg: dict, log_fn, cfg_key: str = "pembukuan") -> bool:
@@ -542,13 +481,11 @@ def aksi_pembukuan(cfg: dict, log_fn, cfg_key: str = "pembukuan") -> bool:
         _sleep(cfg, "setelah_ketik", 0.15)
         log_fn(f"    Jabatan → '{jabatan_teks}'")
 
-    # 3. Klik jabatan klik2 → paste (konfirmasi/pilih dari list)
+    # 3. Klik jabatan klik2 (pilih item dari list dropdown)
     if jx2 and jy2:
-        _klik(jx2, jy2, label="jabatan klik2", delay_after=0.15)
-        pyautogui.hotkey("ctrl", "a"); time.sleep(0.05)
-        pyperclip.copy(jabatan_teks); pyautogui.hotkey("ctrl", "v")
-        _sleep(cfg, "setelah_ketik", 0.15)
-        log_fn(f"    Jabatan klik2 → '{jabatan_teks}'")
+        _klik(jx2, jy2, label="jabatan klik2", delay_after=0.2)
+        _sleep(cfg, "setelah_klik", 0.15)
+        log_fn(f"    Jabatan klik2 ({jx2},{jy2})")
 
     # 4. Klik nama → paste
     if nx and ny:
@@ -558,13 +495,11 @@ def aksi_pembukuan(cfg: dict, log_fn, cfg_key: str = "pembukuan") -> bool:
         _sleep(cfg, "setelah_ketik", 0.15)
         log_fn(f"    Nama → '{nama}'")
 
-    # 5. Klik nama klik2 (konfirmasi)
+    # 5. Klik nama klik2 (pilih item dari list dropdown)
     if nx2 and ny2:
-        _klik(nx2, ny2, label="nama klik2", delay_after=0.15)
-        pyautogui.hotkey("ctrl", "a"); time.sleep(0.05)
-        pyperclip.copy(nama); pyautogui.hotkey("ctrl", "v")
-        _sleep(cfg, "setelah_ketik", 0.15)
-        log_fn(f"    Nama klik2 → '{nama}'")
+        _klik(nx2, ny2, label="nama klik2", delay_after=0.2)
+        _sleep(cfg, "setelah_klik", 0.15)
+        log_fn(f"    Nama klik2 ({nx2},{ny2})")
 
     log_fn(f"  [{cfg_key.upper()}] ✅")
     return True
@@ -591,10 +526,14 @@ def aksi_penerbitan_sertifikat(cfg: dict, log_fn,
 
     log_fn(f"  [{cfg_key.upper()}] Mulai…")
 
-    if cx and cy:
+    # 1. Centang — hanya jika centang_enabled: true
+    if pen.get("centang_enabled", False) and cx and cy:
         _klik(cx, cy, label="centang", delay_after=0.2)
         log_fn(f"    ✓ Centang ({cx},{cy})")
+    else:
+        log_fn(f"    ↷ Centang dilewati.")
 
+    # 2. Klik jabatan → paste
     if jx and jy:
         _klik(jx, jy, label="jabatan klik1", delay_after=0.15)
         pyautogui.hotkey("ctrl", "a"); time.sleep(0.05)
@@ -602,13 +541,13 @@ def aksi_penerbitan_sertifikat(cfg: dict, log_fn,
         _sleep(cfg, "setelah_ketik", 0.15)
         log_fn(f"    Jabatan → '{jabatan_teks}'")
 
+    # 3. Klik jabatan klik2 (pilih item dari list dropdown)
     if jx2 and jy2:
-        _klik(jx2, jy2, label="jabatan klik2", delay_after=0.15)
-        pyautogui.hotkey("ctrl", "a"); time.sleep(0.05)
-        pyperclip.copy(jabatan_teks); pyautogui.hotkey("ctrl", "v")
-        _sleep(cfg, "setelah_ketik", 0.15)
-        log_fn(f"    Jabatan klik2 → '{jabatan_teks}'")
+        _klik(jx2, jy2, label="jabatan klik2", delay_after=0.2)
+        _sleep(cfg, "setelah_klik", 0.15)
+        log_fn(f"    Jabatan klik2 ({jx2},{jy2})")
 
+    # 4. Klik nama → paste
     if nx and ny:
         _klik(nx, ny, label="nama klik1", delay_after=0.15)
         pyautogui.hotkey("ctrl", "a"); time.sleep(0.05)
@@ -616,15 +555,62 @@ def aksi_penerbitan_sertifikat(cfg: dict, log_fn,
         _sleep(cfg, "setelah_ketik", 0.15)
         log_fn(f"    Nama → '{nama}'")
 
+    # 5. Klik nama klik2 (pilih item dari list dropdown)
     if nx2 and ny2:
-        _klik(nx2, ny2, label="nama klik2", delay_after=0.15)
-        pyautogui.hotkey("ctrl", "a"); time.sleep(0.05)
-        pyperclip.copy(nama); pyautogui.hotkey("ctrl", "v")
-        _sleep(cfg, "setelah_ketik", 0.15)
-        log_fn(f"    Nama klik2 → '{nama}'")
+        _klik(nx2, ny2, label="nama klik2", delay_after=0.2)
+        _sleep(cfg, "setelah_klik", 0.15)
+        log_fn(f"    Nama klik2 ({nx2},{ny2})")
 
     log_fn(f"  [{cfg_key.upper()}] ✅")
     return True
+
+
+def _ekstrak_nama_pemohon(teks_mentah: str) -> str:
+    """
+    Ekstrak nama pemohon/pengukur secara akurat dari teks field,
+    membersihkan sisa boilerplate peraturan batas atau template lama.
+    """
+    if not teks_mentah:
+        return ""
+    t = teks_mentah.strip()
+
+    # 1. Bersihkan teks tanda batas atau template yang sering tidak sengaja tercampur
+    sampah_list = [
+        "Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.",
+        "Telah terpasang sesuai dengan Peraturan Pemerintah",
+        "Telah terpasang sesuai dengan PP No. 24 Tahun 1997",
+        "Batas-batas ditunjukan oleh :",
+        "Batas-batas ditunjukkan oleh :",
+        "Batas-batas ditunjukan oleh:",
+        "Batas-batas ditunjukkan oleh:",
+        "Ditetapkan dan diukur oleh",
+    ]
+    for s in sampah_list:
+        if s.lower() in t.lower():
+            pattern = re.compile(re.escape(s), re.IGNORECASE)
+            t = pattern.sub("", t).strip()
+
+    # 2. Jika teks mengandung pola '... oleh : <nama> (pemohon...' atau ada tanda '('
+    m = re.search(r'(?:oleh\s*:\s*)?([A-Za-z0-9\s\.,\'\/-]+?)(?:\s*\(\s*pemohon|\s*$)', t, re.IGNORECASE)
+    if m and m.group(1).strip():
+        t = m.group(1).strip()
+    elif "(" in t:
+        t = t.split("(")[0].strip()
+    else:
+        lines = [line.strip() for line in t.splitlines() if line.strip()]
+        t = lines[0] if lines else t
+
+    # 3. Bersihkan tanda baca dan spasi berlebih di depan/belakang
+    t = re.sub(r'^[:\-\.\s]+|[:\-\.\s]+$', '', t).strip()
+    return t
+
+
+_URUTAN_DETAIL = [
+    ("keadaan_tanah",          "Keadaan Tanah"),
+    ("tanda_tanda_batas",      "Tanda-Tanda Batas"),
+    ("pengukuran_dan_pemetaan","Penunjukan dan Penetapan Batas"),
+    ("hal_lain_lain",          "Hal Lain-Lain"),
+]
 
 
 def aksi_detail_lain(cfg: dict, assets_dir: str, log_fn,
@@ -633,9 +619,9 @@ def aksi_detail_lain(cfg: dict, assets_dir: str, log_fn,
     Isi Detail Lain-Lain via koordinat absolut (klik langsung, tidak pakai Tab).
 
     Mode per-field di config:
-      default             → klik (x,y) → triple-click → paste nilai
-      sisip_sebelum_kurung → klik (x,y) → salin isi lama → sisipkan
-                             teks_tambah di baris ke-2 sebelum karakter '('
+      default             → klik (x,y) → select-all → paste nilai
+      template_nama       → ambil nama murni dari field, susun dengan template
+      sisip_sebelum_kurung → klik (x,y) → salin isi lama → sisipkan teks_tambah
     """
     for key, lbl_text in _URUTAN_DETAIL:
         sub = detail_cfg.get(key, {})
@@ -652,57 +638,47 @@ def aksi_detail_lain(cfg: dict, assets_dir: str, log_fn,
         mode = sub.get("mode", "default")
 
         if mode == "template_nama":
-            # ── Ambil nama dari field, susun teks dengan template ──
             template = str(sub.get("template", "{nama}"))
 
             # 1. Klik field
-            _klik(x, y, label=lbl_text, delay_after=0.15)
+            _klik(x, y, label=lbl_text, delay_after=0.1)
 
-            # 2. Ctrl+A → Ctrl+C ambil isi lama (nama saja, misal "ROMLI")
+            # 2. Kosongkan clipboard sebelum copy agar tidak ada data stale
+            pyperclip.copy("")
+            time.sleep(0.04)
+
+            # 3. Select all dan salin isi teks saat ini
             pyautogui.hotkey("ctrl", "a")
-            time.sleep(0.15)
+            time.sleep(0.06)
             pyautogui.hotkey("ctrl", "c")
-            time.sleep(0.25)
+            time.sleep(0.12)
             isi_lama = pyperclip.paste().strip()
 
-            # Jika isi lama sudah berupa teks panjang (bukan hanya nama),
-            # coba ekstrak nama: ambil kata-kata sebelum '(' atau baris pertama
-            nama = isi_lama
-            if "(" in nama:
-                # ambil teks sebelum '(' di baris yang mengandung '('
-                for baris in nama.splitlines():
-                    if "(" in baris:
-                        nama = baris[:baris.index("(")].strip()
-                        break
-            elif "\n" in nama:
-                # ambil baris pertama yang tidak kosong
-                for baris in nama.splitlines():
-                    if baris.strip():
-                        nama = baris.strip()
-                        break
-
+            # 4. Ekstrak nama pemohon murni tanpa sampah peraturan
+            nama = _ekstrak_nama_pemohon(isi_lama)
             log_fn(f"  [{lbl_text}] Nama diambil: {nama!r}")
 
-            # 3. Susun teks baru dari template
+            # 5. Susun teks baru dari template
             teks_baru = template.replace("{nama}", nama)
             log_fn(f"  [{lbl_text}] Teks baru:\n{teks_baru}")
 
-            # 4. Paste teks baru
+            # 6. Paste teks baru
             pyperclip.copy(teks_baru)
             pyautogui.hotkey("ctrl", "a")
-            time.sleep(0.05)
+            time.sleep(0.04)
             pyautogui.hotkey("ctrl", "v")
-            _sleep(cfg, "setelah_ketik", 0.4)
+            _sleep(cfg, "setelah_ketik", 0.2)
             log_fn(f"  [{lbl_text}] ✅  Template selesai.")
 
         elif mode == "sisip_sebelum_kurung":
-            # ── Mode lama — masih didukung ──────────────────
             teks_tambah = str(sub.get("teks_tambah", ""))
-            _klik(x, y, label=lbl_text, delay_after=0.15)
+            _klik(x, y, label=lbl_text, delay_after=0.1)
+            pyperclip.copy("")
+            time.sleep(0.04)
             pyautogui.hotkey("ctrl", "a")
-            time.sleep(0.15)
+            time.sleep(0.06)
             pyautogui.hotkey("ctrl", "c")
-            time.sleep(0.25)
+            time.sleep(0.12)
             isi_lama = pyperclip.paste()
             idx_kurung = isi_lama.find("(")
             if idx_kurung == -1:
@@ -717,13 +693,13 @@ def aksi_detail_lain(cfg: dict, assets_dir: str, log_fn,
                              + isi_lama[idx_awal:])
             pyperclip.copy(teks_baru)
             pyautogui.hotkey("ctrl", "a")
-            time.sleep(0.05)
+            time.sleep(0.04)
             pyautogui.hotkey("ctrl", "v")
-            _sleep(cfg, "setelah_ketik", 0.4)
+            _sleep(cfg, "setelah_ketik", 0.2)
             log_fn(f"  [{lbl_text}] ✅  Sisip selesai.")
 
         else:
-            # ── Mode default: klik → triple-click → paste ────
+            # Mode default
             nilai = str(sub.get("nilai", ""))
             if not nilai.strip():
                 log_fn(f"  [{lbl_text}] ⏭  Nilai kosong, skip.")
@@ -762,15 +738,16 @@ def cek_semua_asset(assets_dir: str, cfg: dict, log_fn):
             continue
 
         sz = os.path.getsize(img_path)
-        try:
-            from PIL import Image as _Im
-            with _Im.open(img_path) as im:
-                pw, ph = im.size
-            px_info = f"{pw}×{ph}px / {sz}B"
-            kecil = pw < 30 or ph < 10
-        except Exception:
-            px_info = f"{sz}B"
-            kecil = sz < 500
+        px_info = f"{sz}B"
+        kecil = sz < 500
+        if _PIL_Image:
+            try:
+                with _PIL_Image.open(img_path) as im:
+                    pw, ph = im.size
+                px_info = f"{pw}×{ph}px / {sz}B"
+                kecil = pw < 30 or ph < 10
+            except Exception:
+                pass
 
         if kecil:
             log_fn(f"  ❌  [{lid}] '{img_name}' ({px_info}) "
@@ -780,10 +757,14 @@ def cek_semua_asset(assets_dir: str, cfg: dict, log_fn):
 
         loc = _find_image(img_path, confidence=0.7)
         if loc:
+            # pyrefly: ignore [missing-attribute]
             cx = loc.left + loc.width  // 2
+            # pyrefly: ignore [missing-attribute]
             cy = loc.top  + loc.height // 2
             log_fn(f"  ✅  [{lid}] '{img_name}' ({px_info}) "
+                   # pyrefly: ignore [missing-attribute]
                    f"— ditemukan ({loc.left},{loc.top}) "
+                   # pyrefly: ignore [missing-attribute]
                    f"{loc.width}×{loc.height}px  tengah=({cx},{cy})")
             ok += 1
         else:
@@ -799,24 +780,92 @@ def cek_semua_asset(assets_dir: str, cfg: dict, log_fn):
                f"tambah offset nomor/tahun/tanggal dari config di_offset.")
 
 
+
+
 # ════════════════════════════════════════════════════════════
-#  AKSI: SIMPAN
+#  AKSI: PETUNJUK BT
 # ════════════════════════════════════════════════════════════
 
-def aksi_simpan(cfg: dict, assets_dir: str, log_fn) -> bool:
-    for img_name in ["label_tanda_seru.png", "Validasi_button.png",
-                     "validasiBT.png"]:
-        img = os.path.join(assets_dir, img_name)
-        if not os.path.exists(img):
-            continue
-        cx, cy = _cari_dan_klik(img, confidence=0.75, timeout=5.0,
-                                 log_fn=log_fn, label="Simpan")
-        if cx is not None:
-            log_fn(f"  [SIMPAN] ✅  '{img_name}'")
-            _sleep(cfg, "setelah_klik", 0.5)
+def aksi_petunjuk_bt(cfg: dict, log_fn) -> bool:
+    """
+    Isi field Petunjuk pada Buku Tanah via koordinat absolut.
+    Mode:
+      - sisip_atas : paste teks baru di baris paling atas tanpa menghapus isi lama
+      - sisip_bawah: paste teks baru di baris paling bawah
+      - timpa      : timpa seluruh isi field
+    """
+    bt_cfg  = cfg.get("bt", {})
+    pet_cfg = bt_cfg.get("petunjuk", {})
+    if not pet_cfg.get("enabled", True):
+        log_fn("  [BT PETUNJUK] ⏭  Dilewati.")
+        return True
+
+    x = int(pet_cfg.get("x", 380))
+    y = int(pet_cfg.get("y", 806))
+    if x <= 0 or y <= 0:
+        log_fn("  [BT PETUNJUK] ⚠️  Koordinat belum diset.")
+        return False
+
+    mode = str(pet_cfg.get("mode", "sisip_atas")).strip().lower()
+
+    # 1. Tentukan teks baru yang ingin ditempel
+    nilai = str(pet_cfg.get("nilai", "")).strip()
+    if nilai:
+        teks_baru = nilai
+    else:
+        teks_baru = pyperclip.paste().strip()
+
+    if not teks_baru:
+        log_fn("  [BT PETUNJUK] ⏭  Teks baru kosong, dilewati.")
+        return True
+
+    # 2. Klik field
+    _klik(x, y, label="Petunjuk BT", delay_after=0.1)
+
+    # 3. Jika mode timpa, langsung select-all dan paste
+    if mode == "timpa":
+        pyperclip.copy(teks_baru)
+        pyautogui.hotkey("ctrl", "a")
+        time.sleep(0.04)
+        pyautogui.hotkey("ctrl", "v")
+        _sleep(cfg, "setelah_ketik", 0.2)
+        log_fn(f"  [BT PETUNJUK] ✅  Timpa teks: '{teks_baru}'")
+        return True
+
+    # 4. Mode sisip (sisip_atas / sisip_bawah): baca isi lama terlebih dahulu
+    pyperclip.copy("")
+    time.sleep(0.04)
+    pyautogui.hotkey("ctrl", "a")
+    time.sleep(0.06)
+    pyautogui.hotkey("ctrl", "c")
+    time.sleep(0.12)
+    isi_lama = pyperclip.paste().strip()
+
+    if isi_lama:
+        # Cek apakah teks_baru sudah pernah disisipkan agar tidak double jika di-retry
+        if teks_baru in isi_lama:
+            log_fn("  [BT PETUNJUK] ℹ️  Teks sudah ada di dalam Petunjuk, tidak diduplikasi.")
             return True
-    log_fn("  [SIMPAN] ⚠️  Tombol tidak ditemukan.")
-    return False
+
+        if mode == "sisip_bawah":
+            teks_gabung = f"{isi_lama}\n{teks_baru}"
+            log_fn(f"  [BT PETUNJUK] 📝  Sisipkan di bawah:\n     '{teks_baru}'")
+        else:  # sisip_atas (default)
+            teks_gabung = f"{teks_baru}\n{isi_lama}"
+            log_fn(f"  [BT PETUNJUK] 📝  Sisipkan di atas isi lama:\n     '{teks_baru}'")
+    else:
+        teks_gabung = teks_baru
+        log_fn(f"  [BT PETUNJUK] 📝  Isi baru: '{teks_baru}'")
+
+    # 5. Paste teks gabungan
+    pyperclip.copy(teks_gabung)
+    time.sleep(0.04)
+    pyautogui.hotkey("ctrl", "a")
+    time.sleep(0.04)
+    pyautogui.hotkey("ctrl", "v")
+    _sleep(cfg, "setelah_ketik", 0.2)
+    log_fn("  [BT PETUNJUK] ✅")
+    return True
 
 
 # ════════════════════════════════════════════════════════════
@@ -839,11 +888,9 @@ def jalankan_paste(cfg, assets_dir, is_running, is_paused,
     log_fn("  AUTO-PASTE DETIL SU  |  F2=Jeda  ESC=Stop")
     log_fn("═" * 52)
 
-    seri_cfg    = cfg.get("seri",         {})
     di_cfg      = cfg.get("daftar_isian", {})
     detail_cfg  = cfg.get("detail_lain",  {})
     kolom_list  = di_cfg.get("kolom", []) if di_cfg.get("enabled", True) else []
-    delay_loop  = float(cfg.get("delay", {}).get("antar_putaran", 1.0))
     rec_idx     = 0
 
     while is_running():
@@ -881,10 +928,7 @@ def jalankan_paste(cfg, assets_dir, is_running, is_paused,
         # Pastikan fokus ada di dalam konten form, bukan di header browser
         _fokus_ke_form(cfg, log_fn)
 
-        # 2. Seri — dihapus
-        if not is_running(): break
-
-        # 2b. Tgl. Penemoran
+        # 2. Tgl. Penemoran
         aksi_penomoran(cfg, log_fn)
         if not is_running(): break
 
@@ -911,9 +955,6 @@ def jalankan_paste(cfg, assets_dir, is_running, is_paused,
         # 4. Detail Lain-Lain
         aksi_detail_lain(cfg, assets_dir, log_fn, detail_cfg)
         if not is_running(): break
-
-        # 5. Simpan
-        aksi_simpan(cfg, assets_dir, log_fn)
 
         log_fn(f"✅  Putaran {rec_idx} selesai.")
 
@@ -955,7 +996,6 @@ def jalankan_paste_bt(cfg, assets_dir, is_running, is_paused,
     bt_cfg      = cfg.get("bt", {})
     di_cfg      = bt_cfg.get("daftar_isian", {})
     kolom_list  = di_cfg.get("kolom", []) if di_cfg.get("enabled", True) else []
-    delay_loop  = float(cfg.get("delay", {}).get("antar_putaran", 1.0))
     rec_idx     = 0
 
     while is_running():
@@ -996,8 +1036,10 @@ def jalankan_paste_bt(cfg, assets_dir, is_running, is_paused,
             log_fn("  [BT DI] ⏭  Dilewati.")
         if not is_running(): break
 
-        # Simpan
-        aksi_simpan(cfg, assets_dir, log_fn)
+        # Petunjuk BT (langsung paste)
+        aksi_petunjuk_bt(cfg, log_fn)
+        if not is_running(): break
+
         log_fn(f"✅  BT Putaran {rec_idx} selesai.")
 
         # Otomatis jeda

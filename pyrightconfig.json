@@ -1,0 +1,10 @@
+{
+  "include": [
+    "."
+  ],
+  "pythonPath": "C:\\Users\\sasai\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+  "extraPaths": [
+    "C:\\Users\\sasai\\AppData\\Roaming\\Python\\Python314\\site-packages",
+    "C:\\Users\\sasai\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages"
+  ]
+}

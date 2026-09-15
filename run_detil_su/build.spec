@@ -22,6 +22,7 @@ datas = [
 
 # ── hidden imports yang sering terlewat PyInstaller ──────────
 hiddenimports = [
+    "auto_paste_detil",
     "pyautogui",
     "pyperclip",
     "pyscreeze",
@@ -32,6 +33,7 @@ hiddenimports = [
     "tkinter.ttk",
     "tkinter.scrolledtext",
     "threading",
+    "re",
 ]
 
 a = Analysis(

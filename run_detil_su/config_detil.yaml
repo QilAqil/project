@@ -24,10 +24,10 @@ penomoran:
 pembukuan:
   enabled: true
   centang_enabled: false
-  jabatan_teks: Kepala Seksi Survei, Pengukuran dan Pemetaan
-  nama: karjono a.ptnh
+  jabatan_teks: kepala seksi survei,
+  nama: karjono
   centang_x: 1883
-  centang_y: 495
+  centang_y: 501
   jabatan_x: 1339
   jabatan_y: 494
   jabatan_klik2_x: 1339
@@ -54,8 +54,8 @@ penerbitan_sertifikat:
 pembukuan_bt:
   enabled: true
   centang_enabled: false
-  jabatan_teks: ajudi
-  nama: agus hariadi
+  jabatan_teks: kepala kantor pertanahan
+  nama: agus suprijanto
   centang_x: 1200
   centang_y: 683
   jabatan_x: 1333
@@ -69,14 +69,14 @@ pembukuan_bt:
 penerbitan_sertifikat_bt:
   enabled: true
   centang_enabled: false
-  jabatan_teks: ajudi
-  nama: agus hariadi
+  jabatan_teks: kepala kantor pertanahan
+  nama: agus suprijanto
   centang_x: 1200
   centang_y: 830
   jabatan_x: 1330
   jabatan_y: 826
   jabatan_klik2_x: 1330
-  jabatan_klik2_y: 805
+  jabatan_klik2_y: 787
   nama_x: 1200
   nama_y: 866
   nama_klik2_x: 1205
@@ -95,7 +95,7 @@ daftar_isian:
     x_tanggal: 810
 detail_lain:
   keadaan_tanah:
-    enabled: true
+    enabled: false
     nilai: Sebidang tanah diatasnya berdiri bangunan.
     x: 377
     y: 825
@@ -112,16 +112,21 @@ detail_lain:
 
       {nama} (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
 
-      Ditetapkan dan diukur oleh WIDODO JUNIARTO'
+      Ditetapkan dan diukur oleh Widodo Juniarto.'
     mode: template_nama
     x: 368
     y: 928
   hal_lain_lain:
-    enabled: true
+    enabled: false
     nilai: TIDAK ADA NOMOR GAMBAR UKUR 1871/2021
     x: 370
-    y: 981
 bt:
+  petunjuk:
+    enabled: false
+    mode: sisip_atas
+    nilai: 'DI 208 No : 1367/2018, Tanggal 15/09/2018'
+    x: 380
+    y: 806
   daftar_isian:
     enabled: true
     kolom:
