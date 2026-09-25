@@ -6,6 +6,7 @@ import tkinter as tk
 from tkinter import ttk, scrolledtext
 import yaml, os, sys, threading, time
 from datetime import datetime
+from typing import Literal
 
 def base_path():
     if getattr(sys, 'frozen', False):
@@ -62,7 +63,8 @@ def frm(parent, bg=None, **kw):
     kw["bg"] = bg or BG2; kw.setdefault("bd", 0)
     return tk.Frame(parent, **kw)
 
-def lbl(parent, text="", bold=False, color=TEXT, size=9, anchor="w", **kw):
+def lbl(parent, text="", bold=False, color=TEXT, size=9,
+        anchor: Literal['center', 'e', 'n', 'ne', 'nw', 's', 'se', 'sw', 'w'] = "w", **kw):
     kw.setdefault("bg", parent.cget("bg"))
     return tk.Label(parent, text=text, anchor=anchor,
                     font=("Segoe UI", size, "bold" if bold else "normal"),
@@ -529,6 +531,22 @@ class AppDetilSU(tk.Tk):
         v["nama"] = tk.StringVar(value=str(cfg_data.get("nama", "")))
         ent(r1, var=v["nama"], w=18).pack(side="left")
 
+        # baris tanggal
+        r_tgl = frm(pf, bg=bg)
+        r_tgl.pack(fill="x", padx=8, pady=(2,1))
+        v["tanggal_enabled"] = tk.BooleanVar(
+            value=cfg_data.get("tanggal_enabled", False))
+        chk(r_tgl, "Tanggal", v["tanggal_enabled"], bg=bg).pack(side="left")
+        lbl(r_tgl, "  Nilai:", color=TEXT_DIM, bg=bg).pack(side="left", padx=(4,2))
+        v["tanggal_nilai"] = tk.StringVar(value=str(cfg_data.get("tanggal_nilai", "")))
+        ent(r_tgl, var=v["tanggal_nilai"], w=18).pack(side="left")
+        lbl(r_tgl, "  X:", color=TEXT_DIM, bg=bg, size=8).pack(side="left", padx=(6,1))
+        v["tanggal_x"] = tk.StringVar(value=str(cfg_data.get("tanggal_x", "")))
+        ent(r_tgl, var=v["tanggal_x"], w=5).pack(side="left", padx=(0,2))
+        lbl(r_tgl, "  Y:", color=TEXT_DIM, bg=bg, size=8).pack(side="left", padx=(4,1))
+        v["tanggal_y"] = tk.StringVar(value=str(cfg_data.get("tanggal_y", "")))
+        ent(r_tgl, var=v["tanggal_y"], w=5).pack(side="left", padx=(0,2))
+
         # helper baris koordinat
         def coord_row(label_text, keys):
             r = frm(pf, bg=bg)
@@ -566,12 +584,16 @@ class AppDetilSU(tk.Tk):
 
     def _get_pejabat_data(self, v: dict) -> dict:
         """Ambil data dari vars panel pejabat untuk disimpan ke config."""
-        centang_val = bool(v["centang_enabled"].get())
+        centang_val = bool(v["centang_enabled"].get()) if "centang_enabled" in v else False
+        tanggal_val = bool(v["tanggal_enabled"].get()) if "tanggal_enabled" in v else False
         d = {"enabled": v["enabled"].get(),
              "centang_enabled": centang_val,
+             "tanggal_enabled": tanggal_val,
+             "tanggal_nilai": v["tanggal_nilai"].get() if "tanggal_nilai" in v else "",
              "jabatan_teks": v["jabatan_teks"].get(),
              "nama": v["nama"].get()}
-        for k in ("centang_x","centang_y",
+        for k in ("tanggal_x", "tanggal_y",
+                  "centang_x","centang_y",
                   "jabatan_x","jabatan_y",
                   "jabatan_klik2_x","jabatan_klik2_y",
                   "nama_x","nama_y",
@@ -664,11 +686,17 @@ class AppDetilSU(tk.Tk):
         # pembukuan & penerbitan sertifikat SU
         cfg["pembukuan"]              = self._get_pejabat_data(self._pb_vars)
         cfg["penerbitan_sertifikat"]  = self._get_pejabat_data(self._ps_vars)
-        # log centang_enabled untuk verifikasi
+        # log centang_enabled & tanggal untuk verifikasi
         self._log(f"  [SAVE] pembukuan.centang_enabled = "
                   f"{cfg['pembukuan'].get('centang_enabled')}")
         self._log(f"  [SAVE] penerbitan.centang_enabled = "
                   f"{cfg['penerbitan_sertifikat'].get('centang_enabled')}")
+        if cfg["pembukuan"].get("tanggal_enabled"):
+            self._log(f"  [SAVE] pembukuan.tanggal = "
+                      f"'{cfg['pembukuan'].get('tanggal_nilai')}'")
+        if cfg["penerbitan_sertifikat"].get("tanggal_enabled"):
+            self._log(f"  [SAVE] penerbitan.tanggal = "
+                      f"'{cfg['penerbitan_sertifikat'].get('tanggal_nilai')}'")
         cfg.pop("simpan", None)
         if hasattr(self, "_bt_pet_en"):
             if "bt" not in cfg:

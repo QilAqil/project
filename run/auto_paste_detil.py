@@ -458,6 +458,8 @@ def aksi_pembukuan(cfg: dict, log_fn, cfg_key: str = "pembukuan") -> bool:
 
     nama         = str(pen.get("nama", ""))
     jabatan_teks = str(pen.get("jabatan_teks", ""))
+    tgl_nilai    = str(pen.get("tanggal_nilai", ""))
+    tx,  ty   = int(pen.get("tanggal_x",       0)), int(pen.get("tanggal_y",       0))
     cx,  cy   = int(pen.get("centang_x",       0)), int(pen.get("centang_y",       0))
     jx,  jy   = int(pen.get("jabatan_x",       0)), int(pen.get("jabatan_y",       0))
     jx2, jy2  = int(pen.get("jabatan_klik2_x", 0)), int(pen.get("jabatan_klik2_y", 0))
@@ -465,6 +467,14 @@ def aksi_pembukuan(cfg: dict, log_fn, cfg_key: str = "pembukuan") -> bool:
     nx2, ny2  = int(pen.get("nama_klik2_x",    0)), int(pen.get("nama_klik2_y",    0))
 
     log_fn(f"  [{cfg_key.upper()}] Mulai…")
+
+    # 0. Tanggal — hanya jika tanggal_enabled: true
+    if pen.get("tanggal_enabled", False) and tx and ty:
+        if tgl_nilai.strip():
+            log_fn(f"    Tanggal ({tx},{ty}) → '{tgl_nilai}'")
+            _isi_field(tx, ty, tgl_nilai, cfg, label=f"{cfg_key} tanggal", log_fn=log_fn)
+        else:
+            log_fn("    ↷ Tanggal dilewati (nilai kosong).")
 
     # 1. Centang — hanya jika centang_enabled: true
     if pen.get("centang_enabled", False) and cx and cy:
@@ -509,7 +519,7 @@ def aksi_penerbitan_sertifikat(cfg: dict, log_fn,
                                 cfg_key: str = "penerbitan_sertifikat") -> bool:
     """
     Isi section Penerbitan Sertifikat (SU atau BT via cfg_key).
-    Alur identik dengan Pembukuan — jabatan & nama masing-masing 2 klik.
+    Alur identik dengan Pembukuan — tanggal, centang, jabatan & nama.
     """
     pen = cfg.get(cfg_key, {})
     if not pen.get("enabled", False):
@@ -518,6 +528,8 @@ def aksi_penerbitan_sertifikat(cfg: dict, log_fn,
 
     nama         = str(pen.get("nama", ""))
     jabatan_teks = str(pen.get("jabatan_teks", ""))
+    tgl_nilai    = str(pen.get("tanggal_nilai", ""))
+    tx,  ty   = int(pen.get("tanggal_x",       0)), int(pen.get("tanggal_y",       0))
     cx,  cy   = int(pen.get("centang_x",       0)), int(pen.get("centang_y",       0))
     jx,  jy   = int(pen.get("jabatan_x",       0)), int(pen.get("jabatan_y",       0))
     jx2, jy2  = int(pen.get("jabatan_klik2_x", 0)), int(pen.get("jabatan_klik2_y", 0))
@@ -525,6 +537,14 @@ def aksi_penerbitan_sertifikat(cfg: dict, log_fn,
     nx2, ny2  = int(pen.get("nama_klik2_x",    0)), int(pen.get("nama_klik2_y",    0))
 
     log_fn(f"  [{cfg_key.upper()}] Mulai…")
+
+    # 0. Tanggal — hanya jika tanggal_enabled: true
+    if pen.get("tanggal_enabled", False) and tx and ty:
+        if tgl_nilai.strip():
+            log_fn(f"    Tanggal ({tx},{ty}) → '{tgl_nilai}'")
+            _isi_field(tx, ty, tgl_nilai, cfg, label=f"{cfg_key} tanggal", log_fn=log_fn)
+        else:
+            log_fn("    ↷ Tanggal dilewati (nilai kosong).")
 
     # 1. Centang — hanya jika centang_enabled: true
     if pen.get("centang_enabled", False) and cx and cy:

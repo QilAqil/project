@@ -18,44 +18,56 @@ delay:
   antar_putaran: 0.5
 penomoran:
   tanggal_enabled: true
-  tanggal_nilai: 06/08/2015
+  tanggal_nilai: 04/04/2013
   tanggal_x: 370
   tanggal_y: 612
 pembukuan:
   enabled: true
   centang_enabled: false
+  tanggal_enabled: false
+  tanggal_nilai: 21/07/2011
   jabatan_teks: kepala seksi survei,
   nama: karjono
-  centang_x: 1883
+  tanggal_x: 1192
+  tanggal_y: 465
+  centang_x: 1188
   centang_y: 501
-  jabatan_x: 1339
-  jabatan_y: 494
-  jabatan_klik2_x: 1339
+  jabatan_x: 1493
+  jabatan_y: 500
+  jabatan_klik2_x: 1493
   jabatan_klik2_y: 551
-  nama_x: 1200
+  nama_x: 1347
   nama_y: 529
-  nama_klik2_x: 1200
+  nama_klik2_x: 1347
   nama_klik2_y: 581
 penerbitan_sertifikat:
   enabled: true
   centang_enabled: false
+  tanggal_enabled: true
+  tanggal_nilai: 13/06/2013
   jabatan_teks: kepala kantor pertanahan
-  nama: agus suprijanto
+  nama: agus supri
+  tanggal_x: 1196
+  tanggal_y: 601
   centang_x: 1188
   centang_y: 627
-  jabatan_x: 1336
+  jabatan_x: 1477
   jabatan_y: 633
-  jabatan_klik2_x: 1336
+  jabatan_klik2_x: 1477
   jabatan_klik2_y: 679
-  nama_x: 1200
+  nama_x: 1400
   nama_y: 666
-  nama_klik2_x: 1200
+  nama_klik2_x: 1400
   nama_klik2_y: 719
 pembukuan_bt:
   enabled: true
   centang_enabled: false
+  tanggal_enabled: false
+  tanggal_nilai: ''
   jabatan_teks: kepala kantor pertanahan
-  nama: agus suprijanto
+  nama: agus supri
+  tanggal_x: 1250
+  tanggal_y: 645
   centang_x: 1200
   centang_y: 683
   jabatan_x: 1333
@@ -69,14 +81,18 @@ pembukuan_bt:
 penerbitan_sertifikat_bt:
   enabled: true
   centang_enabled: false
+  tanggal_enabled: false
+  tanggal_nilai: ''
   jabatan_teks: kepala kantor pertanahan
-  nama: agus suprijanto
+  nama: agus supri
+  tanggal_x: 1250
+  tanggal_y: 790
   centang_x: 1200
   centang_y: 830
   jabatan_x: 1330
   jabatan_y: 826
   jabatan_klik2_x: 1330
-  jabatan_klik2_y: 787
+  jabatan_klik2_y: 786
   nama_x: 1200
   nama_y: 866
   nama_klik2_x: 1205
@@ -87,8 +103,8 @@ daftar_isian:
   - id: DI 303
     enabled: true
     nomor: '0'
-    tahun: '1990'
-    tanggal: 01/01/1990
+    tahun: '1900'
+    tanggal: 01/01/1900
     y: 726
     x_nomor: 571
     x_tahun: 590
@@ -96,7 +112,7 @@ daftar_isian:
 detail_lain:
   keadaan_tanah:
     enabled: false
-    nilai: Sebidang tanah diatasnya berdiri bangunan.
+    nilai: Sebidang tanah pekarangan di atasnya berdiri bangunan rumah.
     x: 377
     y: 825
   tanda_tanda_batas:
@@ -110,9 +126,9 @@ detail_lain:
     enabled: true
     template: 'Batas-batas ditunjukan oleh :
 
-      {nama} (pemohon/ kuasa pemohon) dan disetujui oleh pihak-pihak berbatasan.
+      {nama} (pemohon) dan disetujui oleh pihak-pihak berbatasan.
 
-      Ditetapkan dan diukur oleh Widodo Juniarto.'
+      Ditetapkan dan diukur oleh Nur Susanto, S.H.'
     mode: template_nama
     x: 368
     y: 928
@@ -123,8 +139,9 @@ detail_lain:
 bt:
   petunjuk:
     enabled: false
-    mode: sisip_atas
-    nilai: 'DI 208 No : 1367/2018, Tanggal 15/09/2018'
+    mode: timpa
+    nilai: Surat Pernyataan Pembagian Waris Tgl.15-12-2010 yang diketahui oleh Kepala
+      Desa Ngadisono.
     x: 380
     y: 806
   daftar_isian:
@@ -133,8 +150,8 @@ bt:
     - id: DI 301
       enabled: true
       nomor: '0'
-      tahun: '1990'
-      tanggal: 01/01/1990
+      tahun: '1900'
+      tanggal: 01/01/1900
       y: 455
       x_nomor: 385
       x_tahun: 649
